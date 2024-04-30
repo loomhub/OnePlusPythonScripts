@@ -3,7 +3,6 @@ from email.header import decode_header
 import imaplib
 import re
 import requests
-
 from dto.processed_dto import processedDTO, listProcessedDTO
 
 class mailHandler:
