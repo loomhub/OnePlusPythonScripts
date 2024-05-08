@@ -22,7 +22,7 @@ class partnersListDTO(BaseModel):
     class Config:
         orm_mode = True
 
-VENDOR_COLUMNS = {
+PARTNERS_COLUMNS = {
     'Partner': 'partner',
     'Recipient Type': 'recipient_type',
     'Recipient TIN Type': 'recipient_tin_type',

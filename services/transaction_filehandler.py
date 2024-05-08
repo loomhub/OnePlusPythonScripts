@@ -15,7 +15,7 @@ class transactionFileHandler(myFileHandler):
             super().__init__(folder=folder)
         
 #######################################################################################################################    
-    def convert_df_to_list(self, file:str, df:pd.DataFrame,**kwargs) -> transactionsListDTO:
+    def convert_df_to_list(self, df:pd.DataFrame,**kwargs) -> transactionsListDTO:
         column_names = kwargs.get('column_names', None)
         rename_columns = kwargs.get('rename_columns', None) #rename columns for Chase downloads
 

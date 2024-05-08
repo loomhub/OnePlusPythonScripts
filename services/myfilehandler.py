@@ -72,7 +72,10 @@ class myFileHandler:
         return dto_list
 #############################################################################################################
     def parse_date(self,date_str):
-        if len(date_str.split('/')[-1]) == 4:  # Check if the year part has four digits
+        """Parse a date string into a date object with coercion for two different year formats."""
+        if pd.isna(date_str):
+            return None  # Directly return None for NaN values
+        elif len(date_str.split('/')[-1]) == 4:
             return pd.to_datetime(date_str, format='%m/%d/%Y', errors='coerce')
         else:
             return pd.to_datetime(date_str, format='%m/%d/%y', errors='coerce')
@@ -89,14 +92,17 @@ class myFileHandler:
   
         for column_name in column_names:
             if column_name in df.columns:
-                try:
-                    df[column_name] = df[column_name].fillna(pd.Timestamp(null_value_date))
-                    df[column_name] = df[column_name].apply(self.parse_date).dt.date
-                    df[column_name] = df[column_name].apply(self.format_date)  # Format the 'tdate' column
-                except Exception as e:
-                    print(f"Error converting {column_name}: {e}")
+                # Apply the date parsing method and handle NaN values after conversion
+                df[column_name] = df[column_name].apply(self.parse_date)
+                # Replace NaT with a default date and ensure all operations are on datetime format
+                df[column_name] = df[column_name].fillna(pd.Timestamp(null_value_date))
+                # Convert datetime to date (optional: remove if you prefer datetime objects)
+                df[column_name] = df[column_name].dt.date
+                # Format the date as a string in the desired format
+                df[column_name] = df[column_name].apply(self.format_date) 
             else:
                 print(f"Column {column_name} not found in DataFrame.")
+        
         return df
 #############################################################################################################   
     def convert_month_to_date(self, 
@@ -108,8 +114,8 @@ class myFileHandler:
                 if column_name in df.columns:
                     try:
                         df[column_name] = df[column_name].fillna(pd.Timestamp(null_value_date))
-                        df[column_name] = pd.to_datetime(df[column_name]).dt.date
-                        df[column_name] = pd.to_datetime(df[column_name]).dt.to_period('M').dt.to_timestamp()
+                        df[column_name] = pd.to_datetime(df[column_name]).dt.to_period('M').dt.start_time.dt.date
+                        df[column_name] = df[column_name].apply(self.format_date)  
                     except Exception as e:
                         print(f"Error converting {column_name}: {e}")
                 else:
@@ -235,10 +241,11 @@ class myFileHandler:
             filename = os.path.basename(file)    
             df = self.read_file(file,fileheaders=fileheaders)
     
-            input_data, errorsList = self.convert_df_to_list(file, df,
+            input_data, errorsList = self.convert_df_to_list(df,
                                                              column_names = column_names,
-                                                             rename_columns = rename_columns
-                                                             )
+                                                             rename_columns = rename_columns,
+                                                             filename = file)
+                                                             
 
             if errorsList:
                 processing_results.append({file: 'error', 'details': errorsList})
