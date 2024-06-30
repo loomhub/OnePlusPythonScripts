@@ -6,7 +6,7 @@ host='http://localhost:8080'
 # Bank Downloads
 endpoint='/transactions'
 url=host+endpoint
-input_file='DataLoads/Transactions/transactions 2014 286.csv'
+input_file='DataLoads/Transactions/transactionsFullLoad.csv'
 input_folder='DataLoads/Transactions/'
 myObjects = 'transactions'
 processing_results = []

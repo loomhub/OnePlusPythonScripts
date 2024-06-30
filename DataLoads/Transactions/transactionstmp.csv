@@ -1,0 +1,2 @@
+﻿bank_account_key,tdate,description,amount,classification,period_status,transaction_group,transaction_type,vendor,customer,comments,vendor_no_w9,customer_no_w9
+,1/1/22,dummy,0,review,open,X-Review,Review,GeneralVendor,GeneralCustomer,Initial,Initial,Initial

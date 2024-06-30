@@ -1,0 +1,81 @@
+﻿ttype,description,transaction_group,transaction_type,vendor,customer,vendor_no_w9,customer_no_w9
+credit,trulo,A01-Income,Exp-Mgmt,W9-TRULO,GeneralCustomer,W9-TRULO,PropertyManagement
+debit,trulo,A01-Income,Exp-Mgmt,GeneralVendor,W9-TRULO,TRULORefund,W9-TRULO
+credit,owner draw,D01-Owner,Owner-Draw,GeneralVendor,GeneralCustomer,GeneralVendor,OwnerDraw
+debit,owner draw,D01-Owner,Owner-Draw,GeneralVendor,GeneralCustomer,OwnerDraw,GeneralCustomer
+credit,funding,D01-Owner,Owner-Funding,GeneralVendor,GeneralCustomer,GeneralVendor,PartnershipFunding
+debit,funding,D01-Owner,Owner-Funding,GeneralVendor,GeneralCustomer,Property,Partnership
+credit,"mortgage,pennymac,newrez,orig co name:jpmorgan chase,jpmorgan chase chase ach,freedom mtg,servicemac,lument",A01-Income,Exp-Mortgage,GeneralVendor,GeneralCustomer,GeneralVendor,Mortgage
+credit,"autopay, auto pay",A01-Income,Exp-Repair,GeneralVendor,GeneralCustomer,GeneralVendor,Autopay
+credit,lowes,A01-Income,Exp-Repair,GeneralVendor,GeneralCustomer,GeneralVendor,Lowes
+credit,"oneplus,everyday checking midway expense",A01-Income,Exp-Repair,W9-ONEPLUS,GeneralCustomer,W9-ONEPLUS,PropertyManagement
+debit,oneplus,A01-Income,Rev-Rent,GeneralVendor,W9-ONEPLUS,Property,W9-ONEPLUS
+debit,vrbo,A01-Income,Rev-Rent,GeneralVendor,GeneralCustomer,VRBORent,GeneralCustomer
+credit,"maria,vaca",A01-Income,Exp-Cleaning,GeneralVendor,GeneralCustomer,GeneralVendor,MariaVaca
+credit,"spectrum,internet,godaddy,google",A01-Income,Exp-Utilities,GeneralVendor,GeneralCustomer,GeneralVendor,Internet
+debit,"spectrum,internet,godaddy,google",A01-Income,Exp-Utilities,GeneralVendor,GeneralCustomer,Internet,GeneralCustomer
+credit,"energy,exelon",A01-Income,Exp-Utilities,GeneralVendor,GeneralCustomer,GeneralVendor,Energy
+debit,"energy,exelon",A01-Income,Exp-Utilities,GeneralVendor,GeneralCustomer,Energy,GeneralCustomer
+credit,"travelers,foremost",A01-Income,Exp-Insurance,GeneralVendor,GeneralCustomer,GeneralVendor,Insurance
+debit,"travelers,foremost",A01-Income,Exp-Insurance,GeneralVendor,GeneralCustomer,Insurance,GeneralCustomer
+credit,tax,A01-Income,Exp-Taxes,GeneralVendor,GeneralCustomer,GeneralVendor,TaxCounty
+debit,tax,A01-Income,Exp-Taxes,GeneralVendor,GeneralCustomer,TaxCounty,GeneralCustomer
+credit,"city of fort,city of arling,utility",A01-Income,Exp-Utilities,GeneralVendor,GeneralCustomer,GeneralVendor,CityServices
+debit,"city of fort,city of arling,utility",A01-Income,Exp-Utilities,GeneralVendor,GeneralCustomer,CityServices,GeneralCustomer
+credit,116 mv chk to sav,F01-BankTransfer,Transfer,GeneralVendor,GeneralCustomer,GeneralVendor,Checking
+debit,116 mv chk to sav,F01-BankTransfer,Transfer,GeneralVendor,GeneralCustomer,Savings,GeneralCustomer
+credit,willow creek,A01-Income,Exp-HOA,GeneralVendor,GeneralCustomer,GeneralVendor,HOA
+debit,interest payment,A01-Income,Rev-Interest,GeneralVendor,GeneralCustomer,BankInterest,GeneralCustomer
+credit,"monthly service fee,wire trans",A01-Income,Exp-ProfessionalServices,GeneralVendor,GeneralCustomer,GeneralVendor,Bank
+credit,"…5909,xxx5909",A01-Income,Exp-Repair,6401Basswood,GeneralCustomer,6401Basswood,BasswoodTransfer
+debit,"…5909,xxx5909",A01-Income,Exp-Repair,GeneralVendor,6401Basswood,BasswoodTransfer,6401Basswood
+credit,"…5031,xxx5031",A01-Income,Exp-Repair,Common,GeneralCustomer,Common,CommonTransfer
+debit,"…5031,xxx5031",A01-Income,Exp-Repair,GeneralVendor,Common,CommonTransfer,Common
+credit,"…3314,xxx3314",B01-SecurityDeposit,Security-In,MeadowSecurity,GeneralCustomer,MeadowSecurity,SecurityDeposit
+debit,"…3314,xxx3314",B01-SecurityDeposit,Security-In,GeneralVendor,MeadowSecurity,SecurityDeposit,MeadowSecurity
+credit,"…6424,xxx6424",B01-SecurityDeposit,Security-In,TrustAccount,GeneralCustomer,TrustAccount,SecurityDeposit
+debit,"…6424,xxx6424",B01-SecurityDeposit,Security-In,GeneralVendor,TrustAccount,SecurityDeposit,TrustAccount
+credit,"…8228,xxx8228",A01-Income,Exp-Repair,1905Morning,GeneralCustomer,1905Morning,MorningTransfer
+debit,"…8228,xxx8228",A01-Income,Exp-Repair,GeneralVendor,1905Morning,MorningTransfer,1905Morning
+credit,"…3606,xxx3606",A01-Income,Exp-Repair,2417Garden,GeneralCustomer,2417Garden,GardenTransfer
+debit,"…3606,xxx3606",A01-Income,Exp-Repair,GeneralVendor,2417Garden,GardenTransfer,2417Garden
+credit,"…4356,xxx4356",A01-Income,Exp-Repair,108Pagoda,GeneralCustomer,108Pagoda,PagodaTransfer
+debit,"…4356,xxx4356",A01-Income,Exp-Repair,GeneralVendor,108Pagoda,PagodaTransfer,108Pagoda
+credit,"…9333,xxx9333",A01-Income,Exp-Repair,2208Chase,GeneralCustomer,2208Chase,2208ChaseTransfer
+debit,"…9333,xxx9333",A01-Income,Exp-Repair,GeneralVendor,2208Chase,2208ChaseTransfer,2208Chase
+credit,"…0218,xxx0218",A01-Income,Exp-Repair,104Meadow,GeneralCustomer,104Meadow,104MeadowTransfer
+debit,"…0218,xxx0218",A01-Income,Exp-Repair,GeneralVendor,104Meadow,104MeadowTransfer,104Meadow
+credit,"…6335,xxx6335",A01-Income,Exp-Repair,108Meadow,GeneralCustomer,108Meadow,108MeadowTransfer
+debit,"…6335,xxx6335",A01-Income,Exp-Repair,GeneralVendor,108Meadow,108MeadowTransfer,108Meadow
+credit,"…2192,xxx2192",A01-Income,Exp-Repair,1342Newton,GeneralCustomer,1342Newton,1342NewtonTransfer
+debit,"…2192,xxx2192",A01-Income,Exp-Repair,GeneralVendor,1342Newton,1342NewtonTransfer,1342Newton
+credit,"…8147,xxx8147",A01-Income,Exp-Repair,1316Rosemon,GeneralCustomer,1316Rosemon,RosemonTransfer
+debit,"…8147,xxx8147",A01-Income,Exp-Repair,GeneralVendor,1316Rosemon,RosemonTransfer,1316Rosemon
+credit,"…8665,xxx8665",A01-Income,Exp-Repair,874Wintergreen,GeneralCustomer,874Wintergreen,WintergreenTransfer
+debit,"…8665,xxx8665",A01-Income,Exp-Repair,GeneralVendor,874Wintergreen,WintergreenTransfer,874Wintergreen
+credit,"…3312,xxx3312",B01-SecurityDeposit,Security-In,PagodaSecurity,GeneralCustomer,PagodaSecurity,SecurityDeposit
+debit,"…3312,xxx3312",B01-SecurityDeposit,Security-In,GeneralVendor,PagodaSecurity,SecurityDeposit,PagodaSecurity
+credit,"…9963,xxx9963",A01-Income,Exp-Repair,711Parks,GeneralCustomer,711Parks,ParksTransfer
+debit,"…9963,xxx9963",A01-Income,Exp-Repair,GeneralVendor,711Parks,ParksTransfer,711Parks
+credit,"…6969,xxx6969",A01-Income,Exp-Repair,Midway,GeneralCustomer,Midway,MidwayTransfer
+debit,"…6969,xxx6969",A01-Income,Exp-Repair,GeneralVendor,Midway,MidwayTransfer,Midway
+credit,"…2620,xxx2620",A01-Income,Exp-Repair,1117Brewer,GeneralCustomer,1117Brewer,BrewerTransfer
+debit,"…2620,xxx2620",A01-Income,Exp-Repair,GeneralVendor,1117Brewer,BrewerTransfer,1117Brewer
+credit,"…1242,xxx1242",A01-Income,Exp-Repair,Partnership,GeneralCustomer,Partnership,PartnershipTransfer
+debit,"…1242,xxx1242",A01-Income,Exp-Repair,GeneralVendor,Partnership,PartnershipTransfer,Partnership
+credit,"…5618,xxx5618",A01-Income,Exp-Repair,8604Wagon,GeneralCustomer,8604Wagon,WagonTransfer
+debit,"…5618,xxx5618",A01-Income,Exp-Repair,GeneralVendor,8604Wagon,WagonTransfer,8604Wagon
+credit,"…2603,xxx2603",A01-Income,Exp-Repair,114Sidney,GeneralCustomer,114Sidney,SidneyTransfer
+debit,"…2603,xxx2603",A01-Income,Exp-Repair,GeneralVendor,114Sidney,SidneyTransfer,114Sidney
+credit,"…7616,xxx7616",A01-Income,Exp-Repair,2224Heatherton,GeneralCustomer,2224Heatherton,HeathertonTransfer
+debit,"…7616,xxx7616",A01-Income,Exp-Repair,GeneralVendor,2224Heatherton,HeathertonTransfer,2224Heatherton
+credit,"…4576,xxx4576",A01-Income,Exp-Repair,4920Brianhill,GeneralCustomer,4920Brianhill,BrianhillTransfer
+debit,"…4576,xxx4576",A01-Income,Exp-Repair,GeneralVendor,4920Brianhill,BrianhillTransfer,4920Brianhill
+credit,"…8291,xxx8291",A01-Income,Exp-Repair,4909Jamesway,GeneralCustomer,4909Jamesway,JameswayTransfer
+debit,"…8291,xxx8291",A01-Income,Exp-Repair,GeneralVendor,4909Jamesway,JameswayTransfer,4909Jamesway
+credit,"…6571,xxx6571",A01-Income,Exp-Repair,7417Canoga,GeneralCustomer,7417Canoga,7417CanogaTransfer
+debit,"…6571,xxx6571",A01-Income,Exp-Repair,GeneralVendor,7417Canoga,7417CanogaTransfer,7417Canoga
+credit,"…9670,xxx9670",B01-SecurityDeposit,Security-In,TrustChase,GeneralCustomer,TrustChase,SecurityDeposit
+debit,"…9670,xxx9670",B01-SecurityDeposit,Security-In,GeneralVendor,TrustChase,SecurityDeposit,TrustChase
+credit,"…5798,xxx5798",B01-SecurityDeposit,Security-In,MedViewSD,GeneralCustomer,MedViewSD,SecurityDeposit
+debit,"…5798,xxx5798",B01-SecurityDeposit,Security-In,GeneralVendor,MedViewSD,SecurityDeposit,MedViewSD

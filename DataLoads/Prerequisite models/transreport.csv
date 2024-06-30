@@ -1,0 +1,22 @@
+﻿sequence_id,category,calc_method,fields
+1,Rent,transaction_type,Rev-Rent
+2,Interest,transaction_type,Rev-Interest
+3,REVENUE,Calculated,Calculated
+4,Insurance,transaction_type,Exp-Insurance
+5,Taxes,transaction_type,Exp-Taxes
+6,Repair,transaction_type,Exp-Repair
+7,Management,transaction_type,Exp-Mgmt
+8,Utilities,transaction_type,Exp-Utilities
+9,Cleaning,transaction_type,Exp-Cleaning
+10,Professional Services,transaction_type,Exp-ProfessionalServices
+11,Travel,transaction_type,Exp-Travel
+12,HOA,transaction_type,Exp-HOA
+13,Allocation,transaction_type,Exp-Allocation
+14,EXPENSES,Calculated,Calculated
+15,NET INCOME,Calculated,Calculated
+16,Mortgage Payments,transaction_type,Exp-Mortgage
+17,Capex,transaction_group,C01-Capex
+18,Transfers,transaction_type,"Transfer,Balancing-Transaction"
+19,Owner Draw,transaction_group,D01-Owner
+20,Security Deposit,transaction_group,B01-SecurityDeposit
+21,CASHFLOW,Calculated,Ending_Balance

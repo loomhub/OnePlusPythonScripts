@@ -75,7 +75,11 @@ class myFileHandler:
         """Parse a date string into a date object with coercion for two different year formats."""
         if pd.isna(date_str):
             return None  # Directly return None for NaN values
-        elif len(date_str.split('/')[-1]) == 4:
+        # Check if the date is in the format "YYYY-MM-DD"
+        if len(date_str.split('-')) == 3 and len(date_str.split('-')[0]) == 4:
+            return pd.to_datetime(date_str, format='%Y-%m-%d', errors='coerce')
+        
+        if len(date_str.split('/')[-1]) == 4:
             return pd.to_datetime(date_str, format='%m/%d/%Y', errors='coerce')
         else:
             return pd.to_datetime(date_str, format='%m/%d/%y', errors='coerce')
@@ -206,12 +210,15 @@ class myFileHandler:
         else:
             return {}
 ############################################################################################################
-    def post_data(self, url, input_data, myObjects):
+    def post_data(self, url, input_data, myObjects,**kwargs):
+        method = kwargs.get('method', 'post')
         try:
             input_count = len(input_data)
             load_data = {myObjects: input_data}  # Wrap the data in a dictionary
-
-            response = requests.post(url, json=load_data)
+            if method == 'delete':
+                response = requests.delete(url, json=load_data)
+            else:
+                response = requests.post(url, json=load_data)
             response.raise_for_status()  
             
             output_data = response.json()  # Convert the response to JSON format
@@ -235,13 +242,42 @@ class myFileHandler:
         column_names = kwargs.get('column_names', None)
         rename_columns = kwargs.get('rename_columns', None)
         fileheaders = kwargs.get('fileheaders', None)
+        
+        processing_results = []
+        for file in self.files:
+            filename = os.path.basename(file)    
+            df = self.read_file(file,fileheaders=fileheaders)
+            input_data, errorsList = self.convert_df_to_list(df,
+                                                         column_names = column_names,
+                                                         rename_columns = rename_columns,
+                                                         filename = file)
+            if errorsList:
+                processing_results.append({file: 'error', 'details': errorsList})
+            else:
+        # Send a POST request with JSON data
+                try:
+                    success, records = self.post_data(url, input_data,myObjects)
+                    if success:
+                        processing_results.append({filename: records})
+                    else:
+                        processing_results.append({filename: 'error', 'details': 'Error posting data'})
+                except Exception as e:
+                    print(f"Error: {str(e)}")
+        
+        return processing_results
+
+############################################################################################################
+    def delete_using_filedata(self,url,myObjects,**kwargs):
+        column_names = kwargs.get('column_names', None)
+        rename_columns = kwargs.get('rename_columns', None)
+        fileheaders = kwargs.get('fileheaders', None)
 
         processing_results = []
         for file in self.files:
             filename = os.path.basename(file)    
             df = self.read_file(file,fileheaders=fileheaders)
     
-            input_data, errorsList = self.convert_df_to_list(df,
+            input_data, errorsList = self.convert_delDF_to_list(df,
                                                              column_names = column_names,
                                                              rename_columns = rename_columns,
                                                              filename = file)
@@ -252,7 +288,7 @@ class myFileHandler:
             else:
             # Send a POST request with JSON data
                 try:
-                    success, records = self.post_data(url, input_data,myObjects)
+                    success, records = self.post_data(url, input_data,myObjects,method='delete')
                     if success:
                         processing_results.append({filename: records})
                     else:
