@@ -1,7 +1,18 @@
+# Test http://0.0.0.0:8080/docs to confirm the server is running
+# If not, open folder fastapi-oneplus and run main.py
+
 # Instructions:
-# 1. If first time run, copy "Transactions/transactionstmp_template.csv" to "Transactions/transactionstmp.csv"
-#    Else Save xls file as csv from "/Output/transactionstmp.xls" to "Transactions/transactionstmp.csv"
-# 2. Run the script
+# 1. If transactionstmp table is empty:
+#  1a. Copy "Transactions/transactionstmp_template.csv" to "Transactions/transactionstmp.csv"
+#  1b. Run the script
+#  1c. Save xls file as csv from "/Output/DatabaseDownloadTransactionstmp.xls" to "Transactions/transactionstmp.csv"
+
+# 2. If transactionstmp table is not empty:
+#  2a. Review "Transactions/transactionstmp.csv" file and update classification = 'clean' for records that are clean
+#  2b. If necessary, run update_rules_FILE.py to update rules
+#  2c. Run the script
+#  2d. Save xls file as csv from "/Output/DatabaseDownloadTransactionstmp.xls" to "Transactions/transactionstmp.csv"
+
 # Logic
 # 1. Read transactionstmp, transactions, bankDownloads, recordsDF (user updates on load file)
 # 2. Drop records from recordsDF, bankDownloads, transactionstmp 

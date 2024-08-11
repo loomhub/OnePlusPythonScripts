@@ -1,6 +1,9 @@
+# Test http://0.0.0.0:8080/docs to confirm the server is running
+# If not, open folder fastapi-oneplus and run main.py
+
 # Instructions
 # 1. Check the bank statements. Populate ending_balances. Period_status = 'closed' if ending_balance = calc_balance
-# 2. Prepare a load file "DataLoads/Prerequisite models/cashflowsJun222024.csv"
+# 2. Prepare a load file "DataLoads/Prerequisite models/cashflowsAug022024.csv"
 # 3. Run the script
 
 # Logic
@@ -16,7 +19,7 @@ host='http://localhost:8080'
 # Bank Downloads
 endpoint='/cashflows?update=X'
 url=host+endpoint
-input_file='DataLoads/Prerequisite models/cashflowsJun222024.csv'
+input_file='DataLoads/Prerequisite models/cashflowsAug022024.csv'
 input_folder='DataLoads/Prerequisite models/'
 myObjects = 'cashflows'
 processing_results = []

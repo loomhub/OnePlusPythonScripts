@@ -1,3 +1,6 @@
+# Test http://0.0.0.0:8080/docs to confirm the server is running
+# If not, open folder fastapi-oneplus and run main.py
+
 # Instructions:
 # 1. Make changes to BusinessRules.csv file to update rules.
 # 2. Run the script

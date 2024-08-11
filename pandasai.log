@@ -1,0 +1,3181 @@
+2024-07-05 10:44:47 [INFO] Question: Which property has generated the most Owner Draw ? And which property has generated the lowest Owner Draw ?
+
+2024-07-05 10:44:47 [INFO] Running PandasAI with local LLM...
+2024-07-05 10:44:47 [INFO] Prompt ID: ee9a05ab-5bde-432b-8086-fc6463ca5bff
+2024-07-05 10:44:47 [INFO] Executing Pipeline: GenerateChatPipeline
+2024-07-05 10:44:47 [INFO] Executing Step 0: ValidatePipelineInput
+2024-07-05 10:44:47 [INFO] Executing Step 1: CacheLookup
+2024-07-05 10:44:47 [INFO] Executing Step 2: PromptGeneration
+2024-07-05 10:44:47 [INFO] Using prompt: <dataframe>
+dfs[0]:332x33
+bank_account_key,sequence_id,category,2022-01,2022-02,2022-03,2022-04,2022-05,2022-06,2022-07,2022-08,2022-09,2022-10,2022-11,2022-12,2023-01,2023-02,2023-03,2023-04,2023-05,2023-06,2023-07,2023-08,2023-09,2023-10,2023-11,2023-12,2024-01,2024-02,2024-03,2024-04,2024-05,2024-06
+MeadowSecurity,7,EXPENSES,1850.0,12605.63,82316.35,-362.19,53743.16,-240.0,151050.0,-963.16,3378.82,6946.86,-2964.0,1795.0,-733.95,6892.9,-60.0,-15003.64,7500.0,1695.0,-70000.0,376.81,11328.96,80939.48,-748.93,9127.74,6590.56,-733.95,-81.81,-9006.55,1810.0,500.0
+2208Chase,17,CASHFLOW,1575.0,-270.88,-1500.0,3734.73,3535.94,7868.48,2400.0,3325.0,-3000.0,-1785.0,-1413.0,-11686.21,-270.23,3751.14,-14533.86,-7050.0,7007.24,1755.0,6999.66,587.0,-10.0,-1118.25,1850.0,-563.38,3621.06,124.22,81.97,3997.48,0.24,3371.51
+Common,8,Allocation,2400.0,3094.64,-5290.55,-694.01,-748.93,-75.0,-2432.73,-947.72,-104.46,150.0,-51.0,-675.63,1213.52,-260.0,17.5,2845.0,4850.52,4230.3,-694.01,-206.45,1900.0,1850.0,-947.72,-4509.34,2061.34,82.92,594262.99,0.03,1850.0,28246.89
+</dataframe>
+
+
+
+
+Update this initial code:
+```python
+# TODO: import the required dependencies
+import pandas as pd
+
+# Write code here
+
+# Declare result var: 
+type (possible values "string", "number", "dataframe", "plot"). Examples: { "type": "string", "value": f"The highest salary is {highest_salary}." } or { "type": "number", "value": 125 } or { "type": "dataframe", "value": pd.DataFrame({...}) } or { "type": "plot", "value": "temp_chart.png" }
+
+```
+
+
+
+### QUERY
+ Which property has generated the most Owner Draw ? And which property has generated the lowest Owner Draw ?
+
+
+Variable `dfs: list[pd.DataFrame]` is already declared.
+
+At the end, declare "result" variable as a dictionary of type and value.
+
+If you are asked to plot a chart, use "matplotlib" for charts, save as png.
+
+
+Generate python code and return full updated code:
+2024-07-05 10:44:47 [INFO] Executing Step 3: CodeGenerator
+2024-07-05 10:45:12 [INFO] HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2024-07-05 10:45:12 [INFO] Prompt used:
+            <dataframe>
+dfs[0]:332x33
+bank_account_key,sequence_id,category,2022-01,2022-02,2022-03,2022-04,2022-05,2022-06,2022-07,2022-08,2022-09,2022-10,2022-11,2022-12,2023-01,2023-02,2023-03,2023-04,2023-05,2023-06,2023-07,2023-08,2023-09,2023-10,2023-11,2023-12,2024-01,2024-02,2024-03,2024-04,2024-05,2024-06
+MeadowSecurity,7,EXPENSES,1850.0,12605.63,82316.35,-362.19,53743.16,-240.0,151050.0,-963.16,3378.82,6946.86,-2964.0,1795.0,-733.95,6892.9,-60.0,-15003.64,7500.0,1695.0,-70000.0,376.81,11328.96,80939.48,-748.93,9127.74,6590.56,-733.95,-81.81,-9006.55,1810.0,500.0
+2208Chase,17,CASHFLOW,1575.0,-270.88,-1500.0,3734.73,3535.94,7868.48,2400.0,3325.0,-3000.0,-1785.0,-1413.0,-11686.21,-270.23,3751.14,-14533.86,-7050.0,7007.24,1755.0,6999.66,587.0,-10.0,-1118.25,1850.0,-563.38,3621.06,124.22,81.97,3997.48,0.24,3371.51
+Common,8,Allocation,2400.0,3094.64,-5290.55,-694.01,-748.93,-75.0,-2432.73,-947.72,-104.46,150.0,-51.0,-675.63,1213.52,-260.0,17.5,2845.0,4850.52,4230.3,-694.01,-206.45,1900.0,1850.0,-947.72,-4509.34,2061.34,82.92,594262.99,0.03,1850.0,28246.89
+</dataframe>
+
+
+
+
+Update this initial code:
+```python
+# TODO: import the required dependencies
+import pandas as pd
+
+# Write code here
+
+# Declare result var: 
+type (possible values "string", "number", "dataframe", "plot"). Examples: { "type": "string", "value": f"The highest salary is {highest_salary}." } or { "type": "number", "value": 125 } or { "type": "dataframe", "value": pd.DataFrame({...}) } or { "type": "plot", "value": "temp_chart.png" }
+
+```
+
+
+
+### QUERY
+ Which property has generated the most Owner Draw ? And which property has generated the lowest Owner Draw ?
+
+
+Variable `dfs: list[pd.DataFrame]` is already declared.
+
+At the end, declare "result" variable as a dictionary of type and value.
+
+If you are asked to plot a chart, use "matplotlib" for charts, save as png.
+
+
+Generate python code and return full updated code:
+            
+2024-07-05 10:45:12 [INFO] Code generated:
+            ```
+            import pandas as pd
+import matplotlib.pyplot as plt
+
+dfs = [...]  # Your initial dataframe
+
+# Initialize result variable
+result = {}
+
+# Calculate total owner draw per category
+owner_draws = dfs[0].sum(axis=1)
+
+# Find the property with the most and least owner draw
+most_owner_draw = max(owner_draws)
+least_owner_draw = min(owner_draws)
+
+# Calculate the properties that generated these owner draws
+most_owner_draw_property = owner_draws.idxmax()
+least_owner_draw_property = owner_draws.idxmin()
+
+# Create result dictionary
+result["type"] = "string"
+result["value"] = f"The property with the most owner draw is {most_owner_draw_property} with ${most_owner_draw:,.2f}. The property with the least owner draw is {least_owner_draw_property} with ${least_owner_draw:,.2f}."
+
+# Plot a chart to visualize the owner draws
+plt.figure(figsize=(10, 6))
+plt.bar(range(len(dfs[0])), owner_draws)
+plt.xlabel("Property")
+plt.ylabel("Owner Draw")
+plt.title("Owner Draws by Property")
+plt.savefig("owner_draw_chart.png")
+
+result["type"] = "plot"
+result["value"] = "owner_draw_chart.png"
+
+print(result)
+            ```
+            
+2024-07-05 10:45:12 [INFO] Executing Step 4: CachePopulation
+2024-07-05 10:45:12 [INFO] Executing Step 5: CodeCleaning
+2024-07-05 10:45:12 [INFO] Saving charts to /Users/vivekjadhav/Documents/github/oneplusPythonScripts/exports/charts/temp_chart.png
+2024-07-05 10:45:12 [INFO] 
+Code running:
+```
+result = {}
+owner_draws = dfs[0].sum(axis=1)
+most_owner_draw = max(owner_draws)
+least_owner_draw = min(owner_draws)
+most_owner_draw_property = owner_draws.idxmax()
+least_owner_draw_property = owner_draws.idxmin()
+result['type'] = 'string'
+result['value'] = f'The property with the most owner draw is {most_owner_draw_property} with ${most_owner_draw:,.2f}. The property with the least owner draw is {least_owner_draw_property} with ${least_owner_draw:,.2f}.'
+plt.figure(figsize=(10, 6))
+plt.bar(range(len(dfs[0])), owner_draws)
+plt.xlabel('Property')
+plt.ylabel('Owner Draw')
+plt.title('Owner Draws by Property')
+plt.savefig('/Users/vivekjadhav/Documents/github/oneplusPythonScripts/exports/charts/temp_chart.png')
+result['type'] = 'plot'
+result['value'] = '/Users/vivekjadhav/Documents/github/oneplusPythonScripts/exports/charts/temp_chart.png'
+print(result)
+        ```
+2024-07-05 10:45:12 [INFO] Executing Step 6: CodeExecution
+2024-07-05 10:45:13 [INFO] Executing Step 7: ResultValidation
+2024-07-05 10:45:13 [INFO] Answer: {'type': 'plot', 'value': '/Users/vivekjadhav/Documents/github/oneplusPythonScripts/exports/charts/temp_chart.png'}
+2024-07-05 10:45:13 [INFO] Executing Step 8: ResultParsing
+2024-07-05 10:46:36 [INFO] Question: What is 104Meadow Net Income trend ?
+
+2024-07-05 10:46:36 [INFO] Running PandasAI with local LLM...
+2024-07-05 10:46:36 [INFO] Prompt ID: 7dbf9c51-64aa-494e-8109-585a086f5be9
+2024-07-05 10:46:36 [INFO] Executing Pipeline: GenerateChatPipeline
+2024-07-05 10:46:36 [INFO] Executing Step 0: ValidatePipelineInput
+2024-07-05 10:46:36 [INFO] Executing Step 1: CacheLookup
+2024-07-05 10:46:36 [INFO] Executing Step 2: PromptGeneration
+2024-07-05 10:46:36 [INFO] Using prompt: <dataframe>
+dfs[0]:332x33
+bank_account_key,sequence_id,category,2022-01,2022-02,2022-03,2022-04,2022-05,2022-06,2022-07,2022-08,2022-09,2022-10,2022-11,2022-12,2023-01,2023-02,2023-03,2023-04,2023-05,2023-06,2023-07,2023-08,2023-09,2023-10,2023-11,2023-12,2024-01,2024-02,2024-03,2024-04,2024-05,2024-06
+1117Brewer,12,Taxes,1000.0,1695.0,-75.0,-1383.06,7553.25,-204.08,10232.35,8499.08,-223.7,-566.16,-900.0,3255.23,536.65,3773.25,1850.0,4999.04,5188.47,15420.86,-5517.46,3492.27,6722.33,11559.95,0.83,-2604.4,-293.0,2211.36,-730.2,594272.76,482.05,9564.49
+2224Heatherton,3,Allocation,-892.0,4610.51,2222.55,2636.87,8174.79,-603.2,20429.4,2400.0,-548.11,-167.04,1091.0,-7016.81,321.32,-260.0,1380.63,1795.0,-726.97,6557.88,-1179.04,10197.97,1650.0,21420.69,0.0,3910.05,2025.0,-976.74,4104.37,7126.51,-67.55,0.02
+116MeadowSavings,16,HOA,5504.3,-748.93,1650.0,5252.68,7565.0,104737.67,-1500.0,-2340.0,0.0,-10.0,-420.0,3400.0,6573.92,0.28,1715.0,-277.14,854.72,0.81,-665.85,587.0,0.88,-733.95,0.58,2284.99,-947.72,-1309.21,4111.11,-356.49,5725.84,-563.38
+</dataframe>
+
+
+
+
+Update this initial code:
+```python
+# TODO: import the required dependencies
+import pandas as pd
+
+# Write code here
+
+# Declare result var: 
+type (possible values "string", "number", "dataframe", "plot"). Examples: { "type": "string", "value": f"The highest salary is {highest_salary}." } or { "type": "number", "value": 125 } or { "type": "dataframe", "value": pd.DataFrame({...}) } or { "type": "plot", "value": "temp_chart.png" }
+
+```
+
+
+
+### QUERY
+ What is 104Meadow Net Income trend ?
+
+
+Variable `dfs: list[pd.DataFrame]` is already declared.
+
+At the end, declare "result" variable as a dictionary of type and value.
+
+If you are asked to plot a chart, use "matplotlib" for charts, save as png.
+
+
+Generate python code and return full updated code:
+2024-07-05 10:46:36 [INFO] Executing Step 3: CodeGenerator
+2024-07-05 10:46:53 [INFO] HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2024-07-05 10:46:53 [INFO] Prompt used:
+            <dataframe>
+dfs[0]:332x33
+bank_account_key,sequence_id,category,2022-01,2022-02,2022-03,2022-04,2022-05,2022-06,2022-07,2022-08,2022-09,2022-10,2022-11,2022-12,2023-01,2023-02,2023-03,2023-04,2023-05,2023-06,2023-07,2023-08,2023-09,2023-10,2023-11,2023-12,2024-01,2024-02,2024-03,2024-04,2024-05,2024-06
+1117Brewer,12,Taxes,1000.0,1695.0,-75.0,-1383.06,7553.25,-204.08,10232.35,8499.08,-223.7,-566.16,-900.0,3255.23,536.65,3773.25,1850.0,4999.04,5188.47,15420.86,-5517.46,3492.27,6722.33,11559.95,0.83,-2604.4,-293.0,2211.36,-730.2,594272.76,482.05,9564.49
+2224Heatherton,3,Allocation,-892.0,4610.51,2222.55,2636.87,8174.79,-603.2,20429.4,2400.0,-548.11,-167.04,1091.0,-7016.81,321.32,-260.0,1380.63,1795.0,-726.97,6557.88,-1179.04,10197.97,1650.0,21420.69,0.0,3910.05,2025.0,-976.74,4104.37,7126.51,-67.55,0.02
+116MeadowSavings,16,HOA,5504.3,-748.93,1650.0,5252.68,7565.0,104737.67,-1500.0,-2340.0,0.0,-10.0,-420.0,3400.0,6573.92,0.28,1715.0,-277.14,854.72,0.81,-665.85,587.0,0.88,-733.95,0.58,2284.99,-947.72,-1309.21,4111.11,-356.49,5725.84,-563.38
+</dataframe>
+
+
+
+
+Update this initial code:
+```python
+# TODO: import the required dependencies
+import pandas as pd
+
+# Write code here
+
+# Declare result var: 
+type (possible values "string", "number", "dataframe", "plot"). Examples: { "type": "string", "value": f"The highest salary is {highest_salary}." } or { "type": "number", "value": 125 } or { "type": "dataframe", "value": pd.DataFrame({...}) } or { "type": "plot", "value": "temp_chart.png" }
+
+```
+
+
+
+### QUERY
+ What is 104Meadow Net Income trend ?
+
+
+Variable `dfs: list[pd.DataFrame]` is already declared.
+
+At the end, declare "result" variable as a dictionary of type and value.
+
+If you are asked to plot a chart, use "matplotlib" for charts, save as png.
+
+
+Generate python code and return full updated code:
+            
+2024-07-05 10:46:53 [INFO] Code generated:
+            ```
+            Python
+import pandas as pd
+import matplotlib.pyplot as plt
+
+# Initialize the result variable
+result = {}
+
+# Check if dfs is not empty
+if len(dfs) > 0:
+    # Select the first dataframe (assuming it contains all data)
+    df = dfs[0]
+    
+    # Calculate the total net income for each month
+    total_net_income = df.loc[df['bank_account_key'] == '104Meadow', '2022-01':'2024-12'].sum(axis=1).reset_index(drop=True)
+    
+    # Calculate the trend (percentage change) for each year
+    trend = total_net_income.pct_change().dropna()
+    
+    # Plot the trend as a line chart
+    plt.figure(figsize=(10,5))
+    plt.plot(trend.index, trend.values)
+    plt.xlabel('Year')
+    plt.ylabel('Net Income Trend')
+    plt.title('104Meadow Net Income Trend')
+    plt.grid(True)
+    plt.savefig('temp_chart.png')
+
+    # Update the result variable
+    result = {
+        "type": "plot",
+        "value": 'temp_chart.png'
+    }
+else:
+    # If dfs is empty, return a string as a result
+    result = {
+        "type": "string",
+        "value": "No data available"
+    }
+            ```
+            
+2024-07-05 10:46:53 [INFO] Executing Step 4: CachePopulation
+2024-07-05 10:46:53 [INFO] Executing Step 5: CodeCleaning
+2024-07-05 10:46:53 [INFO] Saving charts to /Users/vivekjadhav/Documents/github/oneplusPythonScripts/exports/charts/temp_chart.png
+2024-07-05 10:46:53 [INFO] 
+Code running:
+```
+Python
+result = {}
+if len(dfs) > 0:
+    df = dfs[0]
+    total_net_income = df.loc[df['bank_account_key'] == '104Meadow', '2022-01':'2024-12'].sum(axis=1).reset_index(drop=True)
+    trend = total_net_income.pct_change().dropna()
+    plt.figure(figsize=(10, 5))
+    plt.plot(trend.index, trend.values)
+    plt.xlabel('Year')
+    plt.ylabel('Net Income Trend')
+    plt.title('104Meadow Net Income Trend')
+    plt.grid(True)
+    plt.savefig('/Users/vivekjadhav/Documents/github/oneplusPythonScripts/exports/charts/temp_chart.png')
+    result = {'type': 'plot', 'value': '/Users/vivekjadhav/Documents/github/oneplusPythonScripts/exports/charts/temp_chart.png'}
+else:
+    result = {'type': 'string', 'value': 'No data available'}
+        ```
+2024-07-05 10:46:53 [INFO] Executing Step 6: CodeExecution
+2024-07-05 10:46:53 [ERROR] Failed with error: Traceback (most recent call last):
+  File "/Users/vivekjadhav/Documents/github/oneplusPythonScripts/venv/lib/python3.9/site-packages/pandasai/pipelines/chat/code_execution.py", line 85, in execute
+    result = self.execute_code(code_to_run, code_context)
+  File "/Users/vivekjadhav/Documents/github/oneplusPythonScripts/venv/lib/python3.9/site-packages/pandasai/pipelines/chat/code_execution.py", line 171, in execute_code
+    exec(code, environment)
+  File "<string>", line 1, in <module>
+NameError: name 'Python' is not defined
+
+2024-07-05 10:46:53 [WARNING] Failed to execute code retrying with a correction framework [retry number: 1]
+2024-07-05 10:46:53 [INFO] Executing Pipeline: ErrorCorrectionPipeline
+2024-07-05 10:46:53 [INFO] Executing Step 0: ErrorPromptGeneration
+2024-07-05 10:46:53 [INFO] Using prompt: <dataframe>
+dfs[0]:332x33
+bank_account_key,sequence_id,category,2022-01,2022-02,2022-03,2022-04,2022-05,2022-06,2022-07,2022-08,2022-09,2022-10,2022-11,2022-12,2023-01,2023-02,2023-03,2023-04,2023-05,2023-06,2023-07,2023-08,2023-09,2023-10,2023-11,2023-12,2024-01,2024-02,2024-03,2024-04,2024-05,2024-06
+1117Brewer,12,Taxes,1000.0,1695.0,-75.0,-1383.06,7553.25,-204.08,10232.35,8499.08,-223.7,-566.16,-900.0,3255.23,536.65,3773.25,1850.0,4999.04,5188.47,15420.86,-5517.46,3492.27,6722.33,11559.95,0.83,-2604.4,-293.0,2211.36,-730.2,594272.76,482.05,9564.49
+2224Heatherton,3,Allocation,-892.0,4610.51,2222.55,2636.87,8174.79,-603.2,20429.4,2400.0,-548.11,-167.04,1091.0,-7016.81,321.32,-260.0,1380.63,1795.0,-726.97,6557.88,-1179.04,10197.97,1650.0,21420.69,0.0,3910.05,2025.0,-976.74,4104.37,7126.51,-67.55,0.02
+116MeadowSavings,16,HOA,5504.3,-748.93,1650.0,5252.68,7565.0,104737.67,-1500.0,-2340.0,0.0,-10.0,-420.0,3400.0,6573.92,0.28,1715.0,-277.14,854.72,0.81,-665.85,587.0,0.88,-733.95,0.58,2284.99,-947.72,-1309.21,4111.11,-356.49,5725.84,-563.38
+</dataframe>
+
+
+The user asked the following question:
+### QUERY
+ What is 104Meadow Net Income trend ?
+
+
+You generated this python code:
+Python
+result = {}
+if len(dfs) > 0:
+    df = dfs[0]
+    total_net_income = df.loc[df['bank_account_key'] == '104Meadow', '2022-01':'2024-12'].sum(axis=1).reset_index(drop=True)
+    trend = total_net_income.pct_change().dropna()
+    plt.figure(figsize=(10, 5))
+    plt.plot(trend.index, trend.values)
+    plt.xlabel('Year')
+    plt.ylabel('Net Income Trend')
+    plt.title('104Meadow Net Income Trend')
+    plt.grid(True)
+    plt.savefig('/Users/vivekjadhav/Documents/github/oneplusPythonScripts/exports/charts/temp_chart.png')
+    result = {'type': 'plot', 'value': '/Users/vivekjadhav/Documents/github/oneplusPythonScripts/exports/charts/temp_chart.png'}
+else:
+    result = {'type': 'string', 'value': 'No data available'}
+
+It fails with the following error:
+Traceback (most recent call last):
+  File "/Users/vivekjadhav/Documents/github/oneplusPythonScripts/venv/lib/python3.9/site-packages/pandasai/pipelines/chat/code_execution.py", line 85, in execute
+    result = self.execute_code(code_to_run, code_context)
+  File "/Users/vivekjadhav/Documents/github/oneplusPythonScripts/venv/lib/python3.9/site-packages/pandasai/pipelines/chat/code_execution.py", line 171, in execute_code
+    exec(code, environment)
+  File "<string>", line 1, in <module>
+NameError: name 'Python' is not defined
+
+
+Fix the python code above and return the new python code:
+2024-07-05 10:46:53 [INFO] Executing Step 1: CodeGenerator
+2024-07-05 10:47:05 [INFO] HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2024-07-05 10:47:05 [INFO] Prompt used:
+            <dataframe>
+dfs[0]:332x33
+bank_account_key,sequence_id,category,2022-01,2022-02,2022-03,2022-04,2022-05,2022-06,2022-07,2022-08,2022-09,2022-10,2022-11,2022-12,2023-01,2023-02,2023-03,2023-04,2023-05,2023-06,2023-07,2023-08,2023-09,2023-10,2023-11,2023-12,2024-01,2024-02,2024-03,2024-04,2024-05,2024-06
+1117Brewer,12,Taxes,1000.0,1695.0,-75.0,-1383.06,7553.25,-204.08,10232.35,8499.08,-223.7,-566.16,-900.0,3255.23,536.65,3773.25,1850.0,4999.04,5188.47,15420.86,-5517.46,3492.27,6722.33,11559.95,0.83,-2604.4,-293.0,2211.36,-730.2,594272.76,482.05,9564.49
+2224Heatherton,3,Allocation,-892.0,4610.51,2222.55,2636.87,8174.79,-603.2,20429.4,2400.0,-548.11,-167.04,1091.0,-7016.81,321.32,-260.0,1380.63,1795.0,-726.97,6557.88,-1179.04,10197.97,1650.0,21420.69,0.0,3910.05,2025.0,-976.74,4104.37,7126.51,-67.55,0.02
+116MeadowSavings,16,HOA,5504.3,-748.93,1650.0,5252.68,7565.0,104737.67,-1500.0,-2340.0,0.0,-10.0,-420.0,3400.0,6573.92,0.28,1715.0,-277.14,854.72,0.81,-665.85,587.0,0.88,-733.95,0.58,2284.99,-947.72,-1309.21,4111.11,-356.49,5725.84,-563.38
+</dataframe>
+
+
+The user asked the following question:
+### QUERY
+ What is 104Meadow Net Income trend ?
+
+
+You generated this python code:
+Python
+result = {}
+if len(dfs) > 0:
+    df = dfs[0]
+    total_net_income = df.loc[df['bank_account_key'] == '104Meadow', '2022-01':'2024-12'].sum(axis=1).reset_index(drop=True)
+    trend = total_net_income.pct_change().dropna()
+    plt.figure(figsize=(10, 5))
+    plt.plot(trend.index, trend.values)
+    plt.xlabel('Year')
+    plt.ylabel('Net Income Trend')
+    plt.title('104Meadow Net Income Trend')
+    plt.grid(True)
+    plt.savefig('/Users/vivekjadhav/Documents/github/oneplusPythonScripts/exports/charts/temp_chart.png')
+    result = {'type': 'plot', 'value': '/Users/vivekjadhav/Documents/github/oneplusPythonScripts/exports/charts/temp_chart.png'}
+else:
+    result = {'type': 'string', 'value': 'No data available'}
+
+It fails with the following error:
+Traceback (most recent call last):
+  File "/Users/vivekjadhav/Documents/github/oneplusPythonScripts/venv/lib/python3.9/site-packages/pandasai/pipelines/chat/code_execution.py", line 85, in execute
+    result = self.execute_code(code_to_run, code_context)
+  File "/Users/vivekjadhav/Documents/github/oneplusPythonScripts/venv/lib/python3.9/site-packages/pandasai/pipelines/chat/code_execution.py", line 171, in execute_code
+    exec(code, environment)
+  File "<string>", line 1, in <module>
+NameError: name 'Python' is not defined
+
+
+Fix the python code above and return the new python code:
+            
+2024-07-05 10:47:05 [INFO] Code generated:
+            ```
+            result = {}
+if len(dfs) > 0:
+    df = dfs[0]
+    total_net_income = df.loc[df['bank_account_key'] == '104Meadow', '2022-01':'2024-12'].sum(axis=1).reset_index(drop=True)
+    trend = total_net_income.pct_change().dropna()
+    import matplotlib.pyplot as plt
+    plt.figure(figsize=(10, 5))
+    plt.plot(trend.index, trend.values)
+    plt.xlabel('Year')
+    plt.ylabel('Net Income Trend')
+    plt.title('104Meadow Net Income Trend')
+    plt.grid(True)
+    plt.savefig('/Users/vivekjadhav/Documents/github/oneplusPythonScripts/exports/charts/temp_chart.png')
+    result = {'type': 'plot', 'value': '/Users/vitekjadhav/Documents/github/oneplusPythonScripts/exports/charts/temp_chart.png'}
+else:
+    result = {'type': 'string', 'value': 'No data available'}
+            ```
+            
+2024-07-05 10:47:05 [INFO] Executing Step 2: CodeCleaning
+2024-07-05 10:47:05 [INFO] Saving charts to /Users/vivekjadhav/Documents/github/oneplusPythonScripts/exports/charts/temp_chart.png
+2024-07-05 10:47:05 [INFO] 
+Code running:
+```
+result = {}
+if len(dfs) > 0:
+    df = dfs[0]
+    total_net_income = df.loc[df['bank_account_key'] == '104Meadow', '2022-01':'2024-12'].sum(axis=1).reset_index(drop=True)
+    trend = total_net_income.pct_change().dropna()
+    import matplotlib.pyplot as plt
+    plt.figure(figsize=(10, 5))
+    plt.plot(trend.index, trend.values)
+    plt.xlabel('Year')
+    plt.ylabel('Net Income Trend')
+    plt.title('104Meadow Net Income Trend')
+    plt.grid(True)
+    plt.savefig('/Users/vivekjadhav/Documents/github/oneplusPythonScripts/exports/charts/temp_chart.png')
+    result = {'type': 'plot', 'value': '/Users/vivekjadhav/Documents/github/oneplusPythonScripts/exports/charts/temp_chart.png'}
+else:
+    result = {'type': 'string', 'value': 'No data available'}
+        ```
+2024-07-05 10:47:05 [ERROR] Failed with error: Traceback (most recent call last):
+  File "/Users/vivekjadhav/Documents/github/oneplusPythonScripts/venv/lib/python3.9/site-packages/pandas/core/indexes/base.py", line 3802, in get_loc
+    return self._engine.get_loc(casted_key)
+  File "pandas/_libs/index.pyx", line 138, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/index.pyx", line 165, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 5745, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 5753, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: '2024-12'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/vivekjadhav/Documents/github/oneplusPythonScripts/venv/lib/python3.9/site-packages/pandasai/pipelines/chat/code_execution.py", line 85, in execute
+    result = self.execute_code(code_to_run, code_context)
+  File "/Users/vivekjadhav/Documents/github/oneplusPythonScripts/venv/lib/python3.9/site-packages/pandasai/pipelines/chat/code_execution.py", line 171, in execute_code
+    exec(code, environment)
+  File "<string>", line 4, in <module>
+  File "/Users/vivekjadhav/Documents/github/oneplusPythonScripts/venv/lib/python3.9/site-packages/pandas/core/indexing.py", line 1067, in __getitem__
+    return self._getitem_tuple(key)
+  File "/Users/vivekjadhav/Documents/github/oneplusPythonScripts/venv/lib/python3.9/site-packages/pandas/core/indexing.py", line 1256, in _getitem_tuple
+    return self._getitem_tuple_same_dim(tup)
+  File "/Users/vivekjadhav/Documents/github/oneplusPythonScripts/venv/lib/python3.9/site-packages/pandas/core/indexing.py", line 924, in _getitem_tuple_same_dim
+    retval = getattr(retval, self.name)._getitem_axis(key, axis=i)
+  File "/Users/vivekjadhav/Documents/github/oneplusPythonScripts/venv/lib/python3.9/site-packages/pandas/core/indexing.py", line 1290, in _getitem_axis
+    return self._get_slice_axis(key, axis=axis)
+  File "/Users/vivekjadhav/Documents/github/oneplusPythonScripts/venv/lib/python3.9/site-packages/pandas/core/indexing.py", line 1324, in _get_slice_axis
+    indexer = labels.slice_indexer(slice_obj.start, slice_obj.stop, slice_obj.step)
+  File "/Users/vivekjadhav/Documents/github/oneplusPythonScripts/venv/lib/python3.9/site-packages/pandas/core/indexes/base.py", line 6559, in slice_indexer
+    start_slice, end_slice = self.slice_locs(start, end, step=step)
+  File "/Users/vivekjadhav/Documents/github/oneplusPythonScripts/venv/lib/python3.9/site-packages/pandas/core/indexes/base.py", line 6773, in slice_locs
+    end_slice = self.get_slice_bound(end, "right")
+  File "/Users/vivekjadhav/Documents/github/oneplusPythonScripts/venv/lib/python3.9/site-packages/pandas/core/indexes/base.py", line 6686, in get_slice_bound
+    raise err
+  File "/Users/vivekjadhav/Documents/github/oneplusPythonScripts/venv/lib/python3.9/site-packages/pandas/core/indexes/base.py", line 6680, in get_slice_bound
+    slc = self.get_loc(label)
+  File "/Users/vivekjadhav/Documents/github/oneplusPythonScripts/venv/lib/python3.9/site-packages/pandas/core/indexes/base.py", line 3804, in get_loc
+    raise KeyError(key) from err
+KeyError: '2024-12'
+
+2024-07-05 10:47:05 [WARNING] Failed to execute code retrying with a correction framework [retry number: 2]
+2024-07-05 10:47:05 [INFO] Executing Pipeline: ErrorCorrectionPipeline
+2024-07-05 10:47:05 [INFO] Executing Step 0: ErrorPromptGeneration
+2024-07-05 10:47:05 [INFO] Using prompt: <dataframe>
+dfs[0]:332x33
+bank_account_key,sequence_id,category,2022-01,2022-02,2022-03,2022-04,2022-05,2022-06,2022-07,2022-08,2022-09,2022-10,2022-11,2022-12,2023-01,2023-02,2023-03,2023-04,2023-05,2023-06,2023-07,2023-08,2023-09,2023-10,2023-11,2023-12,2024-01,2024-02,2024-03,2024-04,2024-05,2024-06
+1117Brewer,12,Taxes,1000.0,1695.0,-75.0,-1383.06,7553.25,-204.08,10232.35,8499.08,-223.7,-566.16,-900.0,3255.23,536.65,3773.25,1850.0,4999.04,5188.47,15420.86,-5517.46,3492.27,6722.33,11559.95,0.83,-2604.4,-293.0,2211.36,-730.2,594272.76,482.05,9564.49
+2224Heatherton,3,Allocation,-892.0,4610.51,2222.55,2636.87,8174.79,-603.2,20429.4,2400.0,-548.11,-167.04,1091.0,-7016.81,321.32,-260.0,1380.63,1795.0,-726.97,6557.88,-1179.04,10197.97,1650.0,21420.69,0.0,3910.05,2025.0,-976.74,4104.37,7126.51,-67.55,0.02
+116MeadowSavings,16,HOA,5504.3,-748.93,1650.0,5252.68,7565.0,104737.67,-1500.0,-2340.0,0.0,-10.0,-420.0,3400.0,6573.92,0.28,1715.0,-277.14,854.72,0.81,-665.85,587.0,0.88,-733.95,0.58,2284.99,-947.72,-1309.21,4111.11,-356.49,5725.84,-563.38
+</dataframe>
+
+
+The user asked the following question:
+### QUERY
+ What is 104Meadow Net Income trend ?
+
+
+You generated this python code:
+result = {}
+if len(dfs) > 0:
+    df = dfs[0]
+    total_net_income = df.loc[df['bank_account_key'] == '104Meadow', '2022-01':'2024-12'].sum(axis=1).reset_index(drop=True)
+    trend = total_net_income.pct_change().dropna()
+    import matplotlib.pyplot as plt
+    plt.figure(figsize=(10, 5))
+    plt.plot(trend.index, trend.values)
+    plt.xlabel('Year')
+    plt.ylabel('Net Income Trend')
+    plt.title('104Meadow Net Income Trend')
+    plt.grid(True)
+    plt.savefig('/Users/vivekjadhav/Documents/github/oneplusPythonScripts/exports/charts/temp_chart.png')
+    result = {'type': 'plot', 'value': '/Users/vivekjadhav/Documents/github/oneplusPythonScripts/exports/charts/temp_chart.png'}
+else:
+    result = {'type': 'string', 'value': 'No data available'}
+
+It fails with the following error:
+Traceback (most recent call last):
+  File "/Users/vivekjadhav/Documents/github/oneplusPythonScripts/venv/lib/python3.9/site-packages/pandas/core/indexes/base.py", line 3802, in get_loc
+    return self._engine.get_loc(casted_key)
+  File "pandas/_libs/index.pyx", line 138, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/index.pyx", line 165, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 5745, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 5753, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: '2024-12'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/vivekjadhav/Documents/github/oneplusPythonScripts/venv/lib/python3.9/site-packages/pandasai/pipelines/chat/code_execution.py", line 85, in execute
+    result = self.execute_code(code_to_run, code_context)
+  File "/Users/vivekjadhav/Documents/github/oneplusPythonScripts/venv/lib/python3.9/site-packages/pandasai/pipelines/chat/code_execution.py", line 171, in execute_code
+    exec(code, environment)
+  File "<string>", line 4, in <module>
+  File "/Users/vivekjadhav/Documents/github/oneplusPythonScripts/venv/lib/python3.9/site-packages/pandas/core/indexing.py", line 1067, in __getitem__
+    return self._getitem_tuple(key)
+  File "/Users/vivekjadhav/Documents/github/oneplusPythonScripts/venv/lib/python3.9/site-packages/pandas/core/indexing.py", line 1256, in _getitem_tuple
+    return self._getitem_tuple_same_dim(tup)
+  File "/Users/vivekjadhav/Documents/github/oneplusPythonScripts/venv/lib/python3.9/site-packages/pandas/core/indexing.py", line 924, in _getitem_tuple_same_dim
+    retval = getattr(retval, self.name)._getitem_axis(key, axis=i)
+  File "/Users/vivekjadhav/Documents/github/oneplusPythonScripts/venv/lib/python3.9/site-packages/pandas/core/indexing.py", line 1290, in _getitem_axis
+    return self._get_slice_axis(key, axis=axis)
+  File "/Users/vivekjadhav/Documents/github/oneplusPythonScripts/venv/lib/python3.9/site-packages/pandas/core/indexing.py", line 1324, in _get_slice_axis
+    indexer = labels.slice_indexer(slice_obj.start, slice_obj.stop, slice_obj.step)
+  File "/Users/vivekjadhav/Documents/github/oneplusPythonScripts/venv/lib/python3.9/site-packages/pandas/core/indexes/base.py", line 6559, in slice_indexer
+    start_slice, end_slice = self.slice_locs(start, end, step=step)
+  File "/Users/vivekjadhav/Documents/github/oneplusPythonScripts/venv/lib/python3.9/site-packages/pandas/core/indexes/base.py", line 6773, in slice_locs
+    end_slice = self.get_slice_bound(end, "right")
+  File "/Users/vivekjadhav/Documents/github/oneplusPythonScripts/venv/lib/python3.9/site-packages/pandas/core/indexes/base.py", line 6686, in get_slice_bound
+    raise err
+  File "/Users/vivekjadhav/Documents/github/oneplusPythonScripts/venv/lib/python3.9/site-packages/pandas/core/indexes/base.py", line 6680, in get_slice_bound
+    slc = self.get_loc(label)
+  File "/Users/vivekjadhav/Documents/github/oneplusPythonScripts/venv/lib/python3.9/site-packages/pandas/core/indexes/base.py", line 3804, in get_loc
+    raise KeyError(key) from err
+KeyError: '2024-12'
+
+
+Fix the python code above and return the new python code:
+2024-07-05 10:47:05 [INFO] Executing Step 1: CodeGenerator
+2024-07-05 10:47:22 [INFO] HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2024-07-05 10:47:22 [INFO] Prompt used:
+            <dataframe>
+dfs[0]:332x33
+bank_account_key,sequence_id,category,2022-01,2022-02,2022-03,2022-04,2022-05,2022-06,2022-07,2022-08,2022-09,2022-10,2022-11,2022-12,2023-01,2023-02,2023-03,2023-04,2023-05,2023-06,2023-07,2023-08,2023-09,2023-10,2023-11,2023-12,2024-01,2024-02,2024-03,2024-04,2024-05,2024-06
+1117Brewer,12,Taxes,1000.0,1695.0,-75.0,-1383.06,7553.25,-204.08,10232.35,8499.08,-223.7,-566.16,-900.0,3255.23,536.65,3773.25,1850.0,4999.04,5188.47,15420.86,-5517.46,3492.27,6722.33,11559.95,0.83,-2604.4,-293.0,2211.36,-730.2,594272.76,482.05,9564.49
+2224Heatherton,3,Allocation,-892.0,4610.51,2222.55,2636.87,8174.79,-603.2,20429.4,2400.0,-548.11,-167.04,1091.0,-7016.81,321.32,-260.0,1380.63,1795.0,-726.97,6557.88,-1179.04,10197.97,1650.0,21420.69,0.0,3910.05,2025.0,-976.74,4104.37,7126.51,-67.55,0.02
+116MeadowSavings,16,HOA,5504.3,-748.93,1650.0,5252.68,7565.0,104737.67,-1500.0,-2340.0,0.0,-10.0,-420.0,3400.0,6573.92,0.28,1715.0,-277.14,854.72,0.81,-665.85,587.0,0.88,-733.95,0.58,2284.99,-947.72,-1309.21,4111.11,-356.49,5725.84,-563.38
+</dataframe>
+
+
+The user asked the following question:
+### QUERY
+ What is 104Meadow Net Income trend ?
+
+
+You generated this python code:
+result = {}
+if len(dfs) > 0:
+    df = dfs[0]
+    total_net_income = df.loc[df['bank_account_key'] == '104Meadow', '2022-01':'2024-12'].sum(axis=1).reset_index(drop=True)
+    trend = total_net_income.pct_change().dropna()
+    import matplotlib.pyplot as plt
+    plt.figure(figsize=(10, 5))
+    plt.plot(trend.index, trend.values)
+    plt.xlabel('Year')
+    plt.ylabel('Net Income Trend')
+    plt.title('104Meadow Net Income Trend')
+    plt.grid(True)
+    plt.savefig('/Users/vivekjadhav/Documents/github/oneplusPythonScripts/exports/charts/temp_chart.png')
+    result = {'type': 'plot', 'value': '/Users/vivekjadhav/Documents/github/oneplusPythonScripts/exports/charts/temp_chart.png'}
+else:
+    result = {'type': 'string', 'value': 'No data available'}
+
+It fails with the following error:
+Traceback (most recent call last):
+  File "/Users/vivekjadhav/Documents/github/oneplusPythonScripts/venv/lib/python3.9/site-packages/pandas/core/indexes/base.py", line 3802, in get_loc
+    return self._engine.get_loc(casted_key)
+  File "pandas/_libs/index.pyx", line 138, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/index.pyx", line 165, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 5745, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 5753, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: '2024-12'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/vivekjadhav/Documents/github/oneplusPythonScripts/venv/lib/python3.9/site-packages/pandasai/pipelines/chat/code_execution.py", line 85, in execute
+    result = self.execute_code(code_to_run, code_context)
+  File "/Users/vivekjadhav/Documents/github/oneplusPythonScripts/venv/lib/python3.9/site-packages/pandasai/pipelines/chat/code_execution.py", line 171, in execute_code
+    exec(code, environment)
+  File "<string>", line 4, in <module>
+  File "/Users/vivekjadhav/Documents/github/oneplusPythonScripts/venv/lib/python3.9/site-packages/pandas/core/indexing.py", line 1067, in __getitem__
+    return self._getitem_tuple(key)
+  File "/Users/vivekjadhav/Documents/github/oneplusPythonScripts/venv/lib/python3.9/site-packages/pandas/core/indexing.py", line 1256, in _getitem_tuple
+    return self._getitem_tuple_same_dim(tup)
+  File "/Users/vivekjadhav/Documents/github/oneplusPythonScripts/venv/lib/python3.9/site-packages/pandas/core/indexing.py", line 924, in _getitem_tuple_same_dim
+    retval = getattr(retval, self.name)._getitem_axis(key, axis=i)
+  File "/Users/vivekjadhav/Documents/github/oneplusPythonScripts/venv/lib/python3.9/site-packages/pandas/core/indexing.py", line 1290, in _getitem_axis
+    return self._get_slice_axis(key, axis=axis)
+  File "/Users/vivekjadhav/Documents/github/oneplusPythonScripts/venv/lib/python3.9/site-packages/pandas/core/indexing.py", line 1324, in _get_slice_axis
+    indexer = labels.slice_indexer(slice_obj.start, slice_obj.stop, slice_obj.step)
+  File "/Users/vivekjadhav/Documents/github/oneplusPythonScripts/venv/lib/python3.9/site-packages/pandas/core/indexes/base.py", line 6559, in slice_indexer
+    start_slice, end_slice = self.slice_locs(start, end, step=step)
+  File "/Users/vivekjadhav/Documents/github/oneplusPythonScripts/venv/lib/python3.9/site-packages/pandas/core/indexes/base.py", line 6773, in slice_locs
+    end_slice = self.get_slice_bound(end, "right")
+  File "/Users/vivekjadhav/Documents/github/oneplusPythonScripts/venv/lib/python3.9/site-packages/pandas/core/indexes/base.py", line 6686, in get_slice_bound
+    raise err
+  File "/Users/vivekjadhav/Documents/github/oneplusPythonScripts/venv/lib/python3.9/site-packages/pandas/core/indexes/base.py", line 6680, in get_slice_bound
+    slc = self.get_loc(label)
+  File "/Users/vivekjadhav/Documents/github/oneplusPythonScripts/venv/lib/python3.9/site-packages/pandas/core/indexes/base.py", line 3804, in get_loc
+    raise KeyError(key) from err
+KeyError: '2024-12'
+
+
+Fix the python code above and return the new python code:
+            
+2024-07-05 10:47:22 [INFO] Code generated:
+            ```
+            result = {}
+if len(dfs) > 0:
+    df = dfs[0]
+    total_net_income = df.loc[df['bank_account_key'] == '104Meadow', :].sum(axis=1).reset_index(drop=True)
+    trend = total_net_income.pct_change().dropna()
+    import matplotlib.pyplot as plt
+    plt.figure(figsize=(10, 5))
+    plt.plot(trend.index, trend.values)
+    plt.xlabel('Year')
+    plt.ylabel('Net Income Trend')
+    plt.title('104Meadow Net Income Trend')
+    plt.grid(True)
+    plt.savefig('/Users/vivekjadhav/Documents/github/oneplusPythonScripts/exports/charts/temp_chart.png')
+    result = {'type': 'plot', 'value': '/Users/vivekjadhav/Documents/github/oneplusPythonScripts/exports/charts/temp_chart.png'}
+else:
+    result = {'type': 'string', 'value': 'No data available'}
+            ```
+            
+2024-07-05 10:47:22 [INFO] Executing Step 2: CodeCleaning
+2024-07-05 10:47:22 [INFO] Saving charts to /Users/vivekjadhav/Documents/github/oneplusPythonScripts/exports/charts/temp_chart.png
+2024-07-05 10:47:22 [INFO] 
+Code running:
+```
+result = {}
+if len(dfs) > 0:
+    df = dfs[0]
+    total_net_income = df.loc[df['bank_account_key'] == '104Meadow', :].sum(axis=1).reset_index(drop=True)
+    trend = total_net_income.pct_change().dropna()
+    import matplotlib.pyplot as plt
+    plt.figure(figsize=(10, 5))
+    plt.plot(trend.index, trend.values)
+    plt.xlabel('Year')
+    plt.ylabel('Net Income Trend')
+    plt.title('104Meadow Net Income Trend')
+    plt.grid(True)
+    plt.savefig('/Users/vivekjadhav/Documents/github/oneplusPythonScripts/exports/charts/temp_chart.png')
+    result = {'type': 'plot', 'value': '/Users/vivekjadhav/Documents/github/oneplusPythonScripts/exports/charts/temp_chart.png'}
+else:
+    result = {'type': 'string', 'value': 'No data available'}
+        ```
+2024-07-05 10:47:22 [ERROR] Failed with error: Traceback (most recent call last):
+  File "/Users/vivekjadhav/Documents/github/oneplusPythonScripts/venv/lib/python3.9/site-packages/pandasai/pipelines/chat/code_execution.py", line 85, in execute
+    result = self.execute_code(code_to_run, code_context)
+  File "/Users/vivekjadhav/Documents/github/oneplusPythonScripts/venv/lib/python3.9/site-packages/pandasai/pipelines/chat/code_execution.py", line 171, in execute_code
+    exec(code, environment)
+  File "<string>", line 6, in <module>
+ImportError: __import__ not found
+
+2024-07-05 10:47:22 [WARNING] Failed to execute code retrying with a correction framework [retry number: 3]
+2024-07-05 10:47:22 [INFO] Executing Pipeline: ErrorCorrectionPipeline
+2024-07-05 10:47:22 [INFO] Executing Step 0: ErrorPromptGeneration
+2024-07-05 10:47:22 [INFO] Using prompt: <dataframe>
+dfs[0]:332x33
+bank_account_key,sequence_id,category,2022-01,2022-02,2022-03,2022-04,2022-05,2022-06,2022-07,2022-08,2022-09,2022-10,2022-11,2022-12,2023-01,2023-02,2023-03,2023-04,2023-05,2023-06,2023-07,2023-08,2023-09,2023-10,2023-11,2023-12,2024-01,2024-02,2024-03,2024-04,2024-05,2024-06
+1117Brewer,12,Taxes,1000.0,1695.0,-75.0,-1383.06,7553.25,-204.08,10232.35,8499.08,-223.7,-566.16,-900.0,3255.23,536.65,3773.25,1850.0,4999.04,5188.47,15420.86,-5517.46,3492.27,6722.33,11559.95,0.83,-2604.4,-293.0,2211.36,-730.2,594272.76,482.05,9564.49
+2224Heatherton,3,Allocation,-892.0,4610.51,2222.55,2636.87,8174.79,-603.2,20429.4,2400.0,-548.11,-167.04,1091.0,-7016.81,321.32,-260.0,1380.63,1795.0,-726.97,6557.88,-1179.04,10197.97,1650.0,21420.69,0.0,3910.05,2025.0,-976.74,4104.37,7126.51,-67.55,0.02
+116MeadowSavings,16,HOA,5504.3,-748.93,1650.0,5252.68,7565.0,104737.67,-1500.0,-2340.0,0.0,-10.0,-420.0,3400.0,6573.92,0.28,1715.0,-277.14,854.72,0.81,-665.85,587.0,0.88,-733.95,0.58,2284.99,-947.72,-1309.21,4111.11,-356.49,5725.84,-563.38
+</dataframe>
+
+
+The user asked the following question:
+### QUERY
+ What is 104Meadow Net Income trend ?
+
+
+You generated this python code:
+result = {}
+if len(dfs) > 0:
+    df = dfs[0]
+    total_net_income = df.loc[df['bank_account_key'] == '104Meadow', :].sum(axis=1).reset_index(drop=True)
+    trend = total_net_income.pct_change().dropna()
+    import matplotlib.pyplot as plt
+    plt.figure(figsize=(10, 5))
+    plt.plot(trend.index, trend.values)
+    plt.xlabel('Year')
+    plt.ylabel('Net Income Trend')
+    plt.title('104Meadow Net Income Trend')
+    plt.grid(True)
+    plt.savefig('/Users/vivekjadhav/Documents/github/oneplusPythonScripts/exports/charts/temp_chart.png')
+    result = {'type': 'plot', 'value': '/Users/vivekjadhav/Documents/github/oneplusPythonScripts/exports/charts/temp_chart.png'}
+else:
+    result = {'type': 'string', 'value': 'No data available'}
+
+It fails with the following error:
+Traceback (most recent call last):
+  File "/Users/vivekjadhav/Documents/github/oneplusPythonScripts/venv/lib/python3.9/site-packages/pandasai/pipelines/chat/code_execution.py", line 85, in execute
+    result = self.execute_code(code_to_run, code_context)
+  File "/Users/vivekjadhav/Documents/github/oneplusPythonScripts/venv/lib/python3.9/site-packages/pandasai/pipelines/chat/code_execution.py", line 171, in execute_code
+    exec(code, environment)
+  File "<string>", line 6, in <module>
+ImportError: __import__ not found
+
+
+Fix the python code above and return the new python code:
+2024-07-05 10:47:22 [INFO] Executing Step 1: CodeGenerator
+2024-07-05 10:47:40 [INFO] HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2024-07-05 10:47:40 [INFO] Prompt used:
+            <dataframe>
+dfs[0]:332x33
+bank_account_key,sequence_id,category,2022-01,2022-02,2022-03,2022-04,2022-05,2022-06,2022-07,2022-08,2022-09,2022-10,2022-11,2022-12,2023-01,2023-02,2023-03,2023-04,2023-05,2023-06,2023-07,2023-08,2023-09,2023-10,2023-11,2023-12,2024-01,2024-02,2024-03,2024-04,2024-05,2024-06
+1117Brewer,12,Taxes,1000.0,1695.0,-75.0,-1383.06,7553.25,-204.08,10232.35,8499.08,-223.7,-566.16,-900.0,3255.23,536.65,3773.25,1850.0,4999.04,5188.47,15420.86,-5517.46,3492.27,6722.33,11559.95,0.83,-2604.4,-293.0,2211.36,-730.2,594272.76,482.05,9564.49
+2224Heatherton,3,Allocation,-892.0,4610.51,2222.55,2636.87,8174.79,-603.2,20429.4,2400.0,-548.11,-167.04,1091.0,-7016.81,321.32,-260.0,1380.63,1795.0,-726.97,6557.88,-1179.04,10197.97,1650.0,21420.69,0.0,3910.05,2025.0,-976.74,4104.37,7126.51,-67.55,0.02
+116MeadowSavings,16,HOA,5504.3,-748.93,1650.0,5252.68,7565.0,104737.67,-1500.0,-2340.0,0.0,-10.0,-420.0,3400.0,6573.92,0.28,1715.0,-277.14,854.72,0.81,-665.85,587.0,0.88,-733.95,0.58,2284.99,-947.72,-1309.21,4111.11,-356.49,5725.84,-563.38
+</dataframe>
+
+
+The user asked the following question:
+### QUERY
+ What is 104Meadow Net Income trend ?
+
+
+You generated this python code:
+result = {}
+if len(dfs) > 0:
+    df = dfs[0]
+    total_net_income = df.loc[df['bank_account_key'] == '104Meadow', :].sum(axis=1).reset_index(drop=True)
+    trend = total_net_income.pct_change().dropna()
+    import matplotlib.pyplot as plt
+    plt.figure(figsize=(10, 5))
+    plt.plot(trend.index, trend.values)
+    plt.xlabel('Year')
+    plt.ylabel('Net Income Trend')
+    plt.title('104Meadow Net Income Trend')
+    plt.grid(True)
+    plt.savefig('/Users/vivekjadhav/Documents/github/oneplusPythonScripts/exports/charts/temp_chart.png')
+    result = {'type': 'plot', 'value': '/Users/vivekjadhav/Documents/github/oneplusPythonScripts/exports/charts/temp_chart.png'}
+else:
+    result = {'type': 'string', 'value': 'No data available'}
+
+It fails with the following error:
+Traceback (most recent call last):
+  File "/Users/vivekjadhav/Documents/github/oneplusPythonScripts/venv/lib/python3.9/site-packages/pandasai/pipelines/chat/code_execution.py", line 85, in execute
+    result = self.execute_code(code_to_run, code_context)
+  File "/Users/vivekjadhav/Documents/github/oneplusPythonScripts/venv/lib/python3.9/site-packages/pandasai/pipelines/chat/code_execution.py", line 171, in execute_code
+    exec(code, environment)
+  File "<string>", line 6, in <module>
+ImportError: __import__ not found
+
+
+Fix the python code above and return the new python code:
+            
+2024-07-05 10:47:40 [INFO] Code generated:
+            ```
+            Python
+result = {}
+if len(dfs) > 0:
+    df = dfs[0]
+    
+    # Filter for 104Meadow bank account
+    total_net_income = df.loc[(df['bank_account_key'] == '104Meadow') & (df['category'] == 'Net Income'), :].sum(axis=1).reset_index(drop=True)
+    
+    # Calculate the percentage change in net income over time
+    trend = total_net_income.pct_change().dropna()
+    
+    import matplotlib.pyplot as plt
+    
+    # Plot the net income trend over time
+    plt.figure(figsize=(10, 5))
+    plt.plot(trend.index, trend.values)
+    plt.xlabel('Year')
+    plt.ylabel('Net Income Trend')
+    plt.title('104Meadow Net Income Trend')
+    plt.grid(True)
+    plt.savefig('/Users/vivekjadhav/Documents/github/oneplusPythonScripts/exports/charts/temp_chart.png')
+    
+    result = {'type': 'plot', 'value': '/Users/vivekjadhav/Documents/github/oneplusPythonScripts/exports/charts/temp_chart.png'}
+else:
+    result = {'type': 'string', 'value': 'No data available'}
+            ```
+            
+2024-07-05 10:47:40 [INFO] Executing Step 2: CodeCleaning
+2024-07-05 10:47:40 [INFO] Saving charts to /Users/vivekjadhav/Documents/github/oneplusPythonScripts/exports/charts/temp_chart.png
+2024-07-05 10:47:40 [INFO] 
+Code running:
+```
+Python
+result = {}
+if len(dfs) > 0:
+    df = dfs[0]
+    total_net_income = df.loc[(df['bank_account_key'] == '104Meadow') & (df['category'] == 'Net Income'), :].sum(axis=1).reset_index(drop=True)
+    trend = total_net_income.pct_change().dropna()
+    import matplotlib.pyplot as plt
+    plt.figure(figsize=(10, 5))
+    plt.plot(trend.index, trend.values)
+    plt.xlabel('Year')
+    plt.ylabel('Net Income Trend')
+    plt.title('104Meadow Net Income Trend')
+    plt.grid(True)
+    plt.savefig('/Users/vivekjadhav/Documents/github/oneplusPythonScripts/exports/charts/temp_chart.png')
+    result = {'type': 'plot', 'value': '/Users/vivekjadhav/Documents/github/oneplusPythonScripts/exports/charts/temp_chart.png'}
+else:
+    result = {'type': 'string', 'value': 'No data available'}
+        ```
+2024-07-05 10:47:40 [ERROR] Failed with error: Traceback (most recent call last):
+  File "/Users/vivekjadhav/Documents/github/oneplusPythonScripts/venv/lib/python3.9/site-packages/pandasai/pipelines/chat/code_execution.py", line 85, in execute
+    result = self.execute_code(code_to_run, code_context)
+  File "/Users/vivekjadhav/Documents/github/oneplusPythonScripts/venv/lib/python3.9/site-packages/pandasai/pipelines/chat/code_execution.py", line 171, in execute_code
+    exec(code, environment)
+  File "<string>", line 1, in <module>
+NameError: name 'Python' is not defined
+
+2024-07-05 10:47:40 [ERROR] Pipeline failed on step 6: name 'Python' is not defined
+2024-07-05 10:49:22 [INFO] Question: What is average rent for 104Meadow ?
+
+2024-07-05 10:49:22 [INFO] Running PandasAI with local LLM...
+2024-07-05 10:49:22 [INFO] Prompt ID: b6012d38-c409-4051-b3f8-40512bbdcd60
+2024-07-05 10:49:22 [INFO] Executing Pipeline: GenerateChatPipeline
+2024-07-05 10:49:22 [INFO] Executing Step 0: ValidatePipelineInput
+2024-07-05 10:49:22 [INFO] Executing Step 1: CacheLookup
+2024-07-05 10:49:22 [INFO] Executing Step 2: PromptGeneration
+2024-07-05 10:49:22 [INFO] Using prompt: <dataframe>
+dfs[0]:332x33
+bank_account_key,sequence_id,category,2022-01,2022-02,2022-03,2022-04,2022-05,2022-06,2022-07,2022-08,2022-09,2022-10,2022-11,2022-12,2023-01,2023-02,2023-03,2023-04,2023-05,2023-06,2023-07,2023-08,2023-09,2023-10,2023-11,2023-12,2024-01,2024-02,2024-03,2024-04,2024-05,2024-06
+6401Basswood,19,Transfers,6089.96,4057.99,15248.45,-225.0,4620.0,-80.64,0.0,24896.04,-54.75,-726.97,10851.82,-541.5,-456.02,1988.27,-116.08,1775.0,-456.02,-150.0,1700.0,-8313.76,5930.26,-843.79,-114.26,1541.0,-733.95,1950.0,-1118.25,4050.0,6858.41,-563.38
+MeadowSecurity,12,Mortgage Payments,1000.0,1720.0,8571.19,5031.16,5765.66,12919.6,0.04,-733.95,14699.97,-730.2,1.11,-456.02,-947.72,-147.99,6575.52,1850.0,1775.0,-8633.48,-711.48,3046.77,-338.15,-356.49,-347.53,-150.0,-20000.0,-733.95,0.24,4127.74,-35.0,1450.0
+108Pagoda,14,Security Deposit,8571.05,0.16,-3708.0,2636.87,8571.33,1720.0,9826.09,3825.0,-150.0,-551.66,2298.87,-616.81,500.0,-90.0,-843.79,3483.09,-1500.0,-528.51,5200.1,9046.8,-733.95,6721.7,5474.22,-733.95,2035.29,-75.0,4104.37,5900.03,5725.84,1525.0
+</dataframe>
+
+
+
+
+Update this initial code:
+```python
+# TODO: import the required dependencies
+import pandas as pd
+
+# Write code here
+
+# Declare result var: 
+type (possible values "string", "number", "dataframe", "plot"). Examples: { "type": "string", "value": f"The highest salary is {highest_salary}." } or { "type": "number", "value": 125 } or { "type": "dataframe", "value": pd.DataFrame({...}) } or { "type": "plot", "value": "temp_chart.png" }
+
+```
+
+
+
+### QUERY
+ What is average rent for 104Meadow ?
+
+
+Variable `dfs: list[pd.DataFrame]` is already declared.
+
+At the end, declare "result" variable as a dictionary of type and value.
+
+If you are asked to plot a chart, use "matplotlib" for charts, save as png.
+
+
+Generate python code and return full updated code:
+2024-07-05 10:49:22 [INFO] Executing Step 3: CodeGenerator
+2024-07-05 10:49:36 [INFO] HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2024-07-05 10:49:36 [INFO] Prompt used:
+            <dataframe>
+dfs[0]:332x33
+bank_account_key,sequence_id,category,2022-01,2022-02,2022-03,2022-04,2022-05,2022-06,2022-07,2022-08,2022-09,2022-10,2022-11,2022-12,2023-01,2023-02,2023-03,2023-04,2023-05,2023-06,2023-07,2023-08,2023-09,2023-10,2023-11,2023-12,2024-01,2024-02,2024-03,2024-04,2024-05,2024-06
+6401Basswood,19,Transfers,6089.96,4057.99,15248.45,-225.0,4620.0,-80.64,0.0,24896.04,-54.75,-726.97,10851.82,-541.5,-456.02,1988.27,-116.08,1775.0,-456.02,-150.0,1700.0,-8313.76,5930.26,-843.79,-114.26,1541.0,-733.95,1950.0,-1118.25,4050.0,6858.41,-563.38
+MeadowSecurity,12,Mortgage Payments,1000.0,1720.0,8571.19,5031.16,5765.66,12919.6,0.04,-733.95,14699.97,-730.2,1.11,-456.02,-947.72,-147.99,6575.52,1850.0,1775.0,-8633.48,-711.48,3046.77,-338.15,-356.49,-347.53,-150.0,-20000.0,-733.95,0.24,4127.74,-35.0,1450.0
+108Pagoda,14,Security Deposit,8571.05,0.16,-3708.0,2636.87,8571.33,1720.0,9826.09,3825.0,-150.0,-551.66,2298.87,-616.81,500.0,-90.0,-843.79,3483.09,-1500.0,-528.51,5200.1,9046.8,-733.95,6721.7,5474.22,-733.95,2035.29,-75.0,4104.37,5900.03,5725.84,1525.0
+</dataframe>
+
+
+
+
+Update this initial code:
+```python
+# TODO: import the required dependencies
+import pandas as pd
+
+# Write code here
+
+# Declare result var: 
+type (possible values "string", "number", "dataframe", "plot"). Examples: { "type": "string", "value": f"The highest salary is {highest_salary}." } or { "type": "number", "value": 125 } or { "type": "dataframe", "value": pd.DataFrame({...}) } or { "type": "plot", "value": "temp_chart.png" }
+
+```
+
+
+
+### QUERY
+ What is average rent for 104Meadow ?
+
+
+Variable `dfs: list[pd.DataFrame]` is already declared.
+
+At the end, declare "result" variable as a dictionary of type and value.
+
+If you are asked to plot a chart, use "matplotlib" for charts, save as png.
+
+
+Generate python code and return full updated code:
+            
+2024-07-05 10:49:36 [INFO] Code generated:
+            ```
+            Python
+import pandas as pd
+
+# List containing the DataFrames
+dfs = []
+
+# ... (you had some data here)
+
+result = {}
+
+# Get the required DataFrame from the list of DataFrames
+meadow_df = dfs[1]
+
+# Extract rent information from the 'category' column for 104Meadow
+rent_info = meadow_df[meadow_df['bank_account_key'] == '104Meadow']
+
+# Check if the required data exists
+if not rent_info.empty:
+    # Calculate average rent
+    avg_rent = rent_info.groupby('category')['2022-01'].mean().reset_index()
+
+    # Select only the row with category as 'Rent'
+    avg_rent = avg_rent[avg_rent['category'] == 'Mortgage Payments']['2022-01'].values[0]
+
+    result = {"type": "number", "value": avg_rent}
+
+else:
+    result = {"type": "string", "value": "No data found for 104Meadow"}
+
+print(result)
+            ```
+            
+2024-07-05 10:49:36 [INFO] Executing Step 4: CachePopulation
+2024-07-05 10:49:36 [INFO] Executing Step 5: CodeCleaning
+2024-07-05 10:49:36 [INFO] 
+Code running:
+```
+Python
+result = {}
+meadow_df = dfs[1]
+rent_info = meadow_df[meadow_df['bank_account_key'] == '104Meadow']
+if not rent_info.empty:
+    avg_rent = rent_info.groupby('category')['2022-01'].mean().reset_index()
+    avg_rent = avg_rent[avg_rent['category'] == 'Mortgage Payments']['2022-01'].values[0]
+    result = {'type': 'number', 'value': avg_rent}
+else:
+    result = {'type': 'string', 'value': 'No data found for 104Meadow'}
+print(result)
+        ```
+2024-07-05 10:49:36 [INFO] Executing Step 6: CodeExecution
+2024-07-05 10:49:36 [ERROR] Failed with error: Traceback (most recent call last):
+  File "/Users/vivekjadhav/Documents/github/oneplusPythonScripts/venv/lib/python3.9/site-packages/pandasai/pipelines/chat/code_execution.py", line 85, in execute
+    result = self.execute_code(code_to_run, code_context)
+  File "/Users/vivekjadhav/Documents/github/oneplusPythonScripts/venv/lib/python3.9/site-packages/pandasai/pipelines/chat/code_execution.py", line 171, in execute_code
+    exec(code, environment)
+  File "<string>", line 1, in <module>
+NameError: name 'Python' is not defined
+
+2024-07-05 10:49:36 [WARNING] Failed to execute code retrying with a correction framework [retry number: 1]
+2024-07-05 10:49:36 [INFO] Executing Pipeline: ErrorCorrectionPipeline
+2024-07-05 10:49:36 [INFO] Executing Step 0: ErrorPromptGeneration
+2024-07-05 10:49:36 [INFO] Using prompt: <dataframe>
+dfs[0]:332x33
+bank_account_key,sequence_id,category,2022-01,2022-02,2022-03,2022-04,2022-05,2022-06,2022-07,2022-08,2022-09,2022-10,2022-11,2022-12,2023-01,2023-02,2023-03,2023-04,2023-05,2023-06,2023-07,2023-08,2023-09,2023-10,2023-11,2023-12,2024-01,2024-02,2024-03,2024-04,2024-05,2024-06
+6401Basswood,19,Transfers,6089.96,4057.99,15248.45,-225.0,4620.0,-80.64,0.0,24896.04,-54.75,-726.97,10851.82,-541.5,-456.02,1988.27,-116.08,1775.0,-456.02,-150.0,1700.0,-8313.76,5930.26,-843.79,-114.26,1541.0,-733.95,1950.0,-1118.25,4050.0,6858.41,-563.38
+MeadowSecurity,12,Mortgage Payments,1000.0,1720.0,8571.19,5031.16,5765.66,12919.6,0.04,-733.95,14699.97,-730.2,1.11,-456.02,-947.72,-147.99,6575.52,1850.0,1775.0,-8633.48,-711.48,3046.77,-338.15,-356.49,-347.53,-150.0,-20000.0,-733.95,0.24,4127.74,-35.0,1450.0
+108Pagoda,14,Security Deposit,8571.05,0.16,-3708.0,2636.87,8571.33,1720.0,9826.09,3825.0,-150.0,-551.66,2298.87,-616.81,500.0,-90.0,-843.79,3483.09,-1500.0,-528.51,5200.1,9046.8,-733.95,6721.7,5474.22,-733.95,2035.29,-75.0,4104.37,5900.03,5725.84,1525.0
+</dataframe>
+
+
+The user asked the following question:
+### QUERY
+ What is average rent for 104Meadow ?
+
+
+You generated this python code:
+Python
+result = {}
+meadow_df = dfs[1]
+rent_info = meadow_df[meadow_df['bank_account_key'] == '104Meadow']
+if not rent_info.empty:
+    avg_rent = rent_info.groupby('category')['2022-01'].mean().reset_index()
+    avg_rent = avg_rent[avg_rent['category'] == 'Mortgage Payments']['2022-01'].values[0]
+    result = {'type': 'number', 'value': avg_rent}
+else:
+    result = {'type': 'string', 'value': 'No data found for 104Meadow'}
+print(result)
+
+It fails with the following error:
+Traceback (most recent call last):
+  File "/Users/vivekjadhav/Documents/github/oneplusPythonScripts/venv/lib/python3.9/site-packages/pandasai/pipelines/chat/code_execution.py", line 85, in execute
+    result = self.execute_code(code_to_run, code_context)
+  File "/Users/vivekjadhav/Documents/github/oneplusPythonScripts/venv/lib/python3.9/site-packages/pandasai/pipelines/chat/code_execution.py", line 171, in execute_code
+    exec(code, environment)
+  File "<string>", line 1, in <module>
+NameError: name 'Python' is not defined
+
+
+Fix the python code above and return the new python code:
+2024-07-05 10:49:36 [INFO] Executing Step 1: CodeGenerator
+2024-07-05 10:49:51 [INFO] HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2024-07-05 10:49:51 [INFO] Prompt used:
+            <dataframe>
+dfs[0]:332x33
+bank_account_key,sequence_id,category,2022-01,2022-02,2022-03,2022-04,2022-05,2022-06,2022-07,2022-08,2022-09,2022-10,2022-11,2022-12,2023-01,2023-02,2023-03,2023-04,2023-05,2023-06,2023-07,2023-08,2023-09,2023-10,2023-11,2023-12,2024-01,2024-02,2024-03,2024-04,2024-05,2024-06
+6401Basswood,19,Transfers,6089.96,4057.99,15248.45,-225.0,4620.0,-80.64,0.0,24896.04,-54.75,-726.97,10851.82,-541.5,-456.02,1988.27,-116.08,1775.0,-456.02,-150.0,1700.0,-8313.76,5930.26,-843.79,-114.26,1541.0,-733.95,1950.0,-1118.25,4050.0,6858.41,-563.38
+MeadowSecurity,12,Mortgage Payments,1000.0,1720.0,8571.19,5031.16,5765.66,12919.6,0.04,-733.95,14699.97,-730.2,1.11,-456.02,-947.72,-147.99,6575.52,1850.0,1775.0,-8633.48,-711.48,3046.77,-338.15,-356.49,-347.53,-150.0,-20000.0,-733.95,0.24,4127.74,-35.0,1450.0
+108Pagoda,14,Security Deposit,8571.05,0.16,-3708.0,2636.87,8571.33,1720.0,9826.09,3825.0,-150.0,-551.66,2298.87,-616.81,500.0,-90.0,-843.79,3483.09,-1500.0,-528.51,5200.1,9046.8,-733.95,6721.7,5474.22,-733.95,2035.29,-75.0,4104.37,5900.03,5725.84,1525.0
+</dataframe>
+
+
+The user asked the following question:
+### QUERY
+ What is average rent for 104Meadow ?
+
+
+You generated this python code:
+Python
+result = {}
+meadow_df = dfs[1]
+rent_info = meadow_df[meadow_df['bank_account_key'] == '104Meadow']
+if not rent_info.empty:
+    avg_rent = rent_info.groupby('category')['2022-01'].mean().reset_index()
+    avg_rent = avg_rent[avg_rent['category'] == 'Mortgage Payments']['2022-01'].values[0]
+    result = {'type': 'number', 'value': avg_rent}
+else:
+    result = {'type': 'string', 'value': 'No data found for 104Meadow'}
+print(result)
+
+It fails with the following error:
+Traceback (most recent call last):
+  File "/Users/vivekjadhav/Documents/github/oneplusPythonScripts/venv/lib/python3.9/site-packages/pandasai/pipelines/chat/code_execution.py", line 85, in execute
+    result = self.execute_code(code_to_run, code_context)
+  File "/Users/vivekjadhav/Documents/github/oneplusPythonScripts/venv/lib/python3.9/site-packages/pandasai/pipelines/chat/code_execution.py", line 171, in execute_code
+    exec(code, environment)
+  File "<string>", line 1, in <module>
+NameError: name 'Python' is not defined
+
+
+Fix the python code above and return the new python code:
+            
+2024-07-05 10:49:51 [INFO] Code generated:
+            ```
+            Python
+result = {}
+meadow_df = dfs[1]
+rent_info = meadow_df[(meadow_df['bank_account_key'] == '104Meadow') & (meadow_df['category'] == 'Transfers')]
+if not rent_info.empty:
+    avg_rent = rent_info[['2022-01', '2022-02', '2022-03', '2022-04', '2022-05', '2022-06', '2022-07', '2022-08', '2022-09', '2022-10', '2022-11', '2022-12']].mean().mean()
+    result = {'type': 'number', 'value': avg_rent}
+else:
+    result = {'type': 'string', 'value': 'No data found for 104Meadow'}
+print(result)
+            ```
+            
+2024-07-05 10:49:51 [INFO] Executing Step 2: CodeCleaning
+2024-07-05 10:49:51 [INFO] 
+Code running:
+```
+Python
+result = {}
+meadow_df = dfs[1]
+rent_info = meadow_df[(meadow_df['bank_account_key'] == '104Meadow') & (meadow_df['category'] == 'Transfers')]
+if not rent_info.empty:
+    avg_rent = rent_info[['2022-01', '2022-02', '2022-03', '2022-04', '2022-05', '2022-06', '2022-07', '2022-08', '2022-09', '2022-10', '2022-11', '2022-12']].mean().mean()
+    result = {'type': 'number', 'value': avg_rent}
+else:
+    result = {'type': 'string', 'value': 'No data found for 104Meadow'}
+print(result)
+        ```
+2024-07-05 10:49:51 [ERROR] Failed with error: Traceback (most recent call last):
+  File "/Users/vivekjadhav/Documents/github/oneplusPythonScripts/venv/lib/python3.9/site-packages/pandasai/pipelines/chat/code_execution.py", line 85, in execute
+    result = self.execute_code(code_to_run, code_context)
+  File "/Users/vivekjadhav/Documents/github/oneplusPythonScripts/venv/lib/python3.9/site-packages/pandasai/pipelines/chat/code_execution.py", line 171, in execute_code
+    exec(code, environment)
+  File "<string>", line 1, in <module>
+NameError: name 'Python' is not defined
+
+2024-07-05 10:49:51 [WARNING] Failed to execute code retrying with a correction framework [retry number: 2]
+2024-07-05 10:49:51 [INFO] Executing Pipeline: ErrorCorrectionPipeline
+2024-07-05 10:49:51 [INFO] Executing Step 0: ErrorPromptGeneration
+2024-07-05 10:49:51 [INFO] Using prompt: <dataframe>
+dfs[0]:332x33
+bank_account_key,sequence_id,category,2022-01,2022-02,2022-03,2022-04,2022-05,2022-06,2022-07,2022-08,2022-09,2022-10,2022-11,2022-12,2023-01,2023-02,2023-03,2023-04,2023-05,2023-06,2023-07,2023-08,2023-09,2023-10,2023-11,2023-12,2024-01,2024-02,2024-03,2024-04,2024-05,2024-06
+6401Basswood,19,Transfers,6089.96,4057.99,15248.45,-225.0,4620.0,-80.64,0.0,24896.04,-54.75,-726.97,10851.82,-541.5,-456.02,1988.27,-116.08,1775.0,-456.02,-150.0,1700.0,-8313.76,5930.26,-843.79,-114.26,1541.0,-733.95,1950.0,-1118.25,4050.0,6858.41,-563.38
+MeadowSecurity,12,Mortgage Payments,1000.0,1720.0,8571.19,5031.16,5765.66,12919.6,0.04,-733.95,14699.97,-730.2,1.11,-456.02,-947.72,-147.99,6575.52,1850.0,1775.0,-8633.48,-711.48,3046.77,-338.15,-356.49,-347.53,-150.0,-20000.0,-733.95,0.24,4127.74,-35.0,1450.0
+108Pagoda,14,Security Deposit,8571.05,0.16,-3708.0,2636.87,8571.33,1720.0,9826.09,3825.0,-150.0,-551.66,2298.87,-616.81,500.0,-90.0,-843.79,3483.09,-1500.0,-528.51,5200.1,9046.8,-733.95,6721.7,5474.22,-733.95,2035.29,-75.0,4104.37,5900.03,5725.84,1525.0
+</dataframe>
+
+
+The user asked the following question:
+### QUERY
+ What is average rent for 104Meadow ?
+
+
+You generated this python code:
+Python
+result = {}
+meadow_df = dfs[1]
+rent_info = meadow_df[(meadow_df['bank_account_key'] == '104Meadow') & (meadow_df['category'] == 'Transfers')]
+if not rent_info.empty:
+    avg_rent = rent_info[['2022-01', '2022-02', '2022-03', '2022-04', '2022-05', '2022-06', '2022-07', '2022-08', '2022-09', '2022-10', '2022-11', '2022-12']].mean().mean()
+    result = {'type': 'number', 'value': avg_rent}
+else:
+    result = {'type': 'string', 'value': 'No data found for 104Meadow'}
+print(result)
+
+It fails with the following error:
+Traceback (most recent call last):
+  File "/Users/vivekjadhav/Documents/github/oneplusPythonScripts/venv/lib/python3.9/site-packages/pandasai/pipelines/chat/code_execution.py", line 85, in execute
+    result = self.execute_code(code_to_run, code_context)
+  File "/Users/vivekjadhav/Documents/github/oneplusPythonScripts/venv/lib/python3.9/site-packages/pandasai/pipelines/chat/code_execution.py", line 171, in execute_code
+    exec(code, environment)
+  File "<string>", line 1, in <module>
+NameError: name 'Python' is not defined
+
+
+Fix the python code above and return the new python code:
+2024-07-05 10:49:51 [INFO] Executing Step 1: CodeGenerator
+2024-07-05 10:50:03 [INFO] HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2024-07-05 10:50:03 [INFO] Prompt used:
+            <dataframe>
+dfs[0]:332x33
+bank_account_key,sequence_id,category,2022-01,2022-02,2022-03,2022-04,2022-05,2022-06,2022-07,2022-08,2022-09,2022-10,2022-11,2022-12,2023-01,2023-02,2023-03,2023-04,2023-05,2023-06,2023-07,2023-08,2023-09,2023-10,2023-11,2023-12,2024-01,2024-02,2024-03,2024-04,2024-05,2024-06
+6401Basswood,19,Transfers,6089.96,4057.99,15248.45,-225.0,4620.0,-80.64,0.0,24896.04,-54.75,-726.97,10851.82,-541.5,-456.02,1988.27,-116.08,1775.0,-456.02,-150.0,1700.0,-8313.76,5930.26,-843.79,-114.26,1541.0,-733.95,1950.0,-1118.25,4050.0,6858.41,-563.38
+MeadowSecurity,12,Mortgage Payments,1000.0,1720.0,8571.19,5031.16,5765.66,12919.6,0.04,-733.95,14699.97,-730.2,1.11,-456.02,-947.72,-147.99,6575.52,1850.0,1775.0,-8633.48,-711.48,3046.77,-338.15,-356.49,-347.53,-150.0,-20000.0,-733.95,0.24,4127.74,-35.0,1450.0
+108Pagoda,14,Security Deposit,8571.05,0.16,-3708.0,2636.87,8571.33,1720.0,9826.09,3825.0,-150.0,-551.66,2298.87,-616.81,500.0,-90.0,-843.79,3483.09,-1500.0,-528.51,5200.1,9046.8,-733.95,6721.7,5474.22,-733.95,2035.29,-75.0,4104.37,5900.03,5725.84,1525.0
+</dataframe>
+
+
+The user asked the following question:
+### QUERY
+ What is average rent for 104Meadow ?
+
+
+You generated this python code:
+Python
+result = {}
+meadow_df = dfs[1]
+rent_info = meadow_df[(meadow_df['bank_account_key'] == '104Meadow') & (meadow_df['category'] == 'Transfers')]
+if not rent_info.empty:
+    avg_rent = rent_info[['2022-01', '2022-02', '2022-03', '2022-04', '2022-05', '2022-06', '2022-07', '2022-08', '2022-09', '2022-10', '2022-11', '2022-12']].mean().mean()
+    result = {'type': 'number', 'value': avg_rent}
+else:
+    result = {'type': 'string', 'value': 'No data found for 104Meadow'}
+print(result)
+
+It fails with the following error:
+Traceback (most recent call last):
+  File "/Users/vivekjadhav/Documents/github/oneplusPythonScripts/venv/lib/python3.9/site-packages/pandasai/pipelines/chat/code_execution.py", line 85, in execute
+    result = self.execute_code(code_to_run, code_context)
+  File "/Users/vivekjadhav/Documents/github/oneplusPythonScripts/venv/lib/python3.9/site-packages/pandasai/pipelines/chat/code_execution.py", line 171, in execute_code
+    exec(code, environment)
+  File "<string>", line 1, in <module>
+NameError: name 'Python' is not defined
+
+
+Fix the python code above and return the new python code:
+            
+2024-07-05 10:50:03 [INFO] Code generated:
+            ```
+            Python
+result = {}
+meadow_df = dfs[1]
+rent_info = meadow_df[(meadow_df['bank_account_key'] == '104Meadow') & (meadow_df['category'] == 'Transfers')]
+if not rent_info.empty:
+    avg_rent = rent_info[['2022-01', '2022-02', '2022-03', '2022-04', '2022-05', '2022-06', '2022-07', '2022-08', '2022-09', '2022-10', '2022-11', '2022-12']].mean().mean()
+    result = {'type': 'number', 'value': avg_rent}
+else:
+    result = {'type': 'string', 'value': 'No data found for 104Meadow'}
+print(result)
+            ```
+            
+2024-07-05 10:50:03 [INFO] Executing Step 2: CodeCleaning
+2024-07-05 10:50:03 [INFO] 
+Code running:
+```
+Python
+result = {}
+meadow_df = dfs[1]
+rent_info = meadow_df[(meadow_df['bank_account_key'] == '104Meadow') & (meadow_df['category'] == 'Transfers')]
+if not rent_info.empty:
+    avg_rent = rent_info[['2022-01', '2022-02', '2022-03', '2022-04', '2022-05', '2022-06', '2022-07', '2022-08', '2022-09', '2022-10', '2022-11', '2022-12']].mean().mean()
+    result = {'type': 'number', 'value': avg_rent}
+else:
+    result = {'type': 'string', 'value': 'No data found for 104Meadow'}
+print(result)
+        ```
+2024-07-05 10:50:03 [ERROR] Failed with error: Traceback (most recent call last):
+  File "/Users/vivekjadhav/Documents/github/oneplusPythonScripts/venv/lib/python3.9/site-packages/pandasai/pipelines/chat/code_execution.py", line 85, in execute
+    result = self.execute_code(code_to_run, code_context)
+  File "/Users/vivekjadhav/Documents/github/oneplusPythonScripts/venv/lib/python3.9/site-packages/pandasai/pipelines/chat/code_execution.py", line 171, in execute_code
+    exec(code, environment)
+  File "<string>", line 1, in <module>
+NameError: name 'Python' is not defined
+
+2024-07-05 10:50:03 [WARNING] Failed to execute code retrying with a correction framework [retry number: 3]
+2024-07-05 10:50:03 [INFO] Executing Pipeline: ErrorCorrectionPipeline
+2024-07-05 10:50:03 [INFO] Executing Step 0: ErrorPromptGeneration
+2024-07-05 10:50:03 [INFO] Using prompt: <dataframe>
+dfs[0]:332x33
+bank_account_key,sequence_id,category,2022-01,2022-02,2022-03,2022-04,2022-05,2022-06,2022-07,2022-08,2022-09,2022-10,2022-11,2022-12,2023-01,2023-02,2023-03,2023-04,2023-05,2023-06,2023-07,2023-08,2023-09,2023-10,2023-11,2023-12,2024-01,2024-02,2024-03,2024-04,2024-05,2024-06
+6401Basswood,19,Transfers,6089.96,4057.99,15248.45,-225.0,4620.0,-80.64,0.0,24896.04,-54.75,-726.97,10851.82,-541.5,-456.02,1988.27,-116.08,1775.0,-456.02,-150.0,1700.0,-8313.76,5930.26,-843.79,-114.26,1541.0,-733.95,1950.0,-1118.25,4050.0,6858.41,-563.38
+MeadowSecurity,12,Mortgage Payments,1000.0,1720.0,8571.19,5031.16,5765.66,12919.6,0.04,-733.95,14699.97,-730.2,1.11,-456.02,-947.72,-147.99,6575.52,1850.0,1775.0,-8633.48,-711.48,3046.77,-338.15,-356.49,-347.53,-150.0,-20000.0,-733.95,0.24,4127.74,-35.0,1450.0
+108Pagoda,14,Security Deposit,8571.05,0.16,-3708.0,2636.87,8571.33,1720.0,9826.09,3825.0,-150.0,-551.66,2298.87,-616.81,500.0,-90.0,-843.79,3483.09,-1500.0,-528.51,5200.1,9046.8,-733.95,6721.7,5474.22,-733.95,2035.29,-75.0,4104.37,5900.03,5725.84,1525.0
+</dataframe>
+
+
+The user asked the following question:
+### QUERY
+ What is average rent for 104Meadow ?
+
+
+You generated this python code:
+Python
+result = {}
+meadow_df = dfs[1]
+rent_info = meadow_df[(meadow_df['bank_account_key'] == '104Meadow') & (meadow_df['category'] == 'Transfers')]
+if not rent_info.empty:
+    avg_rent = rent_info[['2022-01', '2022-02', '2022-03', '2022-04', '2022-05', '2022-06', '2022-07', '2022-08', '2022-09', '2022-10', '2022-11', '2022-12']].mean().mean()
+    result = {'type': 'number', 'value': avg_rent}
+else:
+    result = {'type': 'string', 'value': 'No data found for 104Meadow'}
+print(result)
+
+It fails with the following error:
+Traceback (most recent call last):
+  File "/Users/vivekjadhav/Documents/github/oneplusPythonScripts/venv/lib/python3.9/site-packages/pandasai/pipelines/chat/code_execution.py", line 85, in execute
+    result = self.execute_code(code_to_run, code_context)
+  File "/Users/vivekjadhav/Documents/github/oneplusPythonScripts/venv/lib/python3.9/site-packages/pandasai/pipelines/chat/code_execution.py", line 171, in execute_code
+    exec(code, environment)
+  File "<string>", line 1, in <module>
+NameError: name 'Python' is not defined
+
+
+Fix the python code above and return the new python code:
+2024-07-05 10:50:03 [INFO] Executing Step 1: CodeGenerator
+2024-07-05 10:50:14 [INFO] HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2024-07-05 10:50:14 [INFO] Prompt used:
+            <dataframe>
+dfs[0]:332x33
+bank_account_key,sequence_id,category,2022-01,2022-02,2022-03,2022-04,2022-05,2022-06,2022-07,2022-08,2022-09,2022-10,2022-11,2022-12,2023-01,2023-02,2023-03,2023-04,2023-05,2023-06,2023-07,2023-08,2023-09,2023-10,2023-11,2023-12,2024-01,2024-02,2024-03,2024-04,2024-05,2024-06
+6401Basswood,19,Transfers,6089.96,4057.99,15248.45,-225.0,4620.0,-80.64,0.0,24896.04,-54.75,-726.97,10851.82,-541.5,-456.02,1988.27,-116.08,1775.0,-456.02,-150.0,1700.0,-8313.76,5930.26,-843.79,-114.26,1541.0,-733.95,1950.0,-1118.25,4050.0,6858.41,-563.38
+MeadowSecurity,12,Mortgage Payments,1000.0,1720.0,8571.19,5031.16,5765.66,12919.6,0.04,-733.95,14699.97,-730.2,1.11,-456.02,-947.72,-147.99,6575.52,1850.0,1775.0,-8633.48,-711.48,3046.77,-338.15,-356.49,-347.53,-150.0,-20000.0,-733.95,0.24,4127.74,-35.0,1450.0
+108Pagoda,14,Security Deposit,8571.05,0.16,-3708.0,2636.87,8571.33,1720.0,9826.09,3825.0,-150.0,-551.66,2298.87,-616.81,500.0,-90.0,-843.79,3483.09,-1500.0,-528.51,5200.1,9046.8,-733.95,6721.7,5474.22,-733.95,2035.29,-75.0,4104.37,5900.03,5725.84,1525.0
+</dataframe>
+
+
+The user asked the following question:
+### QUERY
+ What is average rent for 104Meadow ?
+
+
+You generated this python code:
+Python
+result = {}
+meadow_df = dfs[1]
+rent_info = meadow_df[(meadow_df['bank_account_key'] == '104Meadow') & (meadow_df['category'] == 'Transfers')]
+if not rent_info.empty:
+    avg_rent = rent_info[['2022-01', '2022-02', '2022-03', '2022-04', '2022-05', '2022-06', '2022-07', '2022-08', '2022-09', '2022-10', '2022-11', '2022-12']].mean().mean()
+    result = {'type': 'number', 'value': avg_rent}
+else:
+    result = {'type': 'string', 'value': 'No data found for 104Meadow'}
+print(result)
+
+It fails with the following error:
+Traceback (most recent call last):
+  File "/Users/vivekjadhav/Documents/github/oneplusPythonScripts/venv/lib/python3.9/site-packages/pandasai/pipelines/chat/code_execution.py", line 85, in execute
+    result = self.execute_code(code_to_run, code_context)
+  File "/Users/vivekjadhav/Documents/github/oneplusPythonScripts/venv/lib/python3.9/site-packages/pandasai/pipelines/chat/code_execution.py", line 171, in execute_code
+    exec(code, environment)
+  File "<string>", line 1, in <module>
+NameError: name 'Python' is not defined
+
+
+Fix the python code above and return the new python code:
+            
+2024-07-05 10:50:14 [INFO] Code generated:
+            ```
+            result = {}
+meadow_df = dfs[1]
+rent_info = meadow_df[(meadow_df['bank_account_key'] == '104Meadow') & (meadow_df['category'] == 'Transfers')]
+if not rent_info.empty:
+    avg_rent = rent_info[['2022-01', '2022-02', '2022-03', '2022-04', '2022-05', '2022-06', '2022-07', '2022-08', '2022-09', '2022-10', '2022-11', '2022-12']].mean().mean()
+    result = {'type': 'number', 'value': avg_rent}
+else:
+    result = {'type': 'string', 'value': 'No data found for 104Meadow'}
+print(result)
+            ```
+            
+2024-07-05 10:50:14 [INFO] Executing Step 2: CodeCleaning
+2024-07-05 10:50:14 [INFO] 
+Code running:
+```
+result = {}
+meadow_df = dfs[1]
+rent_info = meadow_df[(meadow_df['bank_account_key'] == '104Meadow') & (meadow_df['category'] == 'Transfers')]
+if not rent_info.empty:
+    avg_rent = rent_info[['2022-01', '2022-02', '2022-03', '2022-04', '2022-05', '2022-06', '2022-07', '2022-08', '2022-09', '2022-10', '2022-11', '2022-12']].mean().mean()
+    result = {'type': 'number', 'value': avg_rent}
+else:
+    result = {'type': 'string', 'value': 'No data found for 104Meadow'}
+print(result)
+        ```
+2024-07-05 10:50:14 [ERROR] Failed with error: Traceback (most recent call last):
+  File "/Users/vivekjadhav/Documents/github/oneplusPythonScripts/venv/lib/python3.9/site-packages/pandasai/pipelines/chat/code_execution.py", line 85, in execute
+    result = self.execute_code(code_to_run, code_context)
+  File "/Users/vivekjadhav/Documents/github/oneplusPythonScripts/venv/lib/python3.9/site-packages/pandasai/pipelines/chat/code_execution.py", line 171, in execute_code
+    exec(code, environment)
+  File "<string>", line 2, in <module>
+IndexError: list index out of range
+
+2024-07-05 10:50:14 [ERROR] Pipeline failed on step 6: list index out of range
+2024-07-05 10:51:22 [INFO] Question: Give the rent for the month 2022-02 for the property 104Meadow ?
+
+2024-07-05 10:51:22 [INFO] Running PandasAI with local LLM...
+2024-07-05 10:51:22 [INFO] Prompt ID: bb5fd5a3-4ba6-41c0-9766-a3849b1214bf
+2024-07-05 10:51:22 [INFO] Executing Pipeline: GenerateChatPipeline
+2024-07-05 10:51:22 [INFO] Executing Step 0: ValidatePipelineInput
+2024-07-05 10:51:22 [INFO] Executing Step 1: CacheLookup
+2024-07-05 10:51:22 [INFO] Executing Step 2: PromptGeneration
+2024-07-05 10:51:22 [INFO] Using prompt: <dataframe>
+dfs[0]:332x33
+bank_account_key,sequence_id,category,2022-01,2022-02,2022-03,2022-04,2022-05,2022-06,2022-07,2022-08,2022-09,2022-10,2022-11,2022-12,2023-01,2023-02,2023-03,2023-04,2023-05,2023-06,2023-07,2023-08,2023-09,2023-10,2023-11,2023-12,2024-01,2024-02,2024-03,2024-04,2024-05,2024-06
+TrustAccount,21,Owner Draw,0.07,2.64,18343.24,-733.95,3550.0,-60.64,-163.25,3825.0,-730.2,-85.0,3520.0,15810.9,-293.0,-284.53,-947.72,-963.16,-963.16,-6161.69,-240.0,6720.02,9216.62,410.0,3961.99,-540.0,-2842.43,-289.32,-733.95,3166.0,391257.92,-271.18
+Midway,2,EXPENSES,3581.99,-726.97,2856.57,3072.52,15042.6,1795.0,19984.75,-26.0,0.07,-551.66,3104.82,2797.48,-566.16,-147.99,-116.08,0.22,91564.16,25202.79,-665.85,1335.0,0.88,4129.92,18242.45,-25.59,686.09,82.92,-1383.06,2511.4,3629.0,99.0
+114Sidney,10,Rent,6749.95,4610.51,4137.55,2992.61,-748.93,-204.08,14276.19,6659.35,2.79,-625.0,2298.87,-75.0,2.26,1377.36,-85.99,14987.75,8370.39,-1994.0,6212.15,-60.0,25475.0,1950.0,2479.0,-675.63,1086.57,0.22,-5673.44,-77.28,4686.0,1518.5
+</dataframe>
+
+
+
+
+Update this initial code:
+```python
+# TODO: import the required dependencies
+import pandas as pd
+
+# Write code here
+
+# Declare result var: 
+type (possible values "string", "number", "dataframe", "plot"). Examples: { "type": "string", "value": f"The highest salary is {highest_salary}." } or { "type": "number", "value": 125 } or { "type": "dataframe", "value": pd.DataFrame({...}) } or { "type": "plot", "value": "temp_chart.png" }
+
+```
+
+
+
+### QUERY
+ Give the rent for the month 2022-02 for the property 104Meadow ?
+
+
+Variable `dfs: list[pd.DataFrame]` is already declared.
+
+At the end, declare "result" variable as a dictionary of type and value.
+
+If you are asked to plot a chart, use "matplotlib" for charts, save as png.
+
+
+Generate python code and return full updated code:
+2024-07-05 10:51:22 [INFO] Executing Step 3: CodeGenerator
+2024-07-05 10:51:32 [INFO] HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2024-07-05 10:51:32 [INFO] Prompt used:
+            <dataframe>
+dfs[0]:332x33
+bank_account_key,sequence_id,category,2022-01,2022-02,2022-03,2022-04,2022-05,2022-06,2022-07,2022-08,2022-09,2022-10,2022-11,2022-12,2023-01,2023-02,2023-03,2023-04,2023-05,2023-06,2023-07,2023-08,2023-09,2023-10,2023-11,2023-12,2024-01,2024-02,2024-03,2024-04,2024-05,2024-06
+TrustAccount,21,Owner Draw,0.07,2.64,18343.24,-733.95,3550.0,-60.64,-163.25,3825.0,-730.2,-85.0,3520.0,15810.9,-293.0,-284.53,-947.72,-963.16,-963.16,-6161.69,-240.0,6720.02,9216.62,410.0,3961.99,-540.0,-2842.43,-289.32,-733.95,3166.0,391257.92,-271.18
+Midway,2,EXPENSES,3581.99,-726.97,2856.57,3072.52,15042.6,1795.0,19984.75,-26.0,0.07,-551.66,3104.82,2797.48,-566.16,-147.99,-116.08,0.22,91564.16,25202.79,-665.85,1335.0,0.88,4129.92,18242.45,-25.59,686.09,82.92,-1383.06,2511.4,3629.0,99.0
+114Sidney,10,Rent,6749.95,4610.51,4137.55,2992.61,-748.93,-204.08,14276.19,6659.35,2.79,-625.0,2298.87,-75.0,2.26,1377.36,-85.99,14987.75,8370.39,-1994.0,6212.15,-60.0,25475.0,1950.0,2479.0,-675.63,1086.57,0.22,-5673.44,-77.28,4686.0,1518.5
+</dataframe>
+
+
+
+
+Update this initial code:
+```python
+# TODO: import the required dependencies
+import pandas as pd
+
+# Write code here
+
+# Declare result var: 
+type (possible values "string", "number", "dataframe", "plot"). Examples: { "type": "string", "value": f"The highest salary is {highest_salary}." } or { "type": "number", "value": 125 } or { "type": "dataframe", "value": pd.DataFrame({...}) } or { "type": "plot", "value": "temp_chart.png" }
+
+```
+
+
+
+### QUERY
+ Give the rent for the month 2022-02 for the property 104Meadow ?
+
+
+Variable `dfs: list[pd.DataFrame]` is already declared.
+
+At the end, declare "result" variable as a dictionary of type and value.
+
+If you are asked to plot a chart, use "matplotlib" for charts, save as png.
+
+
+Generate python code and return full updated code:
+            
+2024-07-05 10:51:32 [INFO] Code generated:
+            ```
+            # TODO: import the required dependencies
+import pandas as pd
+
+dfs = [pd.read_csv("<dataframe>")]
+
+result = {}
+
+for df in dfs:
+    if "104Meadow" in df.columns:
+        rent_2022_02 = df.loc[df["bank_account_key"] == "114Sidney", "2022-02"].values[0]
+        result = {"type": "number", "value": rent_2022_02}
+        break
+
+print(result)
+            ```
+            
+2024-07-05 10:51:32 [INFO] Executing Step 4: CachePopulation
+2024-07-05 10:51:32 [INFO] Executing Step 5: CodeCleaning
+2024-07-05 10:51:32 [INFO] 
+Code running:
+```
+result = {}
+for df in dfs:
+    if '104Meadow' in df.columns:
+        rent_2022_02 = df.loc[df['bank_account_key'] == '114Sidney', '2022-02'].values[0]
+        result = {'type': 'number', 'value': rent_2022_02}
+        break
+print(result)
+        ```
+2024-07-05 10:51:32 [INFO] Executing Step 6: CodeExecution
+2024-07-05 10:51:32 [ERROR] Failed with error: Traceback (most recent call last):
+  File "/Users/vivekjadhav/Documents/github/oneplusPythonScripts/venv/lib/python3.9/site-packages/pandasai/pipelines/chat/code_execution.py", line 96, in execute
+    if not OutputValidator.validate_result(result):
+  File "/Users/vivekjadhav/Documents/github/oneplusPythonScripts/venv/lib/python3.9/site-packages/pandasai/helpers/output_validator.py", line 73, in validate_result
+    raise InvalidOutputValueMismatch(
+pandasai.exceptions.InvalidOutputValueMismatch: Result must be in the format of dictionary of type and value
+
+2024-07-05 10:51:32 [WARNING] Failed to execute code retrying with a correction framework [retry number: 1]
+2024-07-05 10:51:32 [INFO] Executing Pipeline: ErrorCorrectionPipeline
+2024-07-05 10:51:32 [INFO] Executing Step 0: ErrorPromptGeneration
+2024-07-05 10:51:32 [INFO] Using prompt: <dataframe>
+dfs[0]:332x33
+bank_account_key,sequence_id,category,2022-01,2022-02,2022-03,2022-04,2022-05,2022-06,2022-07,2022-08,2022-09,2022-10,2022-11,2022-12,2023-01,2023-02,2023-03,2023-04,2023-05,2023-06,2023-07,2023-08,2023-09,2023-10,2023-11,2023-12,2024-01,2024-02,2024-03,2024-04,2024-05,2024-06
+TrustAccount,21,Owner Draw,0.07,2.64,18343.24,-733.95,3550.0,-60.64,-163.25,3825.0,-730.2,-85.0,3520.0,15810.9,-293.0,-284.53,-947.72,-963.16,-963.16,-6161.69,-240.0,6720.02,9216.62,410.0,3961.99,-540.0,-2842.43,-289.32,-733.95,3166.0,391257.92,-271.18
+Midway,2,EXPENSES,3581.99,-726.97,2856.57,3072.52,15042.6,1795.0,19984.75,-26.0,0.07,-551.66,3104.82,2797.48,-566.16,-147.99,-116.08,0.22,91564.16,25202.79,-665.85,1335.0,0.88,4129.92,18242.45,-25.59,686.09,82.92,-1383.06,2511.4,3629.0,99.0
+114Sidney,10,Rent,6749.95,4610.51,4137.55,2992.61,-748.93,-204.08,14276.19,6659.35,2.79,-625.0,2298.87,-75.0,2.26,1377.36,-85.99,14987.75,8370.39,-1994.0,6212.15,-60.0,25475.0,1950.0,2479.0,-675.63,1086.57,0.22,-5673.44,-77.28,4686.0,1518.5
+</dataframe>
+
+
+The user asked the following question:
+### QUERY
+ Give the rent for the month 2022-02 for the property 104Meadow ?
+
+
+You generated this python code:
+result = {}
+for df in dfs:
+    if '104Meadow' in df.columns:
+        rent_2022_02 = df.loc[df['bank_account_key'] == '114Sidney', '2022-02'].values[0]
+        result = {'type': 'number', 'value': rent_2022_02}
+        break
+print(result)
+
+It fails with the following error:
+Traceback (most recent call last):
+  File "/Users/vivekjadhav/Documents/github/oneplusPythonScripts/venv/lib/python3.9/site-packages/pandasai/pipelines/chat/code_execution.py", line 96, in execute
+    if not OutputValidator.validate_result(result):
+  File "/Users/vivekjadhav/Documents/github/oneplusPythonScripts/venv/lib/python3.9/site-packages/pandasai/helpers/output_validator.py", line 73, in validate_result
+    raise InvalidOutputValueMismatch(
+pandasai.exceptions.InvalidOutputValueMismatch: Result must be in the format of dictionary of type and value
+
+
+Fix the python code above and return the new python code:
+2024-07-05 10:51:32 [INFO] Executing Step 1: CodeGenerator
+2024-07-05 10:51:42 [INFO] HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2024-07-05 10:51:42 [INFO] Prompt used:
+            <dataframe>
+dfs[0]:332x33
+bank_account_key,sequence_id,category,2022-01,2022-02,2022-03,2022-04,2022-05,2022-06,2022-07,2022-08,2022-09,2022-10,2022-11,2022-12,2023-01,2023-02,2023-03,2023-04,2023-05,2023-06,2023-07,2023-08,2023-09,2023-10,2023-11,2023-12,2024-01,2024-02,2024-03,2024-04,2024-05,2024-06
+TrustAccount,21,Owner Draw,0.07,2.64,18343.24,-733.95,3550.0,-60.64,-163.25,3825.0,-730.2,-85.0,3520.0,15810.9,-293.0,-284.53,-947.72,-963.16,-963.16,-6161.69,-240.0,6720.02,9216.62,410.0,3961.99,-540.0,-2842.43,-289.32,-733.95,3166.0,391257.92,-271.18
+Midway,2,EXPENSES,3581.99,-726.97,2856.57,3072.52,15042.6,1795.0,19984.75,-26.0,0.07,-551.66,3104.82,2797.48,-566.16,-147.99,-116.08,0.22,91564.16,25202.79,-665.85,1335.0,0.88,4129.92,18242.45,-25.59,686.09,82.92,-1383.06,2511.4,3629.0,99.0
+114Sidney,10,Rent,6749.95,4610.51,4137.55,2992.61,-748.93,-204.08,14276.19,6659.35,2.79,-625.0,2298.87,-75.0,2.26,1377.36,-85.99,14987.75,8370.39,-1994.0,6212.15,-60.0,25475.0,1950.0,2479.0,-675.63,1086.57,0.22,-5673.44,-77.28,4686.0,1518.5
+</dataframe>
+
+
+The user asked the following question:
+### QUERY
+ Give the rent for the month 2022-02 for the property 104Meadow ?
+
+
+You generated this python code:
+result = {}
+for df in dfs:
+    if '104Meadow' in df.columns:
+        rent_2022_02 = df.loc[df['bank_account_key'] == '114Sidney', '2022-02'].values[0]
+        result = {'type': 'number', 'value': rent_2022_02}
+        break
+print(result)
+
+It fails with the following error:
+Traceback (most recent call last):
+  File "/Users/vivekjadhav/Documents/github/oneplusPythonScripts/venv/lib/python3.9/site-packages/pandasai/pipelines/chat/code_execution.py", line 96, in execute
+    if not OutputValidator.validate_result(result):
+  File "/Users/vivekjadhav/Documents/github/oneplusPythonScripts/venv/lib/python3.9/site-packages/pandasai/helpers/output_validator.py", line 73, in validate_result
+    raise InvalidOutputValueMismatch(
+pandasai.exceptions.InvalidOutputValueMismatch: Result must be in the format of dictionary of type and value
+
+
+Fix the python code above and return the new python code:
+            
+2024-07-05 10:51:42 [INFO] Code generated:
+            ```
+            for df in dfs:
+    if '104Meadow' not in df.columns:
+        continue
+    for index, row in df.iterrows():
+        if str(row['bank_account_key']) == '114Sidney':
+            result = {'type': 'number', 'value': row['2022-02']}
+            break
+    break
+print(result)
+            ```
+            
+2024-07-05 10:51:42 [INFO] Executing Step 2: CodeCleaning
+2024-07-05 10:51:42 [INFO] 
+Code running:
+```
+for df in dfs:
+    if '104Meadow' not in df.columns:
+        continue
+    for index, row in df.iterrows():
+        if str(row['bank_account_key']) == '114Sidney':
+            result = {'type': 'number', 'value': row['2022-02']}
+            break
+    break
+print(result)
+        ```
+2024-07-05 10:51:42 [ERROR] Failed with error: Traceback (most recent call last):
+  File "/Users/vivekjadhav/Documents/github/oneplusPythonScripts/venv/lib/python3.9/site-packages/pandasai/pipelines/chat/code_execution.py", line 85, in execute
+    result = self.execute_code(code_to_run, code_context)
+  File "/Users/vivekjadhav/Documents/github/oneplusPythonScripts/venv/lib/python3.9/site-packages/pandasai/pipelines/chat/code_execution.py", line 171, in execute_code
+    exec(code, environment)
+  File "<string>", line 9, in <module>
+NameError: name 'result' is not defined
+
+2024-07-05 10:51:42 [WARNING] Failed to execute code retrying with a correction framework [retry number: 2]
+2024-07-05 10:51:42 [INFO] Executing Pipeline: ErrorCorrectionPipeline
+2024-07-05 10:51:42 [INFO] Executing Step 0: ErrorPromptGeneration
+2024-07-05 10:51:42 [INFO] Using prompt: <dataframe>
+dfs[0]:332x33
+bank_account_key,sequence_id,category,2022-01,2022-02,2022-03,2022-04,2022-05,2022-06,2022-07,2022-08,2022-09,2022-10,2022-11,2022-12,2023-01,2023-02,2023-03,2023-04,2023-05,2023-06,2023-07,2023-08,2023-09,2023-10,2023-11,2023-12,2024-01,2024-02,2024-03,2024-04,2024-05,2024-06
+TrustAccount,21,Owner Draw,0.07,2.64,18343.24,-733.95,3550.0,-60.64,-163.25,3825.0,-730.2,-85.0,3520.0,15810.9,-293.0,-284.53,-947.72,-963.16,-963.16,-6161.69,-240.0,6720.02,9216.62,410.0,3961.99,-540.0,-2842.43,-289.32,-733.95,3166.0,391257.92,-271.18
+Midway,2,EXPENSES,3581.99,-726.97,2856.57,3072.52,15042.6,1795.0,19984.75,-26.0,0.07,-551.66,3104.82,2797.48,-566.16,-147.99,-116.08,0.22,91564.16,25202.79,-665.85,1335.0,0.88,4129.92,18242.45,-25.59,686.09,82.92,-1383.06,2511.4,3629.0,99.0
+114Sidney,10,Rent,6749.95,4610.51,4137.55,2992.61,-748.93,-204.08,14276.19,6659.35,2.79,-625.0,2298.87,-75.0,2.26,1377.36,-85.99,14987.75,8370.39,-1994.0,6212.15,-60.0,25475.0,1950.0,2479.0,-675.63,1086.57,0.22,-5673.44,-77.28,4686.0,1518.5
+</dataframe>
+
+
+The user asked the following question:
+### QUERY
+ Give the rent for the month 2022-02 for the property 104Meadow ?
+
+
+You generated this python code:
+for df in dfs:
+    if '104Meadow' not in df.columns:
+        continue
+    for index, row in df.iterrows():
+        if str(row['bank_account_key']) == '114Sidney':
+            result = {'type': 'number', 'value': row['2022-02']}
+            break
+    break
+print(result)
+
+It fails with the following error:
+Traceback (most recent call last):
+  File "/Users/vivekjadhav/Documents/github/oneplusPythonScripts/venv/lib/python3.9/site-packages/pandasai/pipelines/chat/code_execution.py", line 85, in execute
+    result = self.execute_code(code_to_run, code_context)
+  File "/Users/vivekjadhav/Documents/github/oneplusPythonScripts/venv/lib/python3.9/site-packages/pandasai/pipelines/chat/code_execution.py", line 171, in execute_code
+    exec(code, environment)
+  File "<string>", line 9, in <module>
+NameError: name 'result' is not defined
+
+
+Fix the python code above and return the new python code:
+2024-07-05 10:51:42 [INFO] Executing Step 1: CodeGenerator
+2024-07-05 10:51:50 [INFO] HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2024-07-05 10:51:50 [INFO] Prompt used:
+            <dataframe>
+dfs[0]:332x33
+bank_account_key,sequence_id,category,2022-01,2022-02,2022-03,2022-04,2022-05,2022-06,2022-07,2022-08,2022-09,2022-10,2022-11,2022-12,2023-01,2023-02,2023-03,2023-04,2023-05,2023-06,2023-07,2023-08,2023-09,2023-10,2023-11,2023-12,2024-01,2024-02,2024-03,2024-04,2024-05,2024-06
+TrustAccount,21,Owner Draw,0.07,2.64,18343.24,-733.95,3550.0,-60.64,-163.25,3825.0,-730.2,-85.0,3520.0,15810.9,-293.0,-284.53,-947.72,-963.16,-963.16,-6161.69,-240.0,6720.02,9216.62,410.0,3961.99,-540.0,-2842.43,-289.32,-733.95,3166.0,391257.92,-271.18
+Midway,2,EXPENSES,3581.99,-726.97,2856.57,3072.52,15042.6,1795.0,19984.75,-26.0,0.07,-551.66,3104.82,2797.48,-566.16,-147.99,-116.08,0.22,91564.16,25202.79,-665.85,1335.0,0.88,4129.92,18242.45,-25.59,686.09,82.92,-1383.06,2511.4,3629.0,99.0
+114Sidney,10,Rent,6749.95,4610.51,4137.55,2992.61,-748.93,-204.08,14276.19,6659.35,2.79,-625.0,2298.87,-75.0,2.26,1377.36,-85.99,14987.75,8370.39,-1994.0,6212.15,-60.0,25475.0,1950.0,2479.0,-675.63,1086.57,0.22,-5673.44,-77.28,4686.0,1518.5
+</dataframe>
+
+
+The user asked the following question:
+### QUERY
+ Give the rent for the month 2022-02 for the property 104Meadow ?
+
+
+You generated this python code:
+for df in dfs:
+    if '104Meadow' not in df.columns:
+        continue
+    for index, row in df.iterrows():
+        if str(row['bank_account_key']) == '114Sidney':
+            result = {'type': 'number', 'value': row['2022-02']}
+            break
+    break
+print(result)
+
+It fails with the following error:
+Traceback (most recent call last):
+  File "/Users/vivekjadhav/Documents/github/oneplusPythonScripts/venv/lib/python3.9/site-packages/pandasai/pipelines/chat/code_execution.py", line 85, in execute
+    result = self.execute_code(code_to_run, code_context)
+  File "/Users/vivekjadhav/Documents/github/oneplusPythonScripts/venv/lib/python3.9/site-packages/pandasai/pipelines/chat/code_execution.py", line 171, in execute_code
+    exec(code, environment)
+  File "<string>", line 9, in <module>
+NameError: name 'result' is not defined
+
+
+Fix the python code above and return the new python code:
+            
+2024-07-05 10:51:50 [INFO] Code generated:
+            ```
+            Python
+for df in dfs:
+    if '104Meadow' not in df.columns:
+        continue
+    for index, row in df.iterrows():
+        if str(row['bank_account_key']) == '114Sidney':
+            result = {'type': 'number', 'value': row['2022-02']}
+            break
+    if 'result' in locals() or 'result' in globals():
+        print(result)
+        break
+            ```
+            
+2024-07-05 10:51:50 [INFO] Executing Step 2: CodeCleaning
+2024-07-05 10:51:50 [INFO] 
+Code running:
+```
+Python
+for df in dfs:
+    if '104Meadow' not in df.columns:
+        continue
+    for index, row in df.iterrows():
+        if str(row['bank_account_key']) == '114Sidney':
+            result = {'type': 'number', 'value': row['2022-02']}
+            break
+    if 'result' in locals() or 'result' in globals():
+        print(result)
+        break
+        ```
+2024-07-05 10:51:50 [ERROR] Failed with error: Traceback (most recent call last):
+  File "/Users/vivekjadhav/Documents/github/oneplusPythonScripts/venv/lib/python3.9/site-packages/pandasai/pipelines/chat/code_execution.py", line 85, in execute
+    result = self.execute_code(code_to_run, code_context)
+  File "/Users/vivekjadhav/Documents/github/oneplusPythonScripts/venv/lib/python3.9/site-packages/pandasai/pipelines/chat/code_execution.py", line 171, in execute_code
+    exec(code, environment)
+  File "<string>", line 1, in <module>
+NameError: name 'Python' is not defined
+
+2024-07-05 10:51:50 [WARNING] Failed to execute code retrying with a correction framework [retry number: 3]
+2024-07-05 10:51:50 [INFO] Executing Pipeline: ErrorCorrectionPipeline
+2024-07-05 10:51:50 [INFO] Executing Step 0: ErrorPromptGeneration
+2024-07-05 10:51:50 [INFO] Using prompt: <dataframe>
+dfs[0]:332x33
+bank_account_key,sequence_id,category,2022-01,2022-02,2022-03,2022-04,2022-05,2022-06,2022-07,2022-08,2022-09,2022-10,2022-11,2022-12,2023-01,2023-02,2023-03,2023-04,2023-05,2023-06,2023-07,2023-08,2023-09,2023-10,2023-11,2023-12,2024-01,2024-02,2024-03,2024-04,2024-05,2024-06
+TrustAccount,21,Owner Draw,0.07,2.64,18343.24,-733.95,3550.0,-60.64,-163.25,3825.0,-730.2,-85.0,3520.0,15810.9,-293.0,-284.53,-947.72,-963.16,-963.16,-6161.69,-240.0,6720.02,9216.62,410.0,3961.99,-540.0,-2842.43,-289.32,-733.95,3166.0,391257.92,-271.18
+Midway,2,EXPENSES,3581.99,-726.97,2856.57,3072.52,15042.6,1795.0,19984.75,-26.0,0.07,-551.66,3104.82,2797.48,-566.16,-147.99,-116.08,0.22,91564.16,25202.79,-665.85,1335.0,0.88,4129.92,18242.45,-25.59,686.09,82.92,-1383.06,2511.4,3629.0,99.0
+114Sidney,10,Rent,6749.95,4610.51,4137.55,2992.61,-748.93,-204.08,14276.19,6659.35,2.79,-625.0,2298.87,-75.0,2.26,1377.36,-85.99,14987.75,8370.39,-1994.0,6212.15,-60.0,25475.0,1950.0,2479.0,-675.63,1086.57,0.22,-5673.44,-77.28,4686.0,1518.5
+</dataframe>
+
+
+The user asked the following question:
+### QUERY
+ Give the rent for the month 2022-02 for the property 104Meadow ?
+
+
+You generated this python code:
+Python
+for df in dfs:
+    if '104Meadow' not in df.columns:
+        continue
+    for index, row in df.iterrows():
+        if str(row['bank_account_key']) == '114Sidney':
+            result = {'type': 'number', 'value': row['2022-02']}
+            break
+    if 'result' in locals() or 'result' in globals():
+        print(result)
+        break
+
+It fails with the following error:
+Traceback (most recent call last):
+  File "/Users/vivekjadhav/Documents/github/oneplusPythonScripts/venv/lib/python3.9/site-packages/pandasai/pipelines/chat/code_execution.py", line 85, in execute
+    result = self.execute_code(code_to_run, code_context)
+  File "/Users/vivekjadhav/Documents/github/oneplusPythonScripts/venv/lib/python3.9/site-packages/pandasai/pipelines/chat/code_execution.py", line 171, in execute_code
+    exec(code, environment)
+  File "<string>", line 1, in <module>
+NameError: name 'Python' is not defined
+
+
+Fix the python code above and return the new python code:
+2024-07-05 10:51:50 [INFO] Executing Step 1: CodeGenerator
+2024-07-05 10:51:59 [INFO] HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2024-07-05 10:51:59 [INFO] Prompt used:
+            <dataframe>
+dfs[0]:332x33
+bank_account_key,sequence_id,category,2022-01,2022-02,2022-03,2022-04,2022-05,2022-06,2022-07,2022-08,2022-09,2022-10,2022-11,2022-12,2023-01,2023-02,2023-03,2023-04,2023-05,2023-06,2023-07,2023-08,2023-09,2023-10,2023-11,2023-12,2024-01,2024-02,2024-03,2024-04,2024-05,2024-06
+TrustAccount,21,Owner Draw,0.07,2.64,18343.24,-733.95,3550.0,-60.64,-163.25,3825.0,-730.2,-85.0,3520.0,15810.9,-293.0,-284.53,-947.72,-963.16,-963.16,-6161.69,-240.0,6720.02,9216.62,410.0,3961.99,-540.0,-2842.43,-289.32,-733.95,3166.0,391257.92,-271.18
+Midway,2,EXPENSES,3581.99,-726.97,2856.57,3072.52,15042.6,1795.0,19984.75,-26.0,0.07,-551.66,3104.82,2797.48,-566.16,-147.99,-116.08,0.22,91564.16,25202.79,-665.85,1335.0,0.88,4129.92,18242.45,-25.59,686.09,82.92,-1383.06,2511.4,3629.0,99.0
+114Sidney,10,Rent,6749.95,4610.51,4137.55,2992.61,-748.93,-204.08,14276.19,6659.35,2.79,-625.0,2298.87,-75.0,2.26,1377.36,-85.99,14987.75,8370.39,-1994.0,6212.15,-60.0,25475.0,1950.0,2479.0,-675.63,1086.57,0.22,-5673.44,-77.28,4686.0,1518.5
+</dataframe>
+
+
+The user asked the following question:
+### QUERY
+ Give the rent for the month 2022-02 for the property 104Meadow ?
+
+
+You generated this python code:
+Python
+for df in dfs:
+    if '104Meadow' not in df.columns:
+        continue
+    for index, row in df.iterrows():
+        if str(row['bank_account_key']) == '114Sidney':
+            result = {'type': 'number', 'value': row['2022-02']}
+            break
+    if 'result' in locals() or 'result' in globals():
+        print(result)
+        break
+
+It fails with the following error:
+Traceback (most recent call last):
+  File "/Users/vivekjadhav/Documents/github/oneplusPythonScripts/venv/lib/python3.9/site-packages/pandasai/pipelines/chat/code_execution.py", line 85, in execute
+    result = self.execute_code(code_to_run, code_context)
+  File "/Users/vivekjadhav/Documents/github/oneplusPythonScripts/venv/lib/python3.9/site-packages/pandasai/pipelines/chat/code_execution.py", line 171, in execute_code
+    exec(code, environment)
+  File "<string>", line 1, in <module>
+NameError: name 'Python' is not defined
+
+
+Fix the python code above and return the new python code:
+            
+2024-07-05 10:51:59 [INFO] Code generated:
+            ```
+            for df in dfs:
+    if '104Meadow' not in df.columns:
+        continue
+    for index, row in df.iterrows():
+        if str(row['bank_account_key']) == '114Sidney':
+            result = {'type': 'number', 'value': row['2022-02']}
+            break
+    if 'result' in locals() or 'result' in globals():
+        print(result)
+        break
+            ```
+            
+2024-07-05 10:51:59 [INFO] Executing Step 2: CodeCleaning
+2024-07-05 10:51:59 [INFO] 
+Code running:
+```
+for df in dfs:
+    if '104Meadow' not in df.columns:
+        continue
+    for index, row in df.iterrows():
+        if str(row['bank_account_key']) == '114Sidney':
+            result = {'type': 'number', 'value': row['2022-02']}
+            break
+    if 'result' in locals() or 'result' in globals():
+        print(result)
+        break
+        ```
+2024-07-05 10:51:59 [ERROR] Failed with error: Traceback (most recent call last):
+  File "/Users/vivekjadhav/Documents/github/oneplusPythonScripts/venv/lib/python3.9/site-packages/pandasai/pipelines/chat/code_execution.py", line 85, in execute
+    result = self.execute_code(code_to_run, code_context)
+  File "/Users/vivekjadhav/Documents/github/oneplusPythonScripts/venv/lib/python3.9/site-packages/pandasai/pipelines/chat/code_execution.py", line 175, in execute_code
+    raise NoResultFoundError("No result returned")
+pandasai.exceptions.NoResultFoundError: No result returned
+
+2024-07-05 10:51:59 [ERROR] Pipeline failed on step 6: No result returned
+2024-07-05 10:52:26 [INFO] Question: Give the rent for the month 2022-02 for the property 104Meadow ?
+
+2024-07-05 10:52:26 [INFO] Running PandasAI with local LLM...
+2024-07-05 10:52:26 [INFO] Prompt ID: ae60531a-d654-428c-9d86-66713f460d37
+2024-07-05 10:52:26 [INFO] Executing Pipeline: GenerateChatPipeline
+2024-07-05 10:52:26 [INFO] Executing Step 0: ValidatePipelineInput
+2024-07-05 10:52:26 [INFO] Executing Step 1: CacheLookup
+2024-07-05 10:52:26 [INFO] Using cached response
+2024-07-05 10:52:26 [INFO] Executing Step 2: PromptGeneration
+2024-07-05 10:52:26 [INFO] Executing Step 2: Skipping...
+2024-07-05 10:52:26 [INFO] Executing Step 3: CodeGenerator
+2024-07-05 10:52:26 [INFO] Executing Step 3: Skipping...
+2024-07-05 10:52:26 [INFO] Executing Step 4: CachePopulation
+2024-07-05 10:52:26 [INFO] Executing Step 4: Skipping...
+2024-07-05 10:52:26 [INFO] Executing Step 5: CodeCleaning
+2024-07-05 10:52:26 [INFO] 
+Code running:
+```
+result = {}
+for df in dfs:
+    if '104Meadow' in df.columns:
+        rent_2022_02 = df.loc[df['bank_account_key'] == '114Sidney', '2022-02'].values[0]
+        result = {'type': 'number', 'value': rent_2022_02}
+        break
+print(result)
+        ```
+2024-07-05 10:52:26 [INFO] Executing Step 6: CodeExecution
+2024-07-05 10:52:26 [ERROR] Failed with error: Traceback (most recent call last):
+  File "/Users/vivekjadhav/Documents/github/oneplusPythonScripts/venv/lib/python3.9/site-packages/pandasai/pipelines/chat/code_execution.py", line 96, in execute
+    if not OutputValidator.validate_result(result):
+  File "/Users/vivekjadhav/Documents/github/oneplusPythonScripts/venv/lib/python3.9/site-packages/pandasai/helpers/output_validator.py", line 73, in validate_result
+    raise InvalidOutputValueMismatch(
+pandasai.exceptions.InvalidOutputValueMismatch: Result must be in the format of dictionary of type and value
+
+2024-07-05 10:52:26 [WARNING] Failed to execute code retrying with a correction framework [retry number: 1]
+2024-07-05 10:52:26 [INFO] Executing Pipeline: ErrorCorrectionPipeline
+2024-07-05 10:52:26 [INFO] Executing Step 0: ErrorPromptGeneration
+2024-07-05 10:52:26 [INFO] Using prompt: <dataframe>
+dfs[0]:332x33
+bank_account_key,sequence_id,category,2022-01,2022-02,2022-03,2022-04,2022-05,2022-06,2022-07,2022-08,2022-09,2022-10,2022-11,2022-12,2023-01,2023-02,2023-03,2023-04,2023-05,2023-06,2023-07,2023-08,2023-09,2023-10,2023-11,2023-12,2024-01,2024-02,2024-03,2024-04,2024-05,2024-06
+104Meadow,18,Transfers,12039.13,-730.2,-129.08,-711.48,-334.15,150.0,900.0,-947.72,0.02,-1286.52,12539.29,-2538.0,-5332.79,-660.0,-85.99,834.78,-290.58,3117.38,100.05,-341.82,9216.62,-733.95,-397.94,-3110.89,-356.49,7.92,0.0,-75.0,150.0,24.0
+4920Brianhill,1,REVENUE,-1500.0,-308.16,-2198.52,13752.1,-944.0,-726.97,-3586.0,-733.95,10874.48,-85.0,-2409.0,-5018.81,-10.0,-746.48,-408.4,1080.0,-2.77,-60.0,1215.73,16992.28,5931.42,3184.49,2025.0,2284.99,2184.0,-1500.0,-563.38,5165.09,-733.95,-675.63
+1117Brewer,11,Professional Services,1699.0,4757.22,2222.55,-200.0,-1019.0,2354.56,0.03,8571.55,-3000.0,-1056.58,3459.06,-616.81,8540.16,3813.25,8256.67,1440.73,1855.17,0.49,-3470.0,-107.32,-726.97,-730.2,7621.98,-88.67,1086.57,1723.4,57166.12,-456.02,-512.06,2869.38
+</dataframe>
+
+
+The user asked the following question:
+### QUERY
+ Give the rent for the month 2022-02 for the property 104Meadow ?
+
+
+You generated this python code:
+result = {}
+for df in dfs:
+    if '104Meadow' in df.columns:
+        rent_2022_02 = df.loc[df['bank_account_key'] == '114Sidney', '2022-02'].values[0]
+        result = {'type': 'number', 'value': rent_2022_02}
+        break
+print(result)
+
+It fails with the following error:
+Traceback (most recent call last):
+  File "/Users/vivekjadhav/Documents/github/oneplusPythonScripts/venv/lib/python3.9/site-packages/pandasai/pipelines/chat/code_execution.py", line 96, in execute
+    if not OutputValidator.validate_result(result):
+  File "/Users/vivekjadhav/Documents/github/oneplusPythonScripts/venv/lib/python3.9/site-packages/pandasai/helpers/output_validator.py", line 73, in validate_result
+    raise InvalidOutputValueMismatch(
+pandasai.exceptions.InvalidOutputValueMismatch: Result must be in the format of dictionary of type and value
+
+
+Fix the python code above and return the new python code:
+2024-07-05 10:52:26 [INFO] Executing Step 1: CodeGenerator
+2024-07-05 10:52:38 [INFO] HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2024-07-05 10:52:38 [INFO] Prompt used:
+            <dataframe>
+dfs[0]:332x33
+bank_account_key,sequence_id,category,2022-01,2022-02,2022-03,2022-04,2022-05,2022-06,2022-07,2022-08,2022-09,2022-10,2022-11,2022-12,2023-01,2023-02,2023-03,2023-04,2023-05,2023-06,2023-07,2023-08,2023-09,2023-10,2023-11,2023-12,2024-01,2024-02,2024-03,2024-04,2024-05,2024-06
+104Meadow,18,Transfers,12039.13,-730.2,-129.08,-711.48,-334.15,150.0,900.0,-947.72,0.02,-1286.52,12539.29,-2538.0,-5332.79,-660.0,-85.99,834.78,-290.58,3117.38,100.05,-341.82,9216.62,-733.95,-397.94,-3110.89,-356.49,7.92,0.0,-75.0,150.0,24.0
+4920Brianhill,1,REVENUE,-1500.0,-308.16,-2198.52,13752.1,-944.0,-726.97,-3586.0,-733.95,10874.48,-85.0,-2409.0,-5018.81,-10.0,-746.48,-408.4,1080.0,-2.77,-60.0,1215.73,16992.28,5931.42,3184.49,2025.0,2284.99,2184.0,-1500.0,-563.38,5165.09,-733.95,-675.63
+1117Brewer,11,Professional Services,1699.0,4757.22,2222.55,-200.0,-1019.0,2354.56,0.03,8571.55,-3000.0,-1056.58,3459.06,-616.81,8540.16,3813.25,8256.67,1440.73,1855.17,0.49,-3470.0,-107.32,-726.97,-730.2,7621.98,-88.67,1086.57,1723.4,57166.12,-456.02,-512.06,2869.38
+</dataframe>
+
+
+The user asked the following question:
+### QUERY
+ Give the rent for the month 2022-02 for the property 104Meadow ?
+
+
+You generated this python code:
+result = {}
+for df in dfs:
+    if '104Meadow' in df.columns:
+        rent_2022_02 = df.loc[df['bank_account_key'] == '114Sidney', '2022-02'].values[0]
+        result = {'type': 'number', 'value': rent_2022_02}
+        break
+print(result)
+
+It fails with the following error:
+Traceback (most recent call last):
+  File "/Users/vivekjadhav/Documents/github/oneplusPythonScripts/venv/lib/python3.9/site-packages/pandasai/pipelines/chat/code_execution.py", line 96, in execute
+    if not OutputValidator.validate_result(result):
+  File "/Users/vivekjadhav/Documents/github/oneplusPythonScripts/venv/lib/python3.9/site-packages/pandasai/helpers/output_validator.py", line 73, in validate_result
+    raise InvalidOutputValueMismatch(
+pandasai.exceptions.InvalidOutputValueMismatch: Result must be in the format of dictionary of type and value
+
+
+Fix the python code above and return the new python code:
+            
+2024-07-05 10:52:38 [INFO] Code generated:
+            ```
+            Python
+result = {'type': 'number', 'value': None}
+
+for index, row in dfs.iterrows():
+    if '104Meadow' == str(row['bank_account_key']):
+        result = {'type': 'number', 'value': float(row['2022-02'])}
+        break
+
+print(result)
+            ```
+            
+2024-07-05 10:52:38 [INFO] Executing Step 2: CodeCleaning
+2024-07-05 10:52:38 [INFO] 
+Code running:
+```
+Python
+result = {'type': 'number', 'value': None}
+for index, row in dfs.iterrows():
+    if '104Meadow' == str(row['bank_account_key']):
+        result = {'type': 'number', 'value': float(row['2022-02'])}
+        break
+print(result)
+        ```
+2024-07-05 10:52:38 [ERROR] Failed with error: Traceback (most recent call last):
+  File "/Users/vivekjadhav/Documents/github/oneplusPythonScripts/venv/lib/python3.9/site-packages/pandasai/pipelines/chat/code_execution.py", line 85, in execute
+    result = self.execute_code(code_to_run, code_context)
+  File "/Users/vivekjadhav/Documents/github/oneplusPythonScripts/venv/lib/python3.9/site-packages/pandasai/pipelines/chat/code_execution.py", line 171, in execute_code
+    exec(code, environment)
+  File "<string>", line 1, in <module>
+NameError: name 'Python' is not defined
+
+2024-07-05 10:52:38 [WARNING] Failed to execute code retrying with a correction framework [retry number: 2]
+2024-07-05 10:52:38 [INFO] Executing Pipeline: ErrorCorrectionPipeline
+2024-07-05 10:52:38 [INFO] Executing Step 0: ErrorPromptGeneration
+2024-07-05 10:52:38 [INFO] Using prompt: <dataframe>
+dfs[0]:332x33
+bank_account_key,sequence_id,category,2022-01,2022-02,2022-03,2022-04,2022-05,2022-06,2022-07,2022-08,2022-09,2022-10,2022-11,2022-12,2023-01,2023-02,2023-03,2023-04,2023-05,2023-06,2023-07,2023-08,2023-09,2023-10,2023-11,2023-12,2024-01,2024-02,2024-03,2024-04,2024-05,2024-06
+104Meadow,18,Transfers,12039.13,-730.2,-129.08,-711.48,-334.15,150.0,900.0,-947.72,0.02,-1286.52,12539.29,-2538.0,-5332.79,-660.0,-85.99,834.78,-290.58,3117.38,100.05,-341.82,9216.62,-733.95,-397.94,-3110.89,-356.49,7.92,0.0,-75.0,150.0,24.0
+4920Brianhill,1,REVENUE,-1500.0,-308.16,-2198.52,13752.1,-944.0,-726.97,-3586.0,-733.95,10874.48,-85.0,-2409.0,-5018.81,-10.0,-746.48,-408.4,1080.0,-2.77,-60.0,1215.73,16992.28,5931.42,3184.49,2025.0,2284.99,2184.0,-1500.0,-563.38,5165.09,-733.95,-675.63
+1117Brewer,11,Professional Services,1699.0,4757.22,2222.55,-200.0,-1019.0,2354.56,0.03,8571.55,-3000.0,-1056.58,3459.06,-616.81,8540.16,3813.25,8256.67,1440.73,1855.17,0.49,-3470.0,-107.32,-726.97,-730.2,7621.98,-88.67,1086.57,1723.4,57166.12,-456.02,-512.06,2869.38
+</dataframe>
+
+
+The user asked the following question:
+### QUERY
+ Give the rent for the month 2022-02 for the property 104Meadow ?
+
+
+You generated this python code:
+Python
+result = {'type': 'number', 'value': None}
+for index, row in dfs.iterrows():
+    if '104Meadow' == str(row['bank_account_key']):
+        result = {'type': 'number', 'value': float(row['2022-02'])}
+        break
+print(result)
+
+It fails with the following error:
+Traceback (most recent call last):
+  File "/Users/vivekjadhav/Documents/github/oneplusPythonScripts/venv/lib/python3.9/site-packages/pandasai/pipelines/chat/code_execution.py", line 85, in execute
+    result = self.execute_code(code_to_run, code_context)
+  File "/Users/vivekjadhav/Documents/github/oneplusPythonScripts/venv/lib/python3.9/site-packages/pandasai/pipelines/chat/code_execution.py", line 171, in execute_code
+    exec(code, environment)
+  File "<string>", line 1, in <module>
+NameError: name 'Python' is not defined
+
+
+Fix the python code above and return the new python code:
+2024-07-05 10:52:38 [INFO] Executing Step 1: CodeGenerator
+2024-07-05 10:52:41 [INFO] Question: Let me explain how the file is set up
+
+
+2024-07-05 10:52:41 [INFO] Running PandasAI with local LLM...
+2024-07-05 10:52:41 [INFO] Prompt ID: fa5e3a0b-e214-4fcf-9ebe-0bb59d2c815f
+2024-07-05 10:52:41 [INFO] Executing Pipeline: GenerateChatPipeline
+2024-07-05 10:52:41 [INFO] Executing Step 0: ValidatePipelineInput
+2024-07-05 10:52:41 [INFO] Executing Step 1: CacheLookup
+2024-07-05 10:52:41 [INFO] Executing Step 2: PromptGeneration
+2024-07-05 10:52:41 [INFO] Using prompt: <dataframe>
+dfs[0]:332x33
+bank_account_key,sequence_id,category,2022-01,2022-02,2022-03,2022-04,2022-05,2022-06,2022-07,2022-08,2022-09,2022-10,2022-11,2022-12,2023-01,2023-02,2023-03,2023-04,2023-05,2023-06,2023-07,2023-08,2023-09,2023-10,2023-11,2023-12,2024-01,2024-02,2024-03,2024-04,2024-05,2024-06
+4909Jamesway,8,Owner Draw,-711.48,-270.88,-963.16,1695.0,3125.0,-490.0,-730.2,180900.78,15822.47,3200.0,-625.0,8206.74,-8261.74,17749.69,4839.5,3791.0,5188.47,3451.54,3000.0,1590.0,1700.0,-11133.75,-108.24,-563.38,1023.53,1775.0,4109.02,2125.0,-843.79,20901.4
+874Wintergreen,17,Repair,-5281.08,5109.68,-9305.74,2658.0,-3669.39,1745.0,-1383.06,-150.0,-44.88,7753.55,10318.35,-254.7,-342.95,-147.99,10734.73,-475.0,-2138.5,4007.93,6678.03,-10.0,436.93,-563.38,-240.21,0.59,1723.38,-694.01,1293.96,5970.76,0.0,1510.0
+2417Garden,14,Utilities,0.02,7133.59,-733.95,-947.72,4545.0,1720.0,-1076.62,10400.56,9987.79,-75.0,-140.94,-109.9,8723.68,-10000.0,16276.73,-1118.25,-2.77,0.0,8479.48,1335.0,1825.0,-733.95,6944.63,-4761.19,2184.0,596252.88,4104.37,3566.0,4686.0,28291.43
+</dataframe>
+
+
+
+
+Update this initial code:
+```python
+# TODO: import the required dependencies
+import pandas as pd
+
+# Write code here
+
+# Declare result var: 
+type (possible values "string", "number", "dataframe", "plot"). Examples: { "type": "string", "value": f"The highest salary is {highest_salary}." } or { "type": "number", "value": 125 } or { "type": "dataframe", "value": pd.DataFrame({...}) } or { "type": "plot", "value": "temp_chart.png" }
+
+```
+
+
+
+### QUERY
+ Let me explain how the file is set up
+
+
+
+Variable `dfs: list[pd.DataFrame]` is already declared.
+
+At the end, declare "result" variable as a dictionary of type and value.
+
+If you are asked to plot a chart, use "matplotlib" for charts, save as png.
+
+
+Generate python code and return full updated code:
+2024-07-05 10:52:41 [INFO] Executing Step 3: CodeGenerator
+2024-07-05 10:52:45 [INFO] HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2024-07-05 10:52:45 [INFO] Prompt used:
+            <dataframe>
+dfs[0]:332x33
+bank_account_key,sequence_id,category,2022-01,2022-02,2022-03,2022-04,2022-05,2022-06,2022-07,2022-08,2022-09,2022-10,2022-11,2022-12,2023-01,2023-02,2023-03,2023-04,2023-05,2023-06,2023-07,2023-08,2023-09,2023-10,2023-11,2023-12,2024-01,2024-02,2024-03,2024-04,2024-05,2024-06
+104Meadow,18,Transfers,12039.13,-730.2,-129.08,-711.48,-334.15,150.0,900.0,-947.72,0.02,-1286.52,12539.29,-2538.0,-5332.79,-660.0,-85.99,834.78,-290.58,3117.38,100.05,-341.82,9216.62,-733.95,-397.94,-3110.89,-356.49,7.92,0.0,-75.0,150.0,24.0
+4920Brianhill,1,REVENUE,-1500.0,-308.16,-2198.52,13752.1,-944.0,-726.97,-3586.0,-733.95,10874.48,-85.0,-2409.0,-5018.81,-10.0,-746.48,-408.4,1080.0,-2.77,-60.0,1215.73,16992.28,5931.42,3184.49,2025.0,2284.99,2184.0,-1500.0,-563.38,5165.09,-733.95,-675.63
+1117Brewer,11,Professional Services,1699.0,4757.22,2222.55,-200.0,-1019.0,2354.56,0.03,8571.55,-3000.0,-1056.58,3459.06,-616.81,8540.16,3813.25,8256.67,1440.73,1855.17,0.49,-3470.0,-107.32,-726.97,-730.2,7621.98,-88.67,1086.57,1723.4,57166.12,-456.02,-512.06,2869.38
+</dataframe>
+
+
+The user asked the following question:
+### QUERY
+ Give the rent for the month 2022-02 for the property 104Meadow ?
+
+
+You generated this python code:
+Python
+result = {'type': 'number', 'value': None}
+for index, row in dfs.iterrows():
+    if '104Meadow' == str(row['bank_account_key']):
+        result = {'type': 'number', 'value': float(row['2022-02'])}
+        break
+print(result)
+
+It fails with the following error:
+Traceback (most recent call last):
+  File "/Users/vivekjadhav/Documents/github/oneplusPythonScripts/venv/lib/python3.9/site-packages/pandasai/pipelines/chat/code_execution.py", line 85, in execute
+    result = self.execute_code(code_to_run, code_context)
+  File "/Users/vivekjadhav/Documents/github/oneplusPythonScripts/venv/lib/python3.9/site-packages/pandasai/pipelines/chat/code_execution.py", line 171, in execute_code
+    exec(code, environment)
+  File "<string>", line 1, in <module>
+NameError: name 'Python' is not defined
+
+
+Fix the python code above and return the new python code:
+            
+2024-07-05 10:52:45 [INFO] Code generated:
+            ```
+            for index, row in dfs.iterrows():
+    if '104Meadow' == str(row['bank_account_key']):
+        print(float(row['2022-02']))
+        break
+            ```
+            
+2024-07-05 10:52:45 [INFO] Executing Step 2: CodeCleaning
+2024-07-05 10:52:45 [INFO] 
+Code running:
+```
+for index, row in dfs.iterrows():
+    if '104Meadow' == str(row['bank_account_key']):
+        print(float(row['2022-02']))
+        break
+        ```
+2024-07-05 10:52:45 [ERROR] Failed with error: Traceback (most recent call last):
+  File "/Users/vivekjadhav/Documents/github/oneplusPythonScripts/venv/lib/python3.9/site-packages/pandasai/pipelines/chat/code_execution.py", line 85, in execute
+    result = self.execute_code(code_to_run, code_context)
+  File "/Users/vivekjadhav/Documents/github/oneplusPythonScripts/venv/lib/python3.9/site-packages/pandasai/pipelines/chat/code_execution.py", line 171, in execute_code
+    exec(code, environment)
+  File "<string>", line 1, in <module>
+AttributeError: 'list' object has no attribute 'iterrows'
+
+2024-07-05 10:52:45 [WARNING] Failed to execute code retrying with a correction framework [retry number: 3]
+2024-07-05 10:52:45 [INFO] Executing Pipeline: ErrorCorrectionPipeline
+2024-07-05 10:52:45 [INFO] Executing Step 0: ErrorPromptGeneration
+2024-07-05 10:52:45 [INFO] Using prompt: <dataframe>
+dfs[0]:332x33
+bank_account_key,sequence_id,category,2022-01,2022-02,2022-03,2022-04,2022-05,2022-06,2022-07,2022-08,2022-09,2022-10,2022-11,2022-12,2023-01,2023-02,2023-03,2023-04,2023-05,2023-06,2023-07,2023-08,2023-09,2023-10,2023-11,2023-12,2024-01,2024-02,2024-03,2024-04,2024-05,2024-06
+104Meadow,18,Transfers,12039.13,-730.2,-129.08,-711.48,-334.15,150.0,900.0,-947.72,0.02,-1286.52,12539.29,-2538.0,-5332.79,-660.0,-85.99,834.78,-290.58,3117.38,100.05,-341.82,9216.62,-733.95,-397.94,-3110.89,-356.49,7.92,0.0,-75.0,150.0,24.0
+4920Brianhill,1,REVENUE,-1500.0,-308.16,-2198.52,13752.1,-944.0,-726.97,-3586.0,-733.95,10874.48,-85.0,-2409.0,-5018.81,-10.0,-746.48,-408.4,1080.0,-2.77,-60.0,1215.73,16992.28,5931.42,3184.49,2025.0,2284.99,2184.0,-1500.0,-563.38,5165.09,-733.95,-675.63
+1117Brewer,11,Professional Services,1699.0,4757.22,2222.55,-200.0,-1019.0,2354.56,0.03,8571.55,-3000.0,-1056.58,3459.06,-616.81,8540.16,3813.25,8256.67,1440.73,1855.17,0.49,-3470.0,-107.32,-726.97,-730.2,7621.98,-88.67,1086.57,1723.4,57166.12,-456.02,-512.06,2869.38
+</dataframe>
+
+
+The user asked the following question:
+### QUERY
+ Give the rent for the month 2022-02 for the property 104Meadow ?
+
+
+You generated this python code:
+for index, row in dfs.iterrows():
+    if '104Meadow' == str(row['bank_account_key']):
+        print(float(row['2022-02']))
+        break
+
+It fails with the following error:
+Traceback (most recent call last):
+  File "/Users/vivekjadhav/Documents/github/oneplusPythonScripts/venv/lib/python3.9/site-packages/pandasai/pipelines/chat/code_execution.py", line 85, in execute
+    result = self.execute_code(code_to_run, code_context)
+  File "/Users/vivekjadhav/Documents/github/oneplusPythonScripts/venv/lib/python3.9/site-packages/pandasai/pipelines/chat/code_execution.py", line 171, in execute_code
+    exec(code, environment)
+  File "<string>", line 1, in <module>
+AttributeError: 'list' object has no attribute 'iterrows'
+
+
+Fix the python code above and return the new python code:
+2024-07-05 10:52:45 [INFO] Executing Step 1: CodeGenerator
+2024-07-05 10:53:06 [INFO] HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2024-07-05 10:53:06 [INFO] Prompt used:
+            <dataframe>
+dfs[0]:332x33
+bank_account_key,sequence_id,category,2022-01,2022-02,2022-03,2022-04,2022-05,2022-06,2022-07,2022-08,2022-09,2022-10,2022-11,2022-12,2023-01,2023-02,2023-03,2023-04,2023-05,2023-06,2023-07,2023-08,2023-09,2023-10,2023-11,2023-12,2024-01,2024-02,2024-03,2024-04,2024-05,2024-06
+4909Jamesway,8,Owner Draw,-711.48,-270.88,-963.16,1695.0,3125.0,-490.0,-730.2,180900.78,15822.47,3200.0,-625.0,8206.74,-8261.74,17749.69,4839.5,3791.0,5188.47,3451.54,3000.0,1590.0,1700.0,-11133.75,-108.24,-563.38,1023.53,1775.0,4109.02,2125.0,-843.79,20901.4
+874Wintergreen,17,Repair,-5281.08,5109.68,-9305.74,2658.0,-3669.39,1745.0,-1383.06,-150.0,-44.88,7753.55,10318.35,-254.7,-342.95,-147.99,10734.73,-475.0,-2138.5,4007.93,6678.03,-10.0,436.93,-563.38,-240.21,0.59,1723.38,-694.01,1293.96,5970.76,0.0,1510.0
+2417Garden,14,Utilities,0.02,7133.59,-733.95,-947.72,4545.0,1720.0,-1076.62,10400.56,9987.79,-75.0,-140.94,-109.9,8723.68,-10000.0,16276.73,-1118.25,-2.77,0.0,8479.48,1335.0,1825.0,-733.95,6944.63,-4761.19,2184.0,596252.88,4104.37,3566.0,4686.0,28291.43
+</dataframe>
+
+
+
+
+Update this initial code:
+```python
+# TODO: import the required dependencies
+import pandas as pd
+
+# Write code here
+
+# Declare result var: 
+type (possible values "string", "number", "dataframe", "plot"). Examples: { "type": "string", "value": f"The highest salary is {highest_salary}." } or { "type": "number", "value": 125 } or { "type": "dataframe", "value": pd.DataFrame({...}) } or { "type": "plot", "value": "temp_chart.png" }
+
+```
+
+
+
+### QUERY
+ Let me explain how the file is set up
+
+
+
+Variable `dfs: list[pd.DataFrame]` is already declared.
+
+At the end, declare "result" variable as a dictionary of type and value.
+
+If you are asked to plot a chart, use "matplotlib" for charts, save as png.
+
+
+Generate python code and return full updated code:
+            
+2024-07-05 10:53:06 [INFO] Code generated:
+            ```
+            # Import required dependencies
+import pandas as pd
+import matplotlib.pyplot as plt
+
+dfs = []  # list of dataframes (initially empty)
+
+# Define a function to process the data
+def analyze_data(file):
+    global dfs
+    df = pd.read_csv(file)  # assuming the file is in CSV format
+    dfs.append(df)
+
+# Load the file and process the data
+analyze_data('your_file.csv')  # replace with your file name
+
+# Define a function to calculate the highest salary
+def find_highest_salary():
+    highest_salary = 0
+    for df in dfs:
+        for index, row in df.iterrows():
+            if float(row['bank_account_key']) > highest_salary:
+                highest_salary = float(row['bank_account_key'])
+    return highest_salary
+
+# Calculate and print the highest salary
+highest_salary = find_highest_salary()
+result = {"type": "string", "value": f"The highest salary is {highest_salary}."}
+print(result)
+
+# Define a function to plot a chart
+def plot_chart(file):
+    df = pd.read_csv(file)  # assuming the file is in CSV format
+    plt.figure(figsize=(10,6))
+    plt.plot(df.iloc[:, 1])  # replace with your desired column index
+    plt.xlabel('Month')
+    plt.ylabel('Value')
+    plt.title('Chart Title')
+    plt.savefig('your_chart.png')  # replace with your desired file name
+
+# Load the file and plot a chart
+plot_chart('your_file.csv')  # replace with your file name
+            ```
+            
+2024-07-05 10:53:06 [INFO] Executing Step 4: CachePopulation
+2024-07-05 10:53:06 [INFO] Executing Step 5: CodeCleaning
+2024-07-05 10:53:06 [INFO] Saving charts to /Users/vivekjadhav/Documents/github/oneplusPythonScripts/exports/charts/temp_chart.png
+2024-07-05 10:53:06 [INFO] 
+Code running:
+```
+def analyze_data(file):
+    global dfs
+    df = pd.read_csv(file)
+    dfs.append(df)
+
+
+analyze_data('your_file.csv')
+
+
+def find_highest_salary():
+    highest_salary = 0
+    for df in dfs:
+        for index, row in df.iterrows():
+            if float(row['bank_account_key']) > highest_salary:
+                highest_salary = float(row['bank_account_key'])
+    return highest_salary
+
+
+highest_salary = find_highest_salary()
+result = {'type': 'string', 'value': f'The highest salary is {highest_salary}.'}
+print(result)
+
+
+def plot_chart(file):
+    df = pd.read_csv(file)
+    plt.figure(figsize=(10, 6))
+    plt.plot(df.iloc[:, 1])
+    plt.xlabel('Month')
+    plt.ylabel('Value')
+    plt.title('Chart Title')
+    plt.savefig('/Users/vivekjadhav/Documents/github/oneplusPythonScripts/exports/charts/temp_chart.png')
+
+
+plot_chart('your_file.csv')
+        ```
+2024-07-05 10:53:06 [INFO] Executing Step 6: CodeExecution
+2024-07-05 10:53:06 [ERROR] Failed with error: Traceback (most recent call last):
+  File "/Users/vivekjadhav/Documents/github/oneplusPythonScripts/venv/lib/python3.9/site-packages/pandasai/pipelines/chat/code_execution.py", line 85, in execute
+    result = self.execute_code(code_to_run, code_context)
+  File "/Users/vivekjadhav/Documents/github/oneplusPythonScripts/venv/lib/python3.9/site-packages/pandasai/pipelines/chat/code_execution.py", line 171, in execute_code
+    exec(code, environment)
+  File "<string>", line 7, in <module>
+  File "<string>", line 3, in analyze_data
+  File "/Users/vivekjadhav/Documents/github/oneplusPythonScripts/venv/lib/python3.9/site-packages/pandas/util/_decorators.py", line 211, in wrapper
+    return func(*args, **kwargs)
+  File "/Users/vivekjadhav/Documents/github/oneplusPythonScripts/venv/lib/python3.9/site-packages/pandas/util/_decorators.py", line 331, in wrapper
+    return func(*args, **kwargs)
+  File "/Users/vivekjadhav/Documents/github/oneplusPythonScripts/venv/lib/python3.9/site-packages/pandas/io/parsers/readers.py", line 950, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "/Users/vivekjadhav/Documents/github/oneplusPythonScripts/venv/lib/python3.9/site-packages/pandas/io/parsers/readers.py", line 605, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "/Users/vivekjadhav/Documents/github/oneplusPythonScripts/venv/lib/python3.9/site-packages/pandas/io/parsers/readers.py", line 1442, in __init__
+    self._engine = self._make_engine(f, self.engine)
+  File "/Users/vivekjadhav/Documents/github/oneplusPythonScripts/venv/lib/python3.9/site-packages/pandas/io/parsers/readers.py", line 1735, in _make_engine
+    self.handles = get_handle(
+  File "/Users/vivekjadhav/Documents/github/oneplusPythonScripts/venv/lib/python3.9/site-packages/pandas/io/common.py", line 856, in get_handle
+    handle = open(
+FileNotFoundError: [Errno 2] No such file or directory: 'your_file.csv'
+
+2024-07-05 10:53:06 [WARNING] Failed to execute code retrying with a correction framework [retry number: 1]
+2024-07-05 10:53:06 [INFO] Executing Pipeline: ErrorCorrectionPipeline
+2024-07-05 10:53:06 [INFO] Executing Step 0: ErrorPromptGeneration
+2024-07-05 10:53:06 [INFO] Using prompt: <dataframe>
+dfs[0]:332x33
+bank_account_key,sequence_id,category,2022-01,2022-02,2022-03,2022-04,2022-05,2022-06,2022-07,2022-08,2022-09,2022-10,2022-11,2022-12,2023-01,2023-02,2023-03,2023-04,2023-05,2023-06,2023-07,2023-08,2023-09,2023-10,2023-11,2023-12,2024-01,2024-02,2024-03,2024-04,2024-05,2024-06
+4909Jamesway,8,Owner Draw,-711.48,-270.88,-963.16,1695.0,3125.0,-490.0,-730.2,180900.78,15822.47,3200.0,-625.0,8206.74,-8261.74,17749.69,4839.5,3791.0,5188.47,3451.54,3000.0,1590.0,1700.0,-11133.75,-108.24,-563.38,1023.53,1775.0,4109.02,2125.0,-843.79,20901.4
+874Wintergreen,17,Repair,-5281.08,5109.68,-9305.74,2658.0,-3669.39,1745.0,-1383.06,-150.0,-44.88,7753.55,10318.35,-254.7,-342.95,-147.99,10734.73,-475.0,-2138.5,4007.93,6678.03,-10.0,436.93,-563.38,-240.21,0.59,1723.38,-694.01,1293.96,5970.76,0.0,1510.0
+2417Garden,14,Utilities,0.02,7133.59,-733.95,-947.72,4545.0,1720.0,-1076.62,10400.56,9987.79,-75.0,-140.94,-109.9,8723.68,-10000.0,16276.73,-1118.25,-2.77,0.0,8479.48,1335.0,1825.0,-733.95,6944.63,-4761.19,2184.0,596252.88,4104.37,3566.0,4686.0,28291.43
+</dataframe>
+
+
+The user asked the following question:
+### QUERY
+ Let me explain how the file is set up
+
+
+
+You generated this python code:
+def analyze_data(file):
+    global dfs
+    df = pd.read_csv(file)
+    dfs.append(df)
+
+
+analyze_data('your_file.csv')
+
+
+def find_highest_salary():
+    highest_salary = 0
+    for df in dfs:
+        for index, row in df.iterrows():
+            if float(row['bank_account_key']) > highest_salary:
+                highest_salary = float(row['bank_account_key'])
+    return highest_salary
+
+
+highest_salary = find_highest_salary()
+result = {'type': 'string', 'value': f'The highest salary is {highest_salary}.'}
+print(result)
+
+
+def plot_chart(file):
+    df = pd.read_csv(file)
+    plt.figure(figsize=(10, 6))
+    plt.plot(df.iloc[:, 1])
+    plt.xlabel('Month')
+    plt.ylabel('Value')
+    plt.title('Chart Title')
+    plt.savefig('/Users/vivekjadhav/Documents/github/oneplusPythonScripts/exports/charts/temp_chart.png')
+
+
+plot_chart('your_file.csv')
+
+It fails with the following error:
+Traceback (most recent call last):
+  File "/Users/vivekjadhav/Documents/github/oneplusPythonScripts/venv/lib/python3.9/site-packages/pandasai/pipelines/chat/code_execution.py", line 85, in execute
+    result = self.execute_code(code_to_run, code_context)
+  File "/Users/vivekjadhav/Documents/github/oneplusPythonScripts/venv/lib/python3.9/site-packages/pandasai/pipelines/chat/code_execution.py", line 171, in execute_code
+    exec(code, environment)
+  File "<string>", line 7, in <module>
+  File "<string>", line 3, in analyze_data
+  File "/Users/vivekjadhav/Documents/github/oneplusPythonScripts/venv/lib/python3.9/site-packages/pandas/util/_decorators.py", line 211, in wrapper
+    return func(*args, **kwargs)
+  File "/Users/vivekjadhav/Documents/github/oneplusPythonScripts/venv/lib/python3.9/site-packages/pandas/util/_decorators.py", line 331, in wrapper
+    return func(*args, **kwargs)
+  File "/Users/vivekjadhav/Documents/github/oneplusPythonScripts/venv/lib/python3.9/site-packages/pandas/io/parsers/readers.py", line 950, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "/Users/vivekjadhav/Documents/github/oneplusPythonScripts/venv/lib/python3.9/site-packages/pandas/io/parsers/readers.py", line 605, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "/Users/vivekjadhav/Documents/github/oneplusPythonScripts/venv/lib/python3.9/site-packages/pandas/io/parsers/readers.py", line 1442, in __init__
+    self._engine = self._make_engine(f, self.engine)
+  File "/Users/vivekjadhav/Documents/github/oneplusPythonScripts/venv/lib/python3.9/site-packages/pandas/io/parsers/readers.py", line 1735, in _make_engine
+    self.handles = get_handle(
+  File "/Users/vivekjadhav/Documents/github/oneplusPythonScripts/venv/lib/python3.9/site-packages/pandas/io/common.py", line 856, in get_handle
+    handle = open(
+FileNotFoundError: [Errno 2] No such file or directory: 'your_file.csv'
+
+
+Fix the python code above and return the new python code:
+2024-07-05 10:53:06 [INFO] Executing Step 1: CodeGenerator
+2024-07-05 10:53:15 [INFO] HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2024-07-05 10:53:15 [INFO] Prompt used:
+            <dataframe>
+dfs[0]:332x33
+bank_account_key,sequence_id,category,2022-01,2022-02,2022-03,2022-04,2022-05,2022-06,2022-07,2022-08,2022-09,2022-10,2022-11,2022-12,2023-01,2023-02,2023-03,2023-04,2023-05,2023-06,2023-07,2023-08,2023-09,2023-10,2023-11,2023-12,2024-01,2024-02,2024-03,2024-04,2024-05,2024-06
+104Meadow,18,Transfers,12039.13,-730.2,-129.08,-711.48,-334.15,150.0,900.0,-947.72,0.02,-1286.52,12539.29,-2538.0,-5332.79,-660.0,-85.99,834.78,-290.58,3117.38,100.05,-341.82,9216.62,-733.95,-397.94,-3110.89,-356.49,7.92,0.0,-75.0,150.0,24.0
+4920Brianhill,1,REVENUE,-1500.0,-308.16,-2198.52,13752.1,-944.0,-726.97,-3586.0,-733.95,10874.48,-85.0,-2409.0,-5018.81,-10.0,-746.48,-408.4,1080.0,-2.77,-60.0,1215.73,16992.28,5931.42,3184.49,2025.0,2284.99,2184.0,-1500.0,-563.38,5165.09,-733.95,-675.63
+1117Brewer,11,Professional Services,1699.0,4757.22,2222.55,-200.0,-1019.0,2354.56,0.03,8571.55,-3000.0,-1056.58,3459.06,-616.81,8540.16,3813.25,8256.67,1440.73,1855.17,0.49,-3470.0,-107.32,-726.97,-730.2,7621.98,-88.67,1086.57,1723.4,57166.12,-456.02,-512.06,2869.38
+</dataframe>
+
+
+The user asked the following question:
+### QUERY
+ Give the rent for the month 2022-02 for the property 104Meadow ?
+
+
+You generated this python code:
+for index, row in dfs.iterrows():
+    if '104Meadow' == str(row['bank_account_key']):
+        print(float(row['2022-02']))
+        break
+
+It fails with the following error:
+Traceback (most recent call last):
+  File "/Users/vivekjadhav/Documents/github/oneplusPythonScripts/venv/lib/python3.9/site-packages/pandasai/pipelines/chat/code_execution.py", line 85, in execute
+    result = self.execute_code(code_to_run, code_context)
+  File "/Users/vivekjadhav/Documents/github/oneplusPythonScripts/venv/lib/python3.9/site-packages/pandasai/pipelines/chat/code_execution.py", line 171, in execute_code
+    exec(code, environment)
+  File "<string>", line 1, in <module>
+AttributeError: 'list' object has no attribute 'iterrows'
+
+
+Fix the python code above and return the new python code:
+            
+2024-07-05 10:53:15 [INFO] Code generated:
+            ```
+            for df in dfs:
+    if '104Meadow' in str(df.index.tolist()):
+        rent = float(df.loc['104Meadow', '2022-02'])
+        print(rent)
+        break
+            ```
+            
+2024-07-05 10:53:15 [INFO] Executing Step 2: CodeCleaning
+2024-07-05 10:53:15 [INFO] 
+Code running:
+```
+for df in dfs:
+    if '104Meadow' in str(df.index.tolist()):
+        rent = float(df.loc['104Meadow', '2022-02'])
+        print(rent)
+        break
+        ```
+2024-07-05 10:53:15 [ERROR] Failed with error: Traceback (most recent call last):
+  File "/Users/vivekjadhav/Documents/github/oneplusPythonScripts/venv/lib/python3.9/site-packages/pandasai/pipelines/chat/code_execution.py", line 85, in execute
+    result = self.execute_code(code_to_run, code_context)
+  File "/Users/vivekjadhav/Documents/github/oneplusPythonScripts/venv/lib/python3.9/site-packages/pandasai/pipelines/chat/code_execution.py", line 175, in execute_code
+    raise NoResultFoundError("No result returned")
+pandasai.exceptions.NoResultFoundError: No result returned
+
+2024-07-05 10:53:15 [ERROR] Pipeline failed on step 6: No result returned
+2024-07-05 10:53:37 [INFO] HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2024-07-05 10:53:37 [INFO] Prompt used:
+            <dataframe>
+dfs[0]:332x33
+bank_account_key,sequence_id,category,2022-01,2022-02,2022-03,2022-04,2022-05,2022-06,2022-07,2022-08,2022-09,2022-10,2022-11,2022-12,2023-01,2023-02,2023-03,2023-04,2023-05,2023-06,2023-07,2023-08,2023-09,2023-10,2023-11,2023-12,2024-01,2024-02,2024-03,2024-04,2024-05,2024-06
+4909Jamesway,8,Owner Draw,-711.48,-270.88,-963.16,1695.0,3125.0,-490.0,-730.2,180900.78,15822.47,3200.0,-625.0,8206.74,-8261.74,17749.69,4839.5,3791.0,5188.47,3451.54,3000.0,1590.0,1700.0,-11133.75,-108.24,-563.38,1023.53,1775.0,4109.02,2125.0,-843.79,20901.4
+874Wintergreen,17,Repair,-5281.08,5109.68,-9305.74,2658.0,-3669.39,1745.0,-1383.06,-150.0,-44.88,7753.55,10318.35,-254.7,-342.95,-147.99,10734.73,-475.0,-2138.5,4007.93,6678.03,-10.0,436.93,-563.38,-240.21,0.59,1723.38,-694.01,1293.96,5970.76,0.0,1510.0
+2417Garden,14,Utilities,0.02,7133.59,-733.95,-947.72,4545.0,1720.0,-1076.62,10400.56,9987.79,-75.0,-140.94,-109.9,8723.68,-10000.0,16276.73,-1118.25,-2.77,0.0,8479.48,1335.0,1825.0,-733.95,6944.63,-4761.19,2184.0,596252.88,4104.37,3566.0,4686.0,28291.43
+</dataframe>
+
+
+The user asked the following question:
+### QUERY
+ Let me explain how the file is set up
+
+
+
+You generated this python code:
+def analyze_data(file):
+    global dfs
+    df = pd.read_csv(file)
+    dfs.append(df)
+
+
+analyze_data('your_file.csv')
+
+
+def find_highest_salary():
+    highest_salary = 0
+    for df in dfs:
+        for index, row in df.iterrows():
+            if float(row['bank_account_key']) > highest_salary:
+                highest_salary = float(row['bank_account_key'])
+    return highest_salary
+
+
+highest_salary = find_highest_salary()
+result = {'type': 'string', 'value': f'The highest salary is {highest_salary}.'}
+print(result)
+
+
+def plot_chart(file):
+    df = pd.read_csv(file)
+    plt.figure(figsize=(10, 6))
+    plt.plot(df.iloc[:, 1])
+    plt.xlabel('Month')
+    plt.ylabel('Value')
+    plt.title('Chart Title')
+    plt.savefig('/Users/vivekjadhav/Documents/github/oneplusPythonScripts/exports/charts/temp_chart.png')
+
+
+plot_chart('your_file.csv')
+
+It fails with the following error:
+Traceback (most recent call last):
+  File "/Users/vivekjadhav/Documents/github/oneplusPythonScripts/venv/lib/python3.9/site-packages/pandasai/pipelines/chat/code_execution.py", line 85, in execute
+    result = self.execute_code(code_to_run, code_context)
+  File "/Users/vivekjadhav/Documents/github/oneplusPythonScripts/venv/lib/python3.9/site-packages/pandasai/pipelines/chat/code_execution.py", line 171, in execute_code
+    exec(code, environment)
+  File "<string>", line 7, in <module>
+  File "<string>", line 3, in analyze_data
+  File "/Users/vivekjadhav/Documents/github/oneplusPythonScripts/venv/lib/python3.9/site-packages/pandas/util/_decorators.py", line 211, in wrapper
+    return func(*args, **kwargs)
+  File "/Users/vivekjadhav/Documents/github/oneplusPythonScripts/venv/lib/python3.9/site-packages/pandas/util/_decorators.py", line 331, in wrapper
+    return func(*args, **kwargs)
+  File "/Users/vivekjadhav/Documents/github/oneplusPythonScripts/venv/lib/python3.9/site-packages/pandas/io/parsers/readers.py", line 950, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "/Users/vivekjadhav/Documents/github/oneplusPythonScripts/venv/lib/python3.9/site-packages/pandas/io/parsers/readers.py", line 605, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "/Users/vivekjadhav/Documents/github/oneplusPythonScripts/venv/lib/python3.9/site-packages/pandas/io/parsers/readers.py", line 1442, in __init__
+    self._engine = self._make_engine(f, self.engine)
+  File "/Users/vivekjadhav/Documents/github/oneplusPythonScripts/venv/lib/python3.9/site-packages/pandas/io/parsers/readers.py", line 1735, in _make_engine
+    self.handles = get_handle(
+  File "/Users/vivekjadhav/Documents/github/oneplusPythonScripts/venv/lib/python3.9/site-packages/pandas/io/common.py", line 856, in get_handle
+    handle = open(
+FileNotFoundError: [Errno 2] No such file or directory: 'your_file.csv'
+
+
+Fix the python code above and return the new python code:
+            
+2024-07-05 10:53:37 [INFO] Code generated:
+            ```
+            Python
+import pandas as pd
+import matplotlib.pyplot as plt
+
+dfs = []
+
+def analyze_data(file):
+    global dfs
+    df = pd.read_csv(file)
+    dfs.append(df)
+
+analyze_data('file.csv')  # Replace 'file.csv' with your actual file name.
+
+def find_highest_salary():
+    highest_salary = 0
+    for df in dfs:
+        for index, row in df.iterrows():
+            if float(row['bank_account_key']) > highest_salary:
+                highest_salary = float(row['bank_account_key'])
+    return highest_salary
+
+highest_salary = find_highest_salary()
+result = {'type': 'string', 'value': f'The highest salary is {highest_salary}.'}
+print(result)
+
+def plot_chart(file):
+    df = pd.read_csv(file)
+    plt.figure(figsize=(10, 6))
+    plt.plot(df.iloc[:, 1])
+    plt.xlabel('Month')
+    plt.ylabel('Value')
+    plt.title('Chart Title')
+    plt.savefig('/Users/vivekjadhav/Documents/github/oneplusPythonScripts/exports/charts/temp_chart.png')  # Replace the file path with your actual path.
+
+plot_chart('file.csv')  # Replace 'file.csv' with your actual file name.
+            ```
+            
+2024-07-05 10:53:37 [INFO] Executing Step 2: CodeCleaning
+2024-07-05 10:53:37 [INFO] Saving charts to /Users/vivekjadhav/Documents/github/oneplusPythonScripts/exports/charts/temp_chart.png
+2024-07-05 10:53:37 [INFO] 
+Code running:
+```
+Python
+
+
+def analyze_data(file):
+    global dfs
+    df = pd.read_csv(file)
+    dfs.append(df)
+
+
+analyze_data('file.csv')
+
+
+def find_highest_salary():
+    highest_salary = 0
+    for df in dfs:
+        for index, row in df.iterrows():
+            if float(row['bank_account_key']) > highest_salary:
+                highest_salary = float(row['bank_account_key'])
+    return highest_salary
+
+
+highest_salary = find_highest_salary()
+result = {'type': 'string', 'value': f'The highest salary is {highest_salary}.'}
+print(result)
+
+
+def plot_chart(file):
+    df = pd.read_csv(file)
+    plt.figure(figsize=(10, 6))
+    plt.plot(df.iloc[:, 1])
+    plt.xlabel('Month')
+    plt.ylabel('Value')
+    plt.title('Chart Title')
+    plt.savefig('/Users/vivekjadhav/Documents/github/oneplusPythonScripts/exports/charts/temp_chart.png')
+
+
+plot_chart('file.csv')
+        ```
+2024-07-05 10:53:37 [ERROR] Failed with error: Traceback (most recent call last):
+  File "/Users/vivekjadhav/Documents/github/oneplusPythonScripts/venv/lib/python3.9/site-packages/pandasai/pipelines/chat/code_execution.py", line 85, in execute
+    result = self.execute_code(code_to_run, code_context)
+  File "/Users/vivekjadhav/Documents/github/oneplusPythonScripts/venv/lib/python3.9/site-packages/pandasai/pipelines/chat/code_execution.py", line 171, in execute_code
+    exec(code, environment)
+  File "<string>", line 1, in <module>
+NameError: name 'Python' is not defined
+
+2024-07-05 10:53:37 [WARNING] Failed to execute code retrying with a correction framework [retry number: 2]
+2024-07-05 10:53:37 [INFO] Executing Pipeline: ErrorCorrectionPipeline
+2024-07-05 10:53:37 [INFO] Executing Step 0: ErrorPromptGeneration
+2024-07-05 10:53:37 [INFO] Using prompt: <dataframe>
+dfs[0]:332x33
+bank_account_key,sequence_id,category,2022-01,2022-02,2022-03,2022-04,2022-05,2022-06,2022-07,2022-08,2022-09,2022-10,2022-11,2022-12,2023-01,2023-02,2023-03,2023-04,2023-05,2023-06,2023-07,2023-08,2023-09,2023-10,2023-11,2023-12,2024-01,2024-02,2024-03,2024-04,2024-05,2024-06
+4909Jamesway,8,Owner Draw,-711.48,-270.88,-963.16,1695.0,3125.0,-490.0,-730.2,180900.78,15822.47,3200.0,-625.0,8206.74,-8261.74,17749.69,4839.5,3791.0,5188.47,3451.54,3000.0,1590.0,1700.0,-11133.75,-108.24,-563.38,1023.53,1775.0,4109.02,2125.0,-843.79,20901.4
+874Wintergreen,17,Repair,-5281.08,5109.68,-9305.74,2658.0,-3669.39,1745.0,-1383.06,-150.0,-44.88,7753.55,10318.35,-254.7,-342.95,-147.99,10734.73,-475.0,-2138.5,4007.93,6678.03,-10.0,436.93,-563.38,-240.21,0.59,1723.38,-694.01,1293.96,5970.76,0.0,1510.0
+2417Garden,14,Utilities,0.02,7133.59,-733.95,-947.72,4545.0,1720.0,-1076.62,10400.56,9987.79,-75.0,-140.94,-109.9,8723.68,-10000.0,16276.73,-1118.25,-2.77,0.0,8479.48,1335.0,1825.0,-733.95,6944.63,-4761.19,2184.0,596252.88,4104.37,3566.0,4686.0,28291.43
+</dataframe>
+
+
+The user asked the following question:
+### QUERY
+ Let me explain how the file is set up
+
+
+
+You generated this python code:
+Python
+
+
+def analyze_data(file):
+    global dfs
+    df = pd.read_csv(file)
+    dfs.append(df)
+
+
+analyze_data('file.csv')
+
+
+def find_highest_salary():
+    highest_salary = 0
+    for df in dfs:
+        for index, row in df.iterrows():
+            if float(row['bank_account_key']) > highest_salary:
+                highest_salary = float(row['bank_account_key'])
+    return highest_salary
+
+
+highest_salary = find_highest_salary()
+result = {'type': 'string', 'value': f'The highest salary is {highest_salary}.'}
+print(result)
+
+
+def plot_chart(file):
+    df = pd.read_csv(file)
+    plt.figure(figsize=(10, 6))
+    plt.plot(df.iloc[:, 1])
+    plt.xlabel('Month')
+    plt.ylabel('Value')
+    plt.title('Chart Title')
+    plt.savefig('/Users/vivekjadhav/Documents/github/oneplusPythonScripts/exports/charts/temp_chart.png')
+
+
+plot_chart('file.csv')
+
+It fails with the following error:
+Traceback (most recent call last):
+  File "/Users/vivekjadhav/Documents/github/oneplusPythonScripts/venv/lib/python3.9/site-packages/pandasai/pipelines/chat/code_execution.py", line 85, in execute
+    result = self.execute_code(code_to_run, code_context)
+  File "/Users/vivekjadhav/Documents/github/oneplusPythonScripts/venv/lib/python3.9/site-packages/pandasai/pipelines/chat/code_execution.py", line 171, in execute_code
+    exec(code, environment)
+  File "<string>", line 1, in <module>
+NameError: name 'Python' is not defined
+
+
+Fix the python code above and return the new python code:
+2024-07-05 10:53:37 [INFO] Executing Step 1: CodeGenerator
+2024-07-05 10:53:51 [INFO] HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2024-07-05 10:53:51 [INFO] Prompt used:
+            <dataframe>
+dfs[0]:332x33
+bank_account_key,sequence_id,category,2022-01,2022-02,2022-03,2022-04,2022-05,2022-06,2022-07,2022-08,2022-09,2022-10,2022-11,2022-12,2023-01,2023-02,2023-03,2023-04,2023-05,2023-06,2023-07,2023-08,2023-09,2023-10,2023-11,2023-12,2024-01,2024-02,2024-03,2024-04,2024-05,2024-06
+4909Jamesway,8,Owner Draw,-711.48,-270.88,-963.16,1695.0,3125.0,-490.0,-730.2,180900.78,15822.47,3200.0,-625.0,8206.74,-8261.74,17749.69,4839.5,3791.0,5188.47,3451.54,3000.0,1590.0,1700.0,-11133.75,-108.24,-563.38,1023.53,1775.0,4109.02,2125.0,-843.79,20901.4
+874Wintergreen,17,Repair,-5281.08,5109.68,-9305.74,2658.0,-3669.39,1745.0,-1383.06,-150.0,-44.88,7753.55,10318.35,-254.7,-342.95,-147.99,10734.73,-475.0,-2138.5,4007.93,6678.03,-10.0,436.93,-563.38,-240.21,0.59,1723.38,-694.01,1293.96,5970.76,0.0,1510.0
+2417Garden,14,Utilities,0.02,7133.59,-733.95,-947.72,4545.0,1720.0,-1076.62,10400.56,9987.79,-75.0,-140.94,-109.9,8723.68,-10000.0,16276.73,-1118.25,-2.77,0.0,8479.48,1335.0,1825.0,-733.95,6944.63,-4761.19,2184.0,596252.88,4104.37,3566.0,4686.0,28291.43
+</dataframe>
+
+
+The user asked the following question:
+### QUERY
+ Let me explain how the file is set up
+
+
+
+You generated this python code:
+Python
+
+
+def analyze_data(file):
+    global dfs
+    df = pd.read_csv(file)
+    dfs.append(df)
+
+
+analyze_data('file.csv')
+
+
+def find_highest_salary():
+    highest_salary = 0
+    for df in dfs:
+        for index, row in df.iterrows():
+            if float(row['bank_account_key']) > highest_salary:
+                highest_salary = float(row['bank_account_key'])
+    return highest_salary
+
+
+highest_salary = find_highest_salary()
+result = {'type': 'string', 'value': f'The highest salary is {highest_salary}.'}
+print(result)
+
+
+def plot_chart(file):
+    df = pd.read_csv(file)
+    plt.figure(figsize=(10, 6))
+    plt.plot(df.iloc[:, 1])
+    plt.xlabel('Month')
+    plt.ylabel('Value')
+    plt.title('Chart Title')
+    plt.savefig('/Users/vivekjadhav/Documents/github/oneplusPythonScripts/exports/charts/temp_chart.png')
+
+
+plot_chart('file.csv')
+
+It fails with the following error:
+Traceback (most recent call last):
+  File "/Users/vivekjadhav/Documents/github/oneplusPythonScripts/venv/lib/python3.9/site-packages/pandasai/pipelines/chat/code_execution.py", line 85, in execute
+    result = self.execute_code(code_to_run, code_context)
+  File "/Users/vivekjadhav/Documents/github/oneplusPythonScripts/venv/lib/python3.9/site-packages/pandasai/pipelines/chat/code_execution.py", line 171, in execute_code
+    exec(code, environment)
+  File "<string>", line 1, in <module>
+NameError: name 'Python' is not defined
+
+
+Fix the python code above and return the new python code:
+            
+2024-07-05 10:53:51 [INFO] Code generated:
+            ```
+            import pandas as pd
+import matplotlib.pyplot as plt
+
+# Define an empty list to store DataFrames
+dfs = []
+
+def analyze_data(file):
+    global dfs
+    df = pd.read_csv(file)
+    dfs.append(df)
+
+analyze_data('file.csv')
+
+def find_highest_salary():
+    highest_salary = 0
+    for df in dfs:
+        for index, row in df.iterrows():
+            if float(row['bank_account_key']) > highest_salary:
+                highest_salary = float(row['bank_account_key'])
+    return highest_salary
+
+highest_salary = find_highest_salary()
+result = {'type': 'string', 'value': f'The highest salary is {highest_salary}.'}
+print(result)
+
+def plot_chart(file):
+    df = pd.read_csv(file)
+    plt.figure(figsize=(10, 6))
+    plt.plot(df.iloc[:, 1])
+    plt.xlabel('Month')
+    plt.ylabel('Value')
+    plt.title('Chart Title')
+    plt.savefig('/Users/vivekjadhav/Documents/github/oneplusPythonScripts/exports/charts/temp_chart.png')
+
+plot_chart('file.csv')
+            ```
+            
+2024-07-05 10:53:51 [INFO] Executing Step 2: CodeCleaning
+2024-07-05 10:53:51 [INFO] Saving charts to /Users/vivekjadhav/Documents/github/oneplusPythonScripts/exports/charts/temp_chart.png
+2024-07-05 10:53:51 [INFO] 
+Code running:
+```
+def analyze_data(file):
+    global dfs
+    df = pd.read_csv(file)
+    dfs.append(df)
+
+
+analyze_data('file.csv')
+
+
+def find_highest_salary():
+    highest_salary = 0
+    for df in dfs:
+        for index, row in df.iterrows():
+            if float(row['bank_account_key']) > highest_salary:
+                highest_salary = float(row['bank_account_key'])
+    return highest_salary
+
+
+highest_salary = find_highest_salary()
+result = {'type': 'string', 'value': f'The highest salary is {highest_salary}.'}
+print(result)
+
+
+def plot_chart(file):
+    df = pd.read_csv(file)
+    plt.figure(figsize=(10, 6))
+    plt.plot(df.iloc[:, 1])
+    plt.xlabel('Month')
+    plt.ylabel('Value')
+    plt.title('Chart Title')
+    plt.savefig('/Users/vivekjadhav/Documents/github/oneplusPythonScripts/exports/charts/temp_chart.png')
+
+
+plot_chart('file.csv')
+        ```
+2024-07-05 10:53:51 [ERROR] Failed with error: Traceback (most recent call last):
+  File "/Users/vivekjadhav/Documents/github/oneplusPythonScripts/venv/lib/python3.9/site-packages/pandasai/pipelines/chat/code_execution.py", line 85, in execute
+    result = self.execute_code(code_to_run, code_context)
+  File "/Users/vivekjadhav/Documents/github/oneplusPythonScripts/venv/lib/python3.9/site-packages/pandasai/pipelines/chat/code_execution.py", line 171, in execute_code
+    exec(code, environment)
+  File "<string>", line 7, in <module>
+  File "<string>", line 3, in analyze_data
+  File "/Users/vivekjadhav/Documents/github/oneplusPythonScripts/venv/lib/python3.9/site-packages/pandas/util/_decorators.py", line 211, in wrapper
+    return func(*args, **kwargs)
+  File "/Users/vivekjadhav/Documents/github/oneplusPythonScripts/venv/lib/python3.9/site-packages/pandas/util/_decorators.py", line 331, in wrapper
+    return func(*args, **kwargs)
+  File "/Users/vivekjadhav/Documents/github/oneplusPythonScripts/venv/lib/python3.9/site-packages/pandas/io/parsers/readers.py", line 950, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "/Users/vivekjadhav/Documents/github/oneplusPythonScripts/venv/lib/python3.9/site-packages/pandas/io/parsers/readers.py", line 605, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "/Users/vivekjadhav/Documents/github/oneplusPythonScripts/venv/lib/python3.9/site-packages/pandas/io/parsers/readers.py", line 1442, in __init__
+    self._engine = self._make_engine(f, self.engine)
+  File "/Users/vivekjadhav/Documents/github/oneplusPythonScripts/venv/lib/python3.9/site-packages/pandas/io/parsers/readers.py", line 1735, in _make_engine
+    self.handles = get_handle(
+  File "/Users/vivekjadhav/Documents/github/oneplusPythonScripts/venv/lib/python3.9/site-packages/pandas/io/common.py", line 856, in get_handle
+    handle = open(
+FileNotFoundError: [Errno 2] No such file or directory: 'file.csv'
+
+2024-07-05 10:53:51 [WARNING] Failed to execute code retrying with a correction framework [retry number: 3]
+2024-07-05 10:53:51 [INFO] Executing Pipeline: ErrorCorrectionPipeline
+2024-07-05 10:53:51 [INFO] Executing Step 0: ErrorPromptGeneration
+2024-07-05 10:53:51 [INFO] Using prompt: <dataframe>
+dfs[0]:332x33
+bank_account_key,sequence_id,category,2022-01,2022-02,2022-03,2022-04,2022-05,2022-06,2022-07,2022-08,2022-09,2022-10,2022-11,2022-12,2023-01,2023-02,2023-03,2023-04,2023-05,2023-06,2023-07,2023-08,2023-09,2023-10,2023-11,2023-12,2024-01,2024-02,2024-03,2024-04,2024-05,2024-06
+4909Jamesway,8,Owner Draw,-711.48,-270.88,-963.16,1695.0,3125.0,-490.0,-730.2,180900.78,15822.47,3200.0,-625.0,8206.74,-8261.74,17749.69,4839.5,3791.0,5188.47,3451.54,3000.0,1590.0,1700.0,-11133.75,-108.24,-563.38,1023.53,1775.0,4109.02,2125.0,-843.79,20901.4
+874Wintergreen,17,Repair,-5281.08,5109.68,-9305.74,2658.0,-3669.39,1745.0,-1383.06,-150.0,-44.88,7753.55,10318.35,-254.7,-342.95,-147.99,10734.73,-475.0,-2138.5,4007.93,6678.03,-10.0,436.93,-563.38,-240.21,0.59,1723.38,-694.01,1293.96,5970.76,0.0,1510.0
+2417Garden,14,Utilities,0.02,7133.59,-733.95,-947.72,4545.0,1720.0,-1076.62,10400.56,9987.79,-75.0,-140.94,-109.9,8723.68,-10000.0,16276.73,-1118.25,-2.77,0.0,8479.48,1335.0,1825.0,-733.95,6944.63,-4761.19,2184.0,596252.88,4104.37,3566.0,4686.0,28291.43
+</dataframe>
+
+
+The user asked the following question:
+### QUERY
+ Let me explain how the file is set up
+
+
+
+You generated this python code:
+def analyze_data(file):
+    global dfs
+    df = pd.read_csv(file)
+    dfs.append(df)
+
+
+analyze_data('file.csv')
+
+
+def find_highest_salary():
+    highest_salary = 0
+    for df in dfs:
+        for index, row in df.iterrows():
+            if float(row['bank_account_key']) > highest_salary:
+                highest_salary = float(row['bank_account_key'])
+    return highest_salary
+
+
+highest_salary = find_highest_salary()
+result = {'type': 'string', 'value': f'The highest salary is {highest_salary}.'}
+print(result)
+
+
+def plot_chart(file):
+    df = pd.read_csv(file)
+    plt.figure(figsize=(10, 6))
+    plt.plot(df.iloc[:, 1])
+    plt.xlabel('Month')
+    plt.ylabel('Value')
+    plt.title('Chart Title')
+    plt.savefig('/Users/vivekjadhav/Documents/github/oneplusPythonScripts/exports/charts/temp_chart.png')
+
+
+plot_chart('file.csv')
+
+It fails with the following error:
+Traceback (most recent call last):
+  File "/Users/vivekjadhav/Documents/github/oneplusPythonScripts/venv/lib/python3.9/site-packages/pandasai/pipelines/chat/code_execution.py", line 85, in execute
+    result = self.execute_code(code_to_run, code_context)
+  File "/Users/vivekjadhav/Documents/github/oneplusPythonScripts/venv/lib/python3.9/site-packages/pandasai/pipelines/chat/code_execution.py", line 171, in execute_code
+    exec(code, environment)
+  File "<string>", line 7, in <module>
+  File "<string>", line 3, in analyze_data
+  File "/Users/vivekjadhav/Documents/github/oneplusPythonScripts/venv/lib/python3.9/site-packages/pandas/util/_decorators.py", line 211, in wrapper
+    return func(*args, **kwargs)
+  File "/Users/vivekjadhav/Documents/github/oneplusPythonScripts/venv/lib/python3.9/site-packages/pandas/util/_decorators.py", line 331, in wrapper
+    return func(*args, **kwargs)
+  File "/Users/vivekjadhav/Documents/github/oneplusPythonScripts/venv/lib/python3.9/site-packages/pandas/io/parsers/readers.py", line 950, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "/Users/vivekjadhav/Documents/github/oneplusPythonScripts/venv/lib/python3.9/site-packages/pandas/io/parsers/readers.py", line 605, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "/Users/vivekjadhav/Documents/github/oneplusPythonScripts/venv/lib/python3.9/site-packages/pandas/io/parsers/readers.py", line 1442, in __init__
+    self._engine = self._make_engine(f, self.engine)
+  File "/Users/vivekjadhav/Documents/github/oneplusPythonScripts/venv/lib/python3.9/site-packages/pandas/io/parsers/readers.py", line 1735, in _make_engine
+    self.handles = get_handle(
+  File "/Users/vivekjadhav/Documents/github/oneplusPythonScripts/venv/lib/python3.9/site-packages/pandas/io/common.py", line 856, in get_handle
+    handle = open(
+FileNotFoundError: [Errno 2] No such file or directory: 'file.csv'
+
+
+Fix the python code above and return the new python code:
+2024-07-05 10:53:51 [INFO] Executing Step 1: CodeGenerator
+2024-07-05 10:53:59 [INFO] HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2024-07-05 10:53:59 [INFO] Prompt used:
+            <dataframe>
+dfs[0]:332x33
+bank_account_key,sequence_id,category,2022-01,2022-02,2022-03,2022-04,2022-05,2022-06,2022-07,2022-08,2022-09,2022-10,2022-11,2022-12,2023-01,2023-02,2023-03,2023-04,2023-05,2023-06,2023-07,2023-08,2023-09,2023-10,2023-11,2023-12,2024-01,2024-02,2024-03,2024-04,2024-05,2024-06
+4909Jamesway,8,Owner Draw,-711.48,-270.88,-963.16,1695.0,3125.0,-490.0,-730.2,180900.78,15822.47,3200.0,-625.0,8206.74,-8261.74,17749.69,4839.5,3791.0,5188.47,3451.54,3000.0,1590.0,1700.0,-11133.75,-108.24,-563.38,1023.53,1775.0,4109.02,2125.0,-843.79,20901.4
+874Wintergreen,17,Repair,-5281.08,5109.68,-9305.74,2658.0,-3669.39,1745.0,-1383.06,-150.0,-44.88,7753.55,10318.35,-254.7,-342.95,-147.99,10734.73,-475.0,-2138.5,4007.93,6678.03,-10.0,436.93,-563.38,-240.21,0.59,1723.38,-694.01,1293.96,5970.76,0.0,1510.0
+2417Garden,14,Utilities,0.02,7133.59,-733.95,-947.72,4545.0,1720.0,-1076.62,10400.56,9987.79,-75.0,-140.94,-109.9,8723.68,-10000.0,16276.73,-1118.25,-2.77,0.0,8479.48,1335.0,1825.0,-733.95,6944.63,-4761.19,2184.0,596252.88,4104.37,3566.0,4686.0,28291.43
+</dataframe>
+
+
+The user asked the following question:
+### QUERY
+ Let me explain how the file is set up
+
+
+
+You generated this python code:
+def analyze_data(file):
+    global dfs
+    df = pd.read_csv(file)
+    dfs.append(df)
+
+
+analyze_data('file.csv')
+
+
+def find_highest_salary():
+    highest_salary = 0
+    for df in dfs:
+        for index, row in df.iterrows():
+            if float(row['bank_account_key']) > highest_salary:
+                highest_salary = float(row['bank_account_key'])
+    return highest_salary
+
+
+highest_salary = find_highest_salary()
+result = {'type': 'string', 'value': f'The highest salary is {highest_salary}.'}
+print(result)
+
+
+def plot_chart(file):
+    df = pd.read_csv(file)
+    plt.figure(figsize=(10, 6))
+    plt.plot(df.iloc[:, 1])
+    plt.xlabel('Month')
+    plt.ylabel('Value')
+    plt.title('Chart Title')
+    plt.savefig('/Users/vivekjadhav/Documents/github/oneplusPythonScripts/exports/charts/temp_chart.png')
+
+
+plot_chart('file.csv')
+
+It fails with the following error:
+Traceback (most recent call last):
+  File "/Users/vivekjadhav/Documents/github/oneplusPythonScripts/venv/lib/python3.9/site-packages/pandasai/pipelines/chat/code_execution.py", line 85, in execute
+    result = self.execute_code(code_to_run, code_context)
+  File "/Users/vivekjadhav/Documents/github/oneplusPythonScripts/venv/lib/python3.9/site-packages/pandasai/pipelines/chat/code_execution.py", line 171, in execute_code
+    exec(code, environment)
+  File "<string>", line 7, in <module>
+  File "<string>", line 3, in analyze_data
+  File "/Users/vivekjadhav/Documents/github/oneplusPythonScripts/venv/lib/python3.9/site-packages/pandas/util/_decorators.py", line 211, in wrapper
+    return func(*args, **kwargs)
+  File "/Users/vivekjadhav/Documents/github/oneplusPythonScripts/venv/lib/python3.9/site-packages/pandas/util/_decorators.py", line 331, in wrapper
+    return func(*args, **kwargs)
+  File "/Users/vivekjadhav/Documents/github/oneplusPythonScripts/venv/lib/python3.9/site-packages/pandas/io/parsers/readers.py", line 950, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "/Users/vivekjadhav/Documents/github/oneplusPythonScripts/venv/lib/python3.9/site-packages/pandas/io/parsers/readers.py", line 605, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "/Users/vivekjadhav/Documents/github/oneplusPythonScripts/venv/lib/python3.9/site-packages/pandas/io/parsers/readers.py", line 1442, in __init__
+    self._engine = self._make_engine(f, self.engine)
+  File "/Users/vivekjadhav/Documents/github/oneplusPythonScripts/venv/lib/python3.9/site-packages/pandas/io/parsers/readers.py", line 1735, in _make_engine
+    self.handles = get_handle(
+  File "/Users/vivekjadhav/Documents/github/oneplusPythonScripts/venv/lib/python3.9/site-packages/pandas/io/common.py", line 856, in get_handle
+    handle = open(
+FileNotFoundError: [Errno 2] No such file or directory: 'file.csv'
+
+
+Fix the python code above and return the new python code:
+            
+2024-07-05 10:53:59 [INFO] Code generated:
+            ```
+            def analyze_data(file_path):
+    global dfs
+    df = pd.read_csv(file_path)
+    dfs.append(df)
+
+analyze_data('path/to/file.csv')  # Replace with your actual file path
+
+...
+
+# Rest of your original code remains the same
+            ```
+            
+2024-07-05 10:53:59 [INFO] Executing Step 2: CodeCleaning
+2024-07-05 10:53:59 [INFO] 
+Code running:
+```
+def analyze_data(file_path):
+    global dfs
+    df = pd.read_csv(file_path)
+    dfs.append(df)
+
+
+analyze_data('path/to/file.csv')
+...
+        ```
+2024-07-05 10:53:59 [ERROR] Failed with error: Traceback (most recent call last):
+  File "/Users/vivekjadhav/Documents/github/oneplusPythonScripts/venv/lib/python3.9/site-packages/pandasai/pipelines/chat/code_execution.py", line 85, in execute
+    result = self.execute_code(code_to_run, code_context)
+  File "/Users/vivekjadhav/Documents/github/oneplusPythonScripts/venv/lib/python3.9/site-packages/pandasai/pipelines/chat/code_execution.py", line 171, in execute_code
+    exec(code, environment)
+  File "<string>", line 7, in <module>
+  File "<string>", line 3, in analyze_data
+  File "/Users/vivekjadhav/Documents/github/oneplusPythonScripts/venv/lib/python3.9/site-packages/pandas/util/_decorators.py", line 211, in wrapper
+    return func(*args, **kwargs)
+  File "/Users/vivekjadhav/Documents/github/oneplusPythonScripts/venv/lib/python3.9/site-packages/pandas/util/_decorators.py", line 331, in wrapper
+    return func(*args, **kwargs)
+  File "/Users/vivekjadhav/Documents/github/oneplusPythonScripts/venv/lib/python3.9/site-packages/pandas/io/parsers/readers.py", line 950, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "/Users/vivekjadhav/Documents/github/oneplusPythonScripts/venv/lib/python3.9/site-packages/pandas/io/parsers/readers.py", line 605, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "/Users/vivekjadhav/Documents/github/oneplusPythonScripts/venv/lib/python3.9/site-packages/pandas/io/parsers/readers.py", line 1442, in __init__
+    self._engine = self._make_engine(f, self.engine)
+  File "/Users/vivekjadhav/Documents/github/oneplusPythonScripts/venv/lib/python3.9/site-packages/pandas/io/parsers/readers.py", line 1735, in _make_engine
+    self.handles = get_handle(
+  File "/Users/vivekjadhav/Documents/github/oneplusPythonScripts/venv/lib/python3.9/site-packages/pandas/io/common.py", line 856, in get_handle
+    handle = open(
+FileNotFoundError: [Errno 2] No such file or directory: 'path/to/file.csv'
+
+2024-07-05 10:53:59 [ERROR] Pipeline failed on step 6: [Errno 2] No such file or directory: 'path/to/file.csv'
+2024-07-05 10:56:00 [INFO] Question: Whats the average rent ?
+
+
+
+2024-07-05 10:56:00 [INFO] Running PandasAI with local LLM...
+2024-07-05 10:56:00 [INFO] Prompt ID: 3d8b3a05-c57c-46f0-970b-b756b3f729a1
+2024-07-05 10:56:00 [INFO] Executing Pipeline: GenerateChatPipeline
+2024-07-05 10:56:00 [INFO] Executing Step 0: ValidatePipelineInput
+2024-07-05 10:56:00 [INFO] Executing Step 1: CacheLookup
+2024-07-05 10:56:00 [INFO] Executing Step 2: PromptGeneration
+2024-07-05 10:56:00 [INFO] Using prompt: <dataframe>
+dfs[0]:13x33
+bank_account_key,sequence_id,category,2022-01,2022-02,2022-03,2022-04,2022-05,2022-06,2022-07,2022-08,2022-09,2022-10,2022-11,2022-12,2023-01,2023-02,2023-03,2023-04,2023-05,2023-06,2023-07,2023-08,2023-09,2023-10,2023-11,2023-12,2024-01,2024-02,2024-03,2024-04,2024-05,2024-06
+104Meadow,1,Taxes,1699.0,1055.0,1645.0,0.0,-944.0,-577.0,-730.2,10045.92,-104.46,-75.0,2642.49,-2500.0,881.1,-730.2,0.0,-75.0,0.0,0.0,1775.0,-75.0,7282.38,-730.2,-75.0,1130.59,2184.0,-75.0,-75.0,3366.0,-730.2,1700.0
+104Meadow,15,Management,-350.0,-840.0,-75.0,-730.2,0.0,-75.0,0.0,0.0,0.0,8406.06,-1623.0,-730.2,-110.0,-75.0,-75.0,0.0,3260.5,-75.0,0.0,6312.58,-730.2,0.0,-730.2,-1000.0,2584.39,1875.0,2923.99,5559.79,1950.0,-730.2
+104Meadow,5,NET INCOME,-75.0,-75.0,4907.89,-75.0,2261.0,0.0,3521.09,-730.2,-730.2,-730.2,-1548.0,721.3,1000.0,75.9,1975.2,1700.0,1700.0,-730.2,5200.1,-32.32,-75.0,-75.0,0.0,0.0,-75.0,0.0,-730.2,-730.2,0.0,1625.0
+</dataframe>
+
+
+
+
+Update this initial code:
+```python
+# TODO: import the required dependencies
+import pandas as pd
+
+# Write code here
+
+# Declare result var: 
+type (possible values "string", "number", "dataframe", "plot"). Examples: { "type": "string", "value": f"The highest salary is {highest_salary}." } or { "type": "number", "value": 125 } or { "type": "dataframe", "value": pd.DataFrame({...}) } or { "type": "plot", "value": "temp_chart.png" }
+
+```
+
+
+
+### QUERY
+ Whats the average rent ?
+
+
+
+
+Variable `dfs: list[pd.DataFrame]` is already declared.
+
+At the end, declare "result" variable as a dictionary of type and value.
+
+If you are asked to plot a chart, use "matplotlib" for charts, save as png.
+
+
+Generate python code and return full updated code:
+2024-07-05 10:56:00 [INFO] Executing Step 3: CodeGenerator
+2024-07-05 10:56:10 [INFO] HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2024-07-05 10:56:10 [INFO] Prompt used:
+            <dataframe>
+dfs[0]:13x33
+bank_account_key,sequence_id,category,2022-01,2022-02,2022-03,2022-04,2022-05,2022-06,2022-07,2022-08,2022-09,2022-10,2022-11,2022-12,2023-01,2023-02,2023-03,2023-04,2023-05,2023-06,2023-07,2023-08,2023-09,2023-10,2023-11,2023-12,2024-01,2024-02,2024-03,2024-04,2024-05,2024-06
+104Meadow,1,Taxes,1699.0,1055.0,1645.0,0.0,-944.0,-577.0,-730.2,10045.92,-104.46,-75.0,2642.49,-2500.0,881.1,-730.2,0.0,-75.0,0.0,0.0,1775.0,-75.0,7282.38,-730.2,-75.0,1130.59,2184.0,-75.0,-75.0,3366.0,-730.2,1700.0
+104Meadow,15,Management,-350.0,-840.0,-75.0,-730.2,0.0,-75.0,0.0,0.0,0.0,8406.06,-1623.0,-730.2,-110.0,-75.0,-75.0,0.0,3260.5,-75.0,0.0,6312.58,-730.2,0.0,-730.2,-1000.0,2584.39,1875.0,2923.99,5559.79,1950.0,-730.2
+104Meadow,5,NET INCOME,-75.0,-75.0,4907.89,-75.0,2261.0,0.0,3521.09,-730.2,-730.2,-730.2,-1548.0,721.3,1000.0,75.9,1975.2,1700.0,1700.0,-730.2,5200.1,-32.32,-75.0,-75.0,0.0,0.0,-75.0,0.0,-730.2,-730.2,0.0,1625.0
+</dataframe>
+
+
+
+
+Update this initial code:
+```python
+# TODO: import the required dependencies
+import pandas as pd
+
+# Write code here
+
+# Declare result var: 
+type (possible values "string", "number", "dataframe", "plot"). Examples: { "type": "string", "value": f"The highest salary is {highest_salary}." } or { "type": "number", "value": 125 } or { "type": "dataframe", "value": pd.DataFrame({...}) } or { "type": "plot", "value": "temp_chart.png" }
+
+```
+
+
+
+### QUERY
+ Whats the average rent ?
+
+
+
+
+Variable `dfs: list[pd.DataFrame]` is already declared.
+
+At the end, declare "result" variable as a dictionary of type and value.
+
+If you are asked to plot a chart, use "matplotlib" for charts, save as png.
+
+
+Generate python code and return full updated code:
+            
+2024-07-05 10:56:10 [INFO] Code generated:
+            ```
+            import pandas as pd
+import matplotlib.pyplot as plt
+
+# Assuming dfs is a list of DataFrames
+dfs = ...
+
+result = {"type": "number", "value": 0}
+
+for df in dfs:
+    if 'rent' in df.columns:  # Check if the column exists
+        result["value"] = df['rent'].mean()
+        break
+
+print(f"The average rent is {result['value']}.")
+            ```
+            
+2024-07-05 10:56:10 [INFO] Executing Step 4: CachePopulation
+2024-07-05 10:56:10 [INFO] Executing Step 5: CodeCleaning
+2024-07-05 10:56:10 [INFO] 
+Code running:
+```
+result = {'type': 'number', 'value': 0}
+for df in dfs:
+    if 'rent' in df.columns:
+        result['value'] = df['rent'].mean()
+        break
+print(f"The average rent is {result['value']}.")
+        ```
+2024-07-05 10:56:10 [INFO] Executing Step 6: CodeExecution
+2024-07-05 10:56:10 [INFO] Executing Step 7: ResultValidation
+2024-07-05 10:56:10 [INFO] Answer: {'type': 'number', 'value': 0}
+2024-07-05 10:56:10 [INFO] Executing Step 8: ResultParsing

@@ -1,3 +1,6 @@
+# Test http://0.0.0.0:8080/docs to confirm the server is running
+# If not, open folder fastapi-oneplus and run main.py
+
 # Instructions
 # 1. Run the script to set period_status = 'closed' for all rows in transactionstmp where cashflow table has closed period
 

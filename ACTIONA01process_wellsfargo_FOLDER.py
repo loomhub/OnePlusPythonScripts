@@ -1,3 +1,6 @@
+# Test http://0.0.0.0:8080/docs to confirm the server is running
+# If not, open folder fastapi-oneplus and run main.py
+
 # Instructions:
 # 1. Download WellsFargo bankdata to wellsfargo folder. 
 # 2. Make sure to name the files after property names. This is how the program knows which property the bankdata belongs to.

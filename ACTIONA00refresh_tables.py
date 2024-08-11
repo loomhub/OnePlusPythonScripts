@@ -1,4 +1,6 @@
 # Instructions:
+# Test http://0.0.0.0:8080/docs to confirm the server is running
+# If not, open folder fastapi-oneplus and run main.py
 # 1. Run the script to truncate transactiontmp and bankdownloads tables
 
 import requests
