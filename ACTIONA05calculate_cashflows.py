@@ -13,7 +13,7 @@
 #5. Build newcashflowsDF = rows from transactionstmpDF where tdate > lastrowsDF['start_date'] for each bank_account_balance
 #6. Add start_date and end_date to newcashflowsDF
 #7. Pivot records from transactionstmp to calculate cash_change for each month, starting balance and ending balance
-# 8. Update cashflows datable    
+# 8. Update cashflows data table    
 
 
 import pandas as pd

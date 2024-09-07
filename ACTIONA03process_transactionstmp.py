@@ -4,7 +4,7 @@
 # Instructions:
 # 1. If transactionstmp table is empty:
 #  1a. Copy "Transactions/transactionstmp_template.csv" to "Transactions/transactionstmp.csv"
-#  1b. Run the script
+#  1b. Run the script. You may see Error: Input records don't match output records. This is normal.
 #  1c. Save xls file as csv from "/Output/DatabaseDownloadTransactionstmp.xls" to "Transactions/transactionstmp.csv"
 
 # 2. If transactionstmp table is not empty:

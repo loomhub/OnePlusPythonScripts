@@ -1,6 +1,12 @@
 # Test http://0.0.0.0:8080/docs to confirm the server is running
 # If not, open folder fastapi-oneplus and run main.py
 
+# Instructions
+# 1. The script creates a performance summary report for the last 2 years
+# 2. Open the file DataLoads/Output/PerformanceReport/performance_summary_report.xlsx
+# 3. Copy the contents of the file to the Details tab of the "YYYY_YTDPerformance.xlsx" file
+# 4. Save the "YYYY_YTDPerformance.xlsx" file to google drive
+
 import pandas as pd
 import requests
 

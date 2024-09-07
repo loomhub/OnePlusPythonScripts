@@ -3,8 +3,9 @@
 
 # Instructions
 # 1. Check the bank statements. Populate ending_balances. Period_status = 'closed' if ending_balance = calc_balance
-# 2. Prepare a load file "DataLoads/Prerequisite models/cashflowsAug022024.csv"
-# 3. Run the script
+# 2. Prepare a load file "DataLoads/Prerequisite models/cashflowsPeriodClose.csv"
+# 3. Run the script. 
+# 4. You may get an error that output records don't match input records. This is because the script fills in gap months with cash_change = 0 and ending_balance = prev_balance
 
 # Logic
 #1. The code fills in gap months with cash_change = 0 and ending_balance = prev_balance
@@ -19,7 +20,7 @@ host='http://localhost:8080'
 # Bank Downloads
 endpoint='/cashflows?update=X'
 url=host+endpoint
-input_file='DataLoads/Prerequisite models/cashflowsAug022024.csv'
+input_file='DataLoads/Prerequisite models/cashflowsPeriodClose.csv'
 input_folder='DataLoads/Prerequisite models/'
 myObjects = 'cashflows'
 processing_results = []
